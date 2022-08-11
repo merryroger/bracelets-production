@@ -1,0 +1,132 @@
+@media (max-width: 1380px) {
+  .review-model-pad {
+    justify-content: flex-start;
+    padding-left: 50px;
+  }
+
+  .review-model-frame {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .review-model-band {
+    position: absolute;
+    width: auto;
+  }
+}
+
+@media (max-width: 1330px) {
+  .review-model-frame {
+    margin-bottom: 0;
+    min-height: 240px;
+  }
+
+  .review-model-band {
+    height: 240px;
+    flex-wrap: nowrap;
+  }
+
+  .review-band-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 16px;
+  }
+
+  .title {
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .instructions h2.headers {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  /*** Header section ***/
+
+  .header {
+    margin-bottom: 50px;
+  }
+
+  .header .container {
+    justify-content: center;
+  }
+
+  /*** Main:review ***/
+
+  .review_header {
+    margin-bottom: 20px;
+    font-size: 70px;
+    line-height: 80px;
+  }
+}
+
+@media (max-width: 674px) {
+  /*** Header section ***/
+
+  .header {
+    margin-bottom: 25px;
+  }
+
+  .instructions h2.headers {
+    font-size: 34px;
+    line-height: 42px;
+  }
+
+  .instructions h3.instruction-cases {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .instructions h5.instruction-comment {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  /*** Main:review ***/
+
+  .review_header {
+    margin-bottom: 0;
+    text-align: center;
+    font-size: calc(37 * 100vw / 470);
+    line-height: calc(42 * 100vw / 470);
+  }
+
+  .review-model-frame {
+    min-height: 240px;
+  }
+
+  .review-model-band {
+    height: 240px;
+  }
+
+  .model-card {
+    padding: 0;
+    width: 240px;
+    min-width: 240px;
+    height: 240px;
+  }
+
+  .device_img {
+    flex-basis: 171px;
+    background-size: 50% auto;
+  }
+
+  .device-name {
+    margin-bottom: 2px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .device-app {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+}
