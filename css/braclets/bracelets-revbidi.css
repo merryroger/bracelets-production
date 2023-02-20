@@ -1,0 +1,31 @@
+/*** Common rules ***/
+
+.rev-bidi {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+
+.footnote::before {
+  left: auto;
+  right: 0;
+}
+
+.descriptions {
+  text-align: right;
+}
+
+.title {
+  flex-direction: row-reverse;
+}
+
+.instructions-todo-list.rev-bidi,
+.instructions-cases-todo-list.rev-bidi {
+  padding-left: 0;
+  padding-right: 25px;
+}
+
+/*** Section Review ***/
+
+.review.container {
+  text-align: right;
+}
