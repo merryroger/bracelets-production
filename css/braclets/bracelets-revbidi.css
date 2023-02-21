@@ -24,8 +24,17 @@
   padding-right: 25px;
 }
 
-/*** Section Review ***/
+.backtop.container {
+  float: left;
+}
 
 .review.container {
   text-align: right;
+}
+
+@media (max-width: 1330px) {
+  .title {
+    flex-direction: column;
+    align-items: flex-end !important;
+  }
 }
