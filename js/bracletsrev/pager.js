@@ -1,8 +1,8 @@
 /**
  * The Object Pager (reversed) JavaScript library
- * version 0.1.4-r
+ * version 0.1.5-r
  * © 2022..2023 Ehwaz Raido
- * 05/Aug/2022 .. 26/Feb/2023
+ * 05/Aug/2022 .. 27/Feb/2023
  */
 
 const Pager = class ObjectPager {
@@ -259,8 +259,7 @@ const Pager = class ObjectPager {
 
   _getFocusedCardNum() {
     let cardNum = 0;
-    const focused =
-      this._focused !== null ? this._focused : document.querySelector(":focus");
+    const focused = (this._focused !== null) ? this._focused : document.querySelector(":focus");
     this._settings.items.forEach((item, index) => {
       if (item === focused) {
         cardNum = index + 1;
@@ -319,15 +318,7 @@ const Pager = class ObjectPager {
       atEdge = false;
     }
 
-    const input = this._settings.ctrlDock.querySelectorAll("input")[
-        Math.floor(cv / (this._parameters.itemsPerScreen * this._parameters.rows))
-      ];
-    input.checked = true;
-    if (atEdge) {
-      this._doMove({ target: input });
-    } else {
-      this._cardSelect(cv);
-    }
+    this._moveByExternalActionEnd(cv, atEdge);
 
     this._tmh = setTimeout(this._trend, 110);
   }
@@ -380,42 +371,45 @@ const Pager = class ObjectPager {
       e.preventDefault();
       return;
     }
-/*
+
     var lastShift = +getComputedStyle(this._settings.band).transform.split(", ")[4] - this._nullPos;
     let cv = this._getCurrentPageValue();
     const rightAligned = lastShift % this._parameters.moveLength === 0;
-    const atRightEdge = this._getCardAtRightPosition(cv);
+    const atRightEdge = (rightAligned) ? Math.floor(lastShift / this._parameters.moveLength) : Math.floor(lastShift / this._parameters.moveLength) + 1;
     const atLeftEdge = atRightEdge + this._parameters.itemsPerScreen - 1;
-    const focusedCard = this._getFocusedCardNum();
-
+    const focusedCard = this._getFocusedCardNum() - 1;
+    const overFlow = (atLeftEdge >= this._settings.items.length - 1 && focusedCard >= atRightEdge);
+    
     let atEdge = true;
 
-    if (focusedCard === 1) {
+    if (focusedCard === 0) {
       cv = 0;
-    } else if (focusedCard === this._settings.items.length) {
+    } else if (overFlow) {
       cv = this._settings.items.length - 1;
     } else if (focusedCard >= atRightEdge && focusedCard <= atLeftEdge) {
-      //cv = Math.round(lastShift / this._parameters.moveLength);
-      //atEdge = false;
       return;
     } else {
-      this._swipInfo.dir = (focusedCard > atLeftEdge) ? -1 : 1;
+      this._swipInfo.dir = (focusedCard > atLeftEdge) ? -1 : -1;
       lastShift += (focusedCard > atLeftEdge)
-          ? this._parameters.itemsPerScreen * this._parameters.moveLength
+          ? this._parameters.moveLength
           : -lastShift % this._parameters.moveLength;
       cv = Math.round(lastShift / this._parameters.moveLength);
       atEdge = false;
     }
 
+    this._moveByExternalActionEnd(cv, atEdge);
+  }
+
+  _moveByExternalActionEnd(cv, atEdge) {
     const input = this._settings.ctrlDock.querySelectorAll("input")[
-        Math.floor(cv / (this._parameters.itemsPerScreen * this._parameters.rows))
-      ];
+      Math.floor(cv / (this._parameters.itemsPerScreen * this._parameters.rows))
+    ];
     input.checked = true;
     if (atEdge) {
       this._doMove({ target: input });
     } else {
       this._cardSelect(cv);
-    }*/
+    }
   }
 
   _transitionEnd() {
@@ -428,36 +422,37 @@ const Pager = class ObjectPager {
       this._settings.band.style.setProperty("transition", "transform .1s ease-in-out");
       this._focused = e.target.closest(".model-card");
       const cv = this._getFocusedCardNum();
-      const bandShift = Math.abs(+getComputedStyle(this._settings.band).transform.split(", ")[4]);
-      const leftCard = Math.floor(bandShift / this._parameters.moveLength);
-      const rightCard = Math.floor(bandShift / this._parameters.moveLength) + this._parameters.itemsPerScreen;
-      const leftAligned = bandShift % this._parameters.moveLength == 0;
+      const bandShift = Math.abs(+getComputedStyle(this._settings.band).transform.split(", ")[4] - this._nullPos);
+      const rightCard = Math.floor(bandShift / this._parameters.moveLength);
+      const leftCard = Math.floor(bandShift / this._parameters.moveLength) + this._parameters.itemsPerScreen;
+    
+      const rightAligned = bandShift % this._parameters.moveLength == 0;
+
       const page = Math.floor((cv - 1) / (this._parameters.itemsPerScreen * this._parameters.rows));
       const input = this._settings.ctrlDock.querySelectorAll("input")[page];
       input.checked = true;
       let anchor = 0;
 
-      if (leftAligned) {
-        if (cv > rightCard) {
-          anchor++;
-          this._swipInfo.dir = 1;
-        } else if (cv == leftCard) {
-          anchor = cv - 1;
-          this._swipInfo.dir = 1;
+      if (rightAligned) {
+        this._swipInfo.dir = 1;
+        if (cv > leftCard) {
+          anchor = cv - this._parameters.itemsPerScreen;
+          this._swipInfo.dir = (cv < this._settings.items.length) ? 1 : -1;
+        } else if (rightCard == 0) {
+          anchor = 0;
+        } else {
+          anchor = cv - this._parameters.itemsPerScreen;
         }
       } else {
-        if (cv > rightCard) {
+        if (cv == this._settings.items.length) {
+          anchor = this._settings.items.length - this._parameters.itemsPerScreen;
+          this._swipInfo.dir = -1;
+        } else {
           anchor = cv - this._parameters.itemsPerScreen;
           this._swipInfo.dir = 1;
-        } else if (cv == leftCard + 1) {
-          anchor = rightCard - this._parameters.itemsPerScreen;
-          this._swipInfo.dir = cv == 1 ? -1 : 1;
-        } else if (cv < leftCard) {
-          anchor = cv - 1;
-          this._swipInfo.dir = -1;
         }
       }
-      //console.log(anchor, cv, leftCard, rightCard, leftAligned);
+      //console.log(anchor, cv, leftCard, rightCard, rightAligned);
 
       this._cardSelect(anchor);
       this._swipInfo.dir = 0;
