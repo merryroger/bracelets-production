@@ -1,0 +1,58 @@
+/*** Common rules ***/
+
+.rev-bidi {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+
+.footnote::before {
+  left: auto;
+  right: 0;
+}
+
+.descriptions {
+  text-align: right;
+}
+
+.title {
+  flex-direction: row-reverse;
+}
+
+.instructions-todo-list.rev-bidi,
+.instructions-cases-todo-list.rev-bidi {
+  padding-left: 0;
+  padding-right: 25px;
+}
+
+.backtop.container {
+  float: left;
+}
+
+.review.container {
+  text-align: right;
+}
+
+/*** Main:review ***/
+
+.review-model-band {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 1380px) {
+  .review-model-pad {
+    justify-content: flex-start;
+    padding-left: 0;
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 1330px) {
+  .review-band-controls {
+    flex-direction: row-reverse;
+  }
+
+  .title {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
