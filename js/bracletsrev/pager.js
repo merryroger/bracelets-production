@@ -379,7 +379,7 @@ const Pager = class ObjectPager {
     const atLeftEdge = atRightEdge + this._parameters.itemsPerScreen - 1;
     const focusedCard = this._getFocusedCardNum() - 1;
     const overFlow = (atLeftEdge >= this._settings.items.length - 1 && focusedCard >= atRightEdge);
-    
+
     let atEdge = true;
 
     if (focusedCard === 0) {
@@ -424,8 +424,8 @@ const Pager = class ObjectPager {
       const cv = this._getFocusedCardNum();
       const bandShift = Math.abs(+getComputedStyle(this._settings.band).transform.split(", ")[4] - this._nullPos);
       const rightCard = Math.floor(bandShift / this._parameters.moveLength);
-      const leftCard = Math.floor(bandShift / this._parameters.moveLength) + this._parameters.itemsPerScreen;
-    
+      const leftCard = rightCard + this._parameters.itemsPerScreen;
+
       const rightAligned = bandShift % this._parameters.moveLength == 0;
 
       const page = Math.floor((cv - 1) / (this._parameters.itemsPerScreen * this._parameters.rows));
