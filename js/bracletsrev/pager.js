@@ -1,8 +1,8 @@
 /**
  * The Object Pager (reversed) JavaScript library
- * version 0.1.6-r
+ * version 0.1.7-r
  * © 2022..2023 Ehwaz Raido
- * 05/Aug/2022 .. 23/Aug/2023
+ * 05/Aug/2022 .. 27/Nov/2024
  */
 
 const Pager = class ObjectPager {
@@ -165,6 +165,18 @@ const Pager = class ObjectPager {
 
     this._hangTouchHandleListeners();
     this._hangMouseHandleListeners();
+
+    /** Begin :: Smooth scrolling changes on 2024-11-27 */
+    const up_link = document.body.querySelector("a.up");
+    [...this._settings.items, up_link].forEach(item => {
+      item.addEventListener("click", e => {
+        if (this._moving) return;
+        e.preventDefault();
+        const target = document.getElementById(item.getAttribute("href").replace(/#/, ""));
+        target.scrollIntoView({ behavior: 'smooth' });
+      })
+    });
+    /** End :: Smooth scrolling changes on 2024-11-27 */
 
     this._settings.frameDock.addEventListener("keyup", this._focbytab);
     this._settings.band.addEventListener("click", this._cardclk);
