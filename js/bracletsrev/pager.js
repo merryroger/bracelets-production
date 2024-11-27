@@ -1,8 +1,8 @@
 /**
  * The Object Pager (reversed) JavaScript library
- * version 0.1.5-r
+ * version 0.1.6-r
  * © 2022..2023 Ehwaz Raido
- * 05/Aug/2022 .. 27/Feb/2023
+ * 05/Aug/2022 .. 23/Aug/2023
  */
 
 const Pager = class ObjectPager {
@@ -397,7 +397,8 @@ const Pager = class ObjectPager {
       atEdge = false;
     }
 
-    this._moveByExternalActionEnd(cv, atEdge);
+    if (this._parameters.rows === 1)
+      this._moveByExternalActionEnd(cv, atEdge);
   }
 
   _moveByExternalActionEnd(cv, atEdge) {
