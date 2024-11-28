@@ -159,6 +159,12 @@ body {
   font-size: 0;
 }
 
+.instructions-todo-list.embedded,
+.instructions-cases-todo-list.embedded {
+  margin: 0;
+  margin-bottom: 12px;
+}
+
 .instructions-cases-todo-list:last-child {
   margin-bottom: 0;
 }
