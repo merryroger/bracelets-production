@@ -207,6 +207,10 @@ body {
   background-color: var(--bracelets-sect-ul-clr);
 }
 
+.warning {
+  color: var(--bracelets-hlt-txt-clr);
+}
+
 /*** Header section ***/
 
 .header {
