@@ -179,6 +179,10 @@ body {
   color: var(--bracelets-txt-clr);
 }
 
+p.instruction-cases-text.mb {
+  margin-bottom: 16px;
+}
+
 .instructions-todo-item {
   list-style-type: disc;
 }
@@ -288,6 +292,10 @@ body {
   flex-basis: 171px;
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+.device_img.healthconnect {
+  background-image: url("/img/braclets/devices/healthconnect_126.png");
 }
 
 .device_img.zepplife {
