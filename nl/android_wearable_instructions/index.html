@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bracelets</title>
+  <title>Armbanden</title>
   <link rel="stylesheet" href="/css/braclets/bracelets.css">
   <link rel="stylesheet" href="/css/braclets/bracelets-media.css">
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -32,18 +32,27 @@
   <main class="main">
     <section class="review container">
       <h1 class="review_header headers">
-        Hoe sluit je een fitnesstracker&nbsp;aan?
+        Een fitnesstracker verbinden
       </h1>
       <div class="review-model-pad" id="devices">
         <div class="review-model-frame" id="review-model-frame">
           <div class="review-model-band" id="review-model-band">
+            <a href="#healthconnect" class="model-card">
+              <div class="device_img healthconnect"></div>
+              <h4 class="device-name">
+                Google Health Connect
+              </h4>
+              <p class="device-app">
+                &nbsp;
+              </p>
+            </a>
             <a href="#zepplife" class="model-card">
               <div class="device_img zepplife"></div>
               <h4 class="device-name">
                 Xiaomi Mi Band
               </h4>
               <p class="device-app">
-                Zepp life app (voorheen Mi Fit)
+                Zepp Life app<br />(voorheen bekend als Mi&nbsp;Fit)
               </p>
             </a>
             <a href="#zepp" class="model-card">
@@ -64,22 +73,31 @@
                 &nbsp;
               </p>
             </a>
+            <a href="#samsunghealth" class="model-card">
+              <div class="device_img samsung"></div>
+              <h4 class="device-name footnoted">
+                Samsung
+              </h4>
+              <p class="device-app">
+                Samsung Health app
+              </p>
+            </a>
+            <a href="#garmin" class="model-card">
+              <div class="device_img garmin"></div>
+              <h4 class="device-name footnoted">
+                Garmin
+              </h4>
+              <p class="device-app">
+                Connect app
+              </p>
+            </a>
             <a href="#fitbit" class="model-card">
               <div class="device_img fitbit"></div>
               <h4 class="device-name footnoted">
                 Fitbit
               </h4>
               <p class="device-app">
-                Fit to fit app
-              </p>
-            </a>
-            <a href="#lg" class="model-card">
-              <div class="device_img lg"></div>
-              <h4 class="device-name footnoted">
-                LG
-              </h4>
-              <p class="device-app">
-                LG Health app
+                Fitbit app
               </p>
             </a>
             <a href="#polar" class="model-card">
@@ -88,7 +106,7 @@
                 Polar
               </h4>
               <p class="device-app">
-                Polar flow app
+                Polar Flow app
               </p>
             </a>
             <a href="#huaweihealth" class="model-card">
@@ -100,24 +118,6 @@
                 Huawei Health app
               </p>
             </a>
-            <a href="#samsunghealth" class="model-card">
-              <div class="device_img samsung"></div>
-              <h4 class="device-name">
-                Samsung
-              </h4>
-              <p class="device-app">
-                Samsung Health app
-              </p>
-            </a>
-            <a href="#garmin" class="model-card">
-              <div class="device_img garmin"></div>
-              <h4 class="device-name">
-                Garmin
-              </h4>
-              <p class="device-app">
-                Garmin connect app
-              </p>
-            </a>
           </div>
         </div>
       </div>
@@ -127,91 +127,165 @@
         </label>
       </form>
       <p class="footnote">
-        Voor deze apparaten zijn de instructies identiek, aangezien ze rechtstreeks verbonden zijn met Google Fit
+        Deze apparaten hebben een directe verbinding met de Health Connect app
       </p>
     </section>
 
     <div class="descriptions">
       <div class="backtop container">
-        <a class="up" href="#devices" tabindex="100"><img src="/img/braclets/top.svg" alt="Go to top"></a>
+        <a class="up" href="#devices" tabindex="100"><img src="/img/braclets/top.svg" alt="Ga naar boven"></a>
       </div>
+      <section class="instructions container" id="healthconnect">
+        <div class="uline"></div>
+        <div class="title">
+          <div class="iconset">
+            <picture>
+              <source srcset="/img/braclets/icons/healthconnect_100.png" media="(max-width: 1108px)">
+              <img src="/img/braclets/icons/healthconnect_46.png" alt="Apparaat icoon">
+            </picture>
+          </div>
+          <h2 class="headers googlefit">
+            Om Google Health Connect (beschikbaar in FitnessOnline versies 2.20.0 en hoger) met de app te synchroniseren, volg deze stappen:
+          </h2>
+        </div>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            Installeer de Health Connect app op je apparaat.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Na de eerste installatie van FitnessOnline op je apparaat en na inloggen in je account, geef toegang om gegevens te lezen in Health Connect.
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          Als toegang om gegevens te lezen in Health Connect niet werd verleend na de eerste installatie van de app:
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            Tik op “Meer” in de rechter benedenhoek.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Tik op “Instellingen”.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Tik op “Gegevens delen”.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Tik op het Health Connect icoon.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Tik op “Instellingen openen”.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Geef toegang om gegevens te lezen voor de FitnessOnline app.
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          Als gegevens niet worden weergegeven op het samenvattingsscherm van de training, volg dan deze stappen:
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            Controleer of de gegevens worden gesynchroniseerd met Health Connect.
+          </li>
+          <li class="instructions-cases-todo-item">
+            <p class="instruction-cases-text">Controleer de synchronisatiestatus tussen Health Connect en FitnessOnline door het volgende in de FitnessOnline app te doen:</p>
+            <ol class="instructions-cases-todo-list">
+              <li class="instructions-cases-todo-item">
+                Tik op “Meer” in de rechter benedenhoek.
+              </li>
+              <li class="instructions-cases-todo-item">
+                Tik op “Instellingen”.
+              </li>
+              <li class="instructions-cases-todo-item">
+                Tik op “Gegevens delen”.
+              </li>
+              <li class="instructions-cases-todo-item">
+                Tik op het Health Connect icoon.
+              </li>
+            </ol>
+          </li>
+        </ol>
+      </section>
+
       <section class="instructions container" id="zepplife">
         <div class="title">
           <div class="iconset">
             <picture>
               <source srcset="/img/braclets/icons/zepplife_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/zepplife_46.png" alt="apparaat pictogram">
+              <img src="/img/braclets/icons/zepplife_46.png" alt="Apparaat icoon">
             </picture>
           </div>
           <h2 class="headers zepplife">
-            Zepp Life met de app te verbinden:
+            Om Zepp Life met FitnessOnline te synchroniseren:
           </h2>
         </div>
-        <ul class="instructions-todo-list">
-          <li class="instructions-todo-item">
-            Verbind je polsband of smartwatch met de Zepp Life app
-          </li>
-          <li class="instructions-todo-item">
-            Start een willekeurige training. Voordat je met een training begint, zal er worden gevraagd om je polsband te ‘koppelen’. Hiermee zullen jouw gegevens worden bijgehouden
-          </li>
-        </ul>
-        <h3 class="headers instruction-cases">
-          Als er niets wordt gevraagd, voer dan de volgende stappen uit:
-        </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            Open de FitnessOnline
+            Verbind je fitnessband of smartwatch met de Zepp Life app.
           </li>
           <li class="instructions-cases-todo-item">
-            Tik op “Meer” rechts onderin
-          </li>
-          <li class="instructions-cases-todo-item">
-            Tik op “Instellingen”
-          </li>
-          <li class="instructions-cases-todo-item">
-            Tik op “Gegevensuiwisseling”
-          </li>
-          <li class="instructions-cases-todo-item">
-            Tik op het app-icoon
-          </li>
-          <li class="instructions-cases-todo-item">
-            Tik op “Verbinden”
+            Start een training in FitnessOnline. Voor de training zal de app je vragen om je fitnessband te synchroniseren voor datatracking.
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          Als de polsband ooit eerder aangesloten is geweest, maar geen gegevens overdraagt, moet je:
+          Als de synchronisatieprompt niet verschijnt, volg dan deze stappen:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            Controleren of de polsband met de Zepp Life app is verbonden. Dit doe je door de Zepp Life app te openen, ga naar "Profiel" en check of de polsband is verbonden onder "Mijn apparaten"
+            Open de FitnessOnline app.
           </li>
           <li class="instructions-cases-todo-item">
-            Ga naar de FitnessOnline app
+            Tik op “Meer” in de rechter benedenhoek.
           </li>
           <li class="instructions-cases-todo-item">
-            Tik op “Meer” rechts onderin
+            Tik op “Instellingen”.
           </li>
           <li class="instructions-cases-todo-item">
-            Tik op “Instellingen”
+            Tik op “Gegevens delen”.
           </li>
           <li class="instructions-cases-todo-item">
-            Tik op “Gegevensuiwisseling”
+            Tik op het app-icoon.
           </li>
           <li class="instructions-cases-todo-item">
-            Tik op het app-icoon
-          </li>
-          <li class="instructions-cases-todo-item">
-            Tik op “Verbinden herhalen”
+            Tik op “Verbinden”.
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          Als jouw polsband is aangesloten maar slechts enkele calorieën zijn meegerekend:
+          Als je fitnessband is verbonden maar de gegevens niet worden gesynchroniseerd:
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            Schakel Bluetooth uit en weer in.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Controleer de synchronisatiestatus van je fitnessband met de Zepp Life app. Hiervoor open je de Zepp Life app, ga je naar het tabblad “Profiel” en zorg je dat je fitnessband is verbonden in de sectie “Mijn apparaten”.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Open de FitnessOnline app.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Tik op “Meer” in de rechter benedenhoek.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Tik op “Instellingen”.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Tik op “Gegevens delen”.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Tik op het app-icoon.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Tik op “Opnieuw verbinden”.
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          Als je fitnessband is verbonden maar lage calorieën toont op het samenvattingsscherm van de training:
         </h3>
         <p class="instruction-cases-text">
-          Dit gebeurt wanneer de polsband het aantal verbrande calorieën zelf berekent zonder dat het trainingssysteem is ingeschakeld.
+          Dit gebeurt omdat je fitnessband dat specifieke aantal verbrande calorieën berekent.
         </p>
         <p class="instruction-cases-text">
-          Om een nauwkeuriger aantal verbrande calorieën te kunnen weergeven, start een training via de polsband.
+          Voor een nauwkeurigere weergave van de verbrande calorieën moet je een systeemtraining starten op je fitnessband.
         </p>
       </section>
 
@@ -221,145 +295,152 @@
           <div class="iconset">
             <picture>
               <source srcset="/img/braclets/icons/zepp_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/zepp_46.png" alt="apparaat pictogram">
+              <img src="/img/braclets/icons/zepp_46.png" alt="Apparaat icoon">
             </picture>
           </div>
           <h2 class="headers zepp">
-            Zepp met de app verbinden:
+            Om Zepp met FitnessOnline te synchroniseren:
           </h2>
         </div>
-        <ul class="instructions-todo-list">
-          <li class="instructions-todo-item">
-            Verbind je polsband of smartwatch met de Zepp Life app
-          </li>
-          <li class="instructions-todo-item">
-            Start een willekeurige training. Voordat je met een training begint, zal er worden gevraagd om je polsband te ‘koppelen’. Hiermee zullen jouw gegevens worden bijgehouden
-          </li>
-        </ul>
-        <h3 class="headers instruction-cases">
-          Als er niets wordt aangekondigd, voer dan de volgende stappen uit:
-        </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            De FitnessOnline app openen
+            Verbind je fitnessband of smartwatch met de Zepp app.
           </li>
           <li class="instructions-cases-todo-item">
-            Tik op “Meer” rechts onderin
-          </li>
-          <li class="instructions-cases-todo-item">
-            Tik op “Instellingen”
-          </li>
-          <li class="instructions-cases-todo-item">
-            Tik op “Gegevensuiwisseling”
-          </li>
-          <li class="instructions-cases-todo-item">
-            Tik op het app-icoon
-          </li>
-          <li class="instructions-cases-todo-item">
-            Tik op “Verbinden”
+            Start een training in FitnessOnline. Voor de training zal de app je vragen om je fitnessband te synchroniseren voor datatracking.
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          Als de armband al eerder aangesloten is geweest, maar geen gegevens overdraagt, moet je:
+          Als de synchronisatieprompt niet verschijnt, volg dan deze stappen:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            Controleren of de polsband met de Zepp Life app is verbonden. Dit doe je door de Zepp Life app te openen, naar "Profiel" te gaan en te checken of de polsband is verbonden onder "Mijn apparaten"
+            Open de FitnessOnline app.
           </li>
           <li class="instructions-cases-todo-item">
-            Ga naar de FitnessOnline app
+            Tik op “Meer” in de rechter benedenhoek.
           </li>
           <li class="instructions-cases-todo-item">
-            Tik op “Meer” rechts onderin
+            Tik op “Instellingen”.
           </li>
           <li class="instructions-cases-todo-item">
-            Tik op “Instellingen”
+            Tik op “Gegevens delen”.
           </li>
           <li class="instructions-cases-todo-item">
-            Tik op “Gegevensuiwisseling”
+            Tik op het app-icoon.
           </li>
           <li class="instructions-cases-todo-item">
-            Tik op het app-icoon
-          </li>
-          <li class="instructions-cases-todo-item">
-            Tik op “Verbinden herhalen”
+            Tik op “Verbinden”.
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          Als jouw polsband is aangesloten maar slechts enkele calorieën zijn meegerekend:
+          Als je fitnessband is verbonden maar de gegevens niet worden gesynchroniseerd:
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            Schakel Bluetooth uit en weer in.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Controleer de synchronisatiestatus van je fitnessband met de Zepp app. Hiervoor open je de Zepp app, ga je naar het tabblad “Profiel” en zorg je dat je fitnessband is verbonden in de sectie “Mijn apparaten”.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Open de FitnessOnline app.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Tik op “Meer” in de rechter benedenhoek.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Tik op “Instellingen”.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Tik op “Gegevens delen”.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Tik op het app-icoon.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Tik op “Opnieuw verbinden”.
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          Als je fitnessband is verbonden maar lage calorieën toont op het samenvattingsscherm van de training:
         </h3>
         <p class="instruction-cases-text">
-          Dit gebeurt wanneer de polsband het aantal verbrande calorieën zelf berekent zonder dat het trainingssysteem is ingeschakeld.
+          Dit gebeurt omdat je fitnessband dat specifieke aantal verbrande calorieën berekent.
         </p>
         <p class="instruction-cases-text">
-          Om een nauwkeuriger aantal verbrande calorieën te kunnen weergeven, start een training via de polsband.
+          Voor een nauwkeurigere weergave van de verbrande calorieën moet je een systeemtraining starten op je fitnessband.
         </p>
       </section>
 
       <section class="instructions container" id="googlefit">
         <div class="uline"></div>
+        <p class="warning bolder">Let op! Google Fit is na 30 juni 2025 niet meer beschikbaar:<br />
+          <nobr><a href="https://developers.google.com/fit">https://developers.google.com/fit</a></nobr>
+        </p>
         <div class="title">
           <div class="iconset">
             <picture>
               <source srcset="/img/braclets/icons/googlefit_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/googlefit_46.png" alt="apparaat pictogram">
+              <img src="/img/braclets/icons/googlefit_46.png" alt="Apparaat icoon">
             </picture>
           </div>
           <h2 class="headers googlefit">
-            Google Fit met de app verbinden:
+            Om Google Fit (beschikbaar in FitnessOnline versies 2.19.2 en lager) met de app te synchroniseren, volg deze stappen:
           </h2>
         </div>
-        <ul class="instructions-todo-list">
-          <li class="instructions-todo-item">
-            Start een willekeurige training. Voordat je met een training begint, zal er, indien je de Google Fit app al hebt geïnstalleerd, worden gevraagd om te ‘koppelen’. Hiermee zullen jouw gegevens kunnen worden bijgehouden
-          </li>
-        </ul>
-        <h3 class="headers instruction-cases">
-          Als er niets wordt aangekondigd, voer dan de volgende stappen uit:
-        </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            Ga naar de FitnessOnline app
+            Installeer de Google Fit app op je apparaat.
           </li>
           <li class="instructions-cases-todo-item">
-            Tik op “Meer” rechts onderin
-          </li>
-          <li class="instructions-cases-todo-item">
-            Tik op “Instellingen”
-          </li>
-          <li class="instructions-cases-todo-item">
-            Tik op “Gegevensuiwisseling”
-          </li>
-          <li class="instructions-cases-todo-item">
-            Tik op het Google Fit icoon
-          </li>
-          <li class="instructions-cases-todo-item">
-            Tik op “Aanmelden met Google”
+            Start een training in FitnessOnline. Voor de training zal de app je vragen om te synchroniseren met Google Fit voor datatracking.
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          Als de gegevens niet in het rapport verschijnen, kun je het volgende doen:
+          Als de synchronisatieprompt niet verschijnt, volg dan deze stappen:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            Controleren of de gegevens naar Google Fit worden doorgestuurd
+            Open de FitnessOnline app.
           </li>
           <li class="instructions-cases-todo-item">
-            <p class="instruction-cases-text">
-              Controleer de verbinding tussen Google Fit en de app., Voer hiervoor de volgende stappen in de FitnessOnline app uit:
-            </p>
+            Tik op “Meer” in de rechter benedenhoek.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Tik op “Instellingen”.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Tik op “Gegevens delen”.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Tik op het icoon voor Google Fit.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Tik op “Inloggen met Google”.
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          Als gegevens niet worden weergegeven op het samenvattingsscherm van de training, volg dan deze stappen:
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            Controleer of de gegevens worden gesynchroniseerd met Google Fit.
+          </li>
+          <li class="instructions-cases-todo-item">
+            <p class="instruction-cases-text">Controleer de synchronisatiestatus tussen Google Fit en FitnessOnline door het volgende in de FitnessOnline app te doen:</p>
             <ol class="instructions-cases-todo-list">
               <li class="instructions-cases-todo-item">
-                Tik op “Meer” rechts onderin
+                Tik op “Meer” in de rechter benedenhoek.
               </li>
               <li class="instructions-cases-todo-item">
-                Tik op “Instellingen”
+                Tik op “Instellingen”.
               </li>
               <li class="instructions-cases-todo-item">
-                Tik op “Gegevensuiwisseling”
+                Tik op “Gegevens delen”.
               </li>
               <li class="instructions-cases-todo-item">
-                Tik op “Gegevens delen”
+                Tik op het icoon voor Google Fit.
               </li>
             </ol>
           </li>
@@ -367,123 +448,133 @@
       </section>
 
       <section class="instructions container" id="fitbit">
-        <div id="lg"></div>
         <div id="polar"></div>
+        <div id="samsunghealth"></div>
+        <div id="garmin"></div>
         <div class="uline"></div>
         <div class="title">
           <div class="iconset">
             <picture>
-              <source srcset="/img/braclets/icons/fitbit_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/fitbit_46.png" alt="apparaat pictogram">
+              <source srcset="/img/braclets/icons/samsung_100.png" media="(max-width: 1108px)">
+              <img src="/img/braclets/icons/samsung_46.png" alt="Apparaat icoon">
             </picture>
             <picture>
-              <source srcset="/img/braclets/icons/lg_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/lg_46.png" alt="apparaat pictogram">
+              <source srcset="/img/braclets/icons/garmin_100.png" media="(max-width: 1108px)">
+              <img src="/img/braclets/icons/garmin_46.png" alt="Apparaat icoon">
+            </picture>
+            <picture>
+              <source srcset="/img/braclets/icons/fitbit_100.png" media="(max-width: 1108px)">
+              <img src="/img/braclets/icons/fitbit_46.png" alt="Apparaat icoon">
             </picture>
             <picture>
               <source srcset="/img/braclets/icons/polar_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/polar_46.png" alt="apparaat pictogram">
+              <img src="/img/braclets/icons/polar_46.png" alt="Apparaat icoon">
             </picture>
           </div>
           <h2 class="headers fitbit lg polar">
-            Fitbit, LG, Polar met de app verbinden:
+            Gegevenstransfer van Samsung Health, Garmin, Fitbit en Polar Flow naar FitnessOnline wordt gefaciliteerd via Google Health Connect
           </h2>
         </div>
-        <h5 class="headers instruction-comment">
-          Om de app waarmee je je activiteiten trackt met de FitnessOnline app te verbinden, dien je je app met Google Fit te synchroniseren.
-        </h5>
         <h3 class="headers instruction-cases">
-          Doe het volgende:
+          Om te verbinden, volg deze stappen:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            Installeer de Google Fit app
+            Installeer de Health Connect app en log in.
           </li>
           <li class="instructions-cases-todo-item">
-            Creëer een account
+            Open de app die wordt gebruikt voor het volgen van je activiteit.
           </li>
           <li class="instructions-cases-todo-item">
-            Open de app waarmee je je activiteiten trackt
+            Ga naar het instellingenmenu.
           </li>
           <li class="instructions-cases-todo-item">
-            Ga naar instellingen
+            Zoek de sectie voor het verbinden van apps van derden. Dit is meestal aangeduid als “Verbind andere diensten”, “Apps en apparaten”, “Beheer verbindingen” of iets dergelijks.
           </li>
           <li class="instructions-cases-todo-item">
-            Zoek de sectie om andere apps te verbinden. Doorgaans is dit "Andere services verbinden", "Apps en apparaten", "Verbindingen beheren" etc.
-          </li>
-          <li class="instructions-cases-todo-item">
-            Volg de instructies om de app met Google Fit te verbinden
+            Volg de instructies om de app met Health Connect te verbinden.
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          Vervolgens synchroniseer je Google Fit en de FitnessOnline-app synchroniseren. Volg daarvoor de volgende stappen:
-        </h3>
-        <ul class="instructions-todo-list">
-          <li class="instructions-todo-item">
-            Start een willekeurige training. Voordat je met een training begint, zal er worden gevraagd te ‘koppelen’
-          </li>
-        </ul>
-        <h3 class="headers instruction-cases">
-          Als dit verzoek niet komt:
+          Vervolgens synchroniseer je Health Connect met de FitnessOnline app als volgt:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            Ga naar de FitnessOnline app
+            Tik in de FitnessOnline app op “Meer” in de rechter benedenhoek.
           </li>
           <li class="instructions-cases-todo-item">
-            Tik op “Meer” rechts onderin
+            Tik op “Instellingen”.
           </li>
           <li class="instructions-cases-todo-item">
-            Tik op “Instellingen”
+            Tik op “Gegevens delen”.
           </li>
           <li class="instructions-cases-todo-item">
-            Tik op “Gegevensuiwisseling”
+            Tik op het Health Connect icoon.
           </li>
           <li class="instructions-cases-todo-item">
-            Tik op het Google Fit icoon
+            Tik op “Instellingen openen”.
           </li>
           <li class="instructions-cases-todo-item">
-            Tik op “Aanmelden met Google”
+            Geef toegang om gegevens te lezen voor de FitnessOnline app.
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          Als de gegevens niet in het rapport verschijnen, kun je het volgende doen:
+          Als gegevens niet worden weergegeven op het samenvattingsscherm van de training, volg dan deze stappen:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            Check of de gegevens naar Google Fit worden verzonden
+            Controleer of gegevens van de app die wordt gebruikt voor activiteitstracking naar Health Connect worden gesynchroniseerd.
           </li>
           <li class="instructions-cases-todo-item">
-            Check of Google Fit en de app met elkaar verbonden zijn. Ga naar <span
-            class="italic">Instellingen&nbsp;&mdash; Gegevensuiwisseling&nbsp;&mdash; Google Fit</span>
+            <p class="instruction-cases-text">Controleer de synchronisatiestatus tussen Health Connect en FitnessOnline door het volgende in de FitnessOnline app te doen:</p>
+            <ol class="instructions-cases-todo-list">
+              <li class="instructions-cases-todo-item">
+                Tik op “Meer” in de rechter benedenhoek.
+              </li>
+              <li class="instructions-cases-todo-item">
+                Tik op “Instellingen”.
+              </li>
+              <li class="instructions-cases-todo-item">
+                Tik op “Gegevens delen”.
+              </li>
+              <li class="instructions-cases-todo-item">
+                Tik op het Health Connect icoon.
+              </li>
+            </ol>
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          Om de app, waarmee je je activiteiten trackt, te verbinden met Google Fit. Doe het volgende
+          Om de verbinding tussen Health Connect en de app die wordt gebruikt voor activiteitstracking te controleren, volg deze stappen:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            Open de Google Fit app
+            Open de Health Connect app.
           </li>
           <li class="instructions-cases-todo-item">
-            Tik op <span class="italic">Profiel</span>&nbsp;&mdash; Tik op “Instellingen”
+            Tik in de sectie “Toestemmingen en gegevens” op “App-toestemmingen”.
           </li>
           <li class="instructions-cases-todo-item">
-            Tik op “Gekoppelde apps beheren”
-          </li>
-          <li class="instructions-cases-todo-item">
-            Om een lijst van alle aangesloten apps te openen, tik op de pijl omlaag onder "Alle apps en apparaten"
+            Zorg ervoor dat de app die je gebruikt onder “Toegestane toegang” staat vermeld.
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          Als jouw polsband is aangesloten maar slechts enkele calorieën zijn meegerekend:
+          Als je fitnessband en Health Connect zijn verbonden, maar onjuiste activiteitsgegevens of geen gegevens verschijnen op het samenvattingsscherm van de training:
         </h3>
         <p class="instruction-cases-text">
-          Dit gebeurt wanneer de polsband het aantal verbrande calorieën zelf berekent zonder dat het trainingssysteem is ingeschakeld.
+          Dit gebeurt omdat de activiteitstracking app specifieke calorie-, stappenteller- en hartslaggegevens naar Health Connect stuurt.
         </p>
         <p class="instruction-cases-text">
-          Om een nauwkeuriger aantal verbrande calorieën te kunnen weergeven, start een training via de polsband.
+          FitnessOnline toont alleen de gegevens die door Health Connect zijn ontvangen.
         </p>
+        <p class="instruction-cases-text">Om ervoor te zorgen dat er meer nauwkeurige activiteitsgegevens op het samenvattingsscherm van de training worden weergegeven, volg deze stappen:</p>
+        <ol class="instructions-todo-list">
+          <li class="instructions-cases-todo-item">
+            Start een systeemtraining op je fitnessband voordat je een training in FitnessOnline start.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Open voor het beëindigen van de training in FitnessOnline de app die wordt gebruikt voor activiteitstracking en verfris de synchronisatie tussen je fitnessband en je mobiele apparaat.
+          </li>
+        </ol>
       </section>
 
       <section class="instructions container" id="huaweihealth">
@@ -492,320 +583,146 @@
           <div class="iconset">
             <picture>
               <source srcset="/img/braclets/icons/huawei_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/huawei_46.png" alt="apparaat pictogram">
+              <img src="/img/braclets/icons/huawei_46.png" alt="Apparaat icoon">
             </picture>
           </div>
           <h2 class="headers huaweihealth">
-            Om Huawei Health met FitnessOnline te verbinden zul je Google Fit moeten gebruiken
+            Gegevenstransfer van de Huawei Health app naar FitnessOnline wordt gefaciliteerd via Google Health Connect en Health Sync (vereist een betaald abonnement)
           </h2>
         </div>
-        <h5 class="headers instruction-comment">
-          Hiervoor heb je de app Health Sync, van een derde partij, nodig (een betaalde app). Als je geen betaalde app voor het synchroniseren van gegevens kunt gebruiken, keer dan terug naar het vorige venster en selecteer <span class="italic">synchroniseren met Google Fit</span> (er wordt dan geen rekening gehouden met de polsband).
-        </h5>
         <h3 class="headers instruction-cases">
-          Om de app van een derde partij te gebruiken, is het volgende nodig op Play Market:
+          Om te verbinden, volg deze stappen:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item bolder">
-            Installeer Google Fit
+            Installeer de Health Connect app en log in.
           </li>
           <li class="instructions-cases-todo-item bolder">
-            Installeer de Health Sync app. Start de app en selecteer de Huawei Health Kit als de primaire bron voor de synchronisatie en selecteer Google Fit als het synchronisatie-doel
+            Installeer de Health Sync app. Open de app en selecteer Huawei Health Kit als primaire synchronisatiebron; kies voor de synchronisatierichting Health Connect.
           </li>
           <li class="instructions-cases-todo-item bolder">
-            Tik op “Akkoordverklaring”
+            Tik op de knop “Toestemmingsverklaring”.
           </li>
           <li class="instructions-cases-todo-item bolder">
             <p class="instruction-cases-text bolder">
-              Volg vervolgens de instructies op de Health Sync app:
+              Volg vervolgens de instructies in de Health Sync app:
             </p>
-            <ul class="instructions-todo-list">
+            <ul class="instructions-todo-list embedded">
               <li class="instructions-todo-item">
-                Tik op “Controleer Google-accountverbinding”
+                Tik op “Verbinding met Google-account controleren”.
               </li>
               <li class="instructions-todo-item">
-                Tik op “Controleer activiteitdetectie in Google Fit”
+                Tik op “Activiteitstracking in Health Connect controleren”.
               </li>
               <li class="instructions-todo-item">
-                Installeer Huawei AppGallery (kopie van instructies van de officiële website <a
-                  href="https://consumer.huawei.com/nl/support/content/nl-nl00696141/">https://consumer.huawei.com/<wbr>nl/support/content/<wbr>nl-nl00696141/</a>)
+                Installeer Huawei AppGallery (raadpleeg de officiële instructies: <a href="https://consumer.huawei.com/my/mobileservices/appgallery/android-installation/"> Huawei Support</a>).
               </li>
               <li class="instructions-todo-item">
-                Installeer HMS CORE (Open hiervoor AppGallery en vul daar HMS CORE in). AppGallery zal om toestemming vragen om dit product te installeren en deze toestemming dient te worden verleend
+                Installeer HMS CORE van AppGallery (AppGallery vereist systeemtoestemming om apps van derden te installeren).
               </li>
               <li class="instructions-todo-item">
-                Installeer Huawei Health (of update)
+                Installeer of werk Huawei Health bij.
               </li>
               <li class="instructions-todo-item">
-                Verificatie van of inloggen op jouw Huawei account
+                Log in op je Huawei-account.
               </li>
               <li class="instructions-todo-item">
-                Vink de vereiste vakjes aan voor de synchronisatie met de Health Sync app
+                Vink in Health Sync de vakjes aan voor de typen gegevens die je naar Health Connect wilt overbrengen.
               </li>
             </ul>
           </li>
           <li class="instructions-cases-todo-item bolder">
-            <p class="instruction-cases-text bolder">
-              Google Fit met de app verbinden:
-            </p>
-            <ul class="instructions-todo-list">
-              <li class="instructions-todo-item">
-                Start een willekeurige training. Voordat je met een training begint, zal er, indien je de Google Fit app al hebt geïnstalleerd, worden gevraagd om te ‘koppelen’
+            Zorg ervoor dat Health Sync succesvol is verbonden met Huawei Health in de “Privacybeheer” instellingen van de Huawei Health app.
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          Vervolgens synchroniseer je Health Connect met de FitnessOnline app als volgt:
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            Tik in de FitnessOnline app op “Meer” in de rechter benedenhoek.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Tik op “Instellingen”.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Tik op “Gegevens delen”.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Tik op het Health Connect icoon.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Tik op “Instellingen openen”.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Geef toegang om gegevens te lezen voor de FitnessOnline app.
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          Als gegevens niet worden weergegeven op het samenvattingsscherm van de training, volg dan deze stappen:
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            Controleer of gegevens van Health Sync naar Health Connect worden gesynchroniseerd.
+          </li>
+          <li class="instructions-cases-todo-item">
+            <p class="instruction-cases-text">Controleer de synchronisatiestatus tussen Health Connect en FitnessOnline door het volgende in de FitnessOnline app te doen:</p>
+            <ol class="instructions-cases-todo-list">
+              <li class="instructions-cases-todo-item">
+                Tik op “Meer” in de rechter benedenhoek.
               </li>
-            </ul>
+              <li class="instructions-cases-todo-item">
+                Tik op “Instellingen”.
+              </li>
+              <li class="instructions-cases-todo-item">
+                Tik op “Gegevens delen”.
+              </li>
+              <li class="instructions-cases-todo-item">
+                Tik op het Health Connect icoon.
+              </li>
+            </ol>
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          Als dit verzoek niet komt:
+          Om de verbinding tussen Health Connect en Health Sync te controleren, volg deze stappen:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            Ga naar de FitnessOnline app
+            Open de Health Connect app.
           </li>
           <li class="instructions-cases-todo-item">
-            Tik op “Meer” rechts onderin
+            Tik in de sectie “Toestemmingen en gegevens” op “App-toestemmingen”.
           </li>
           <li class="instructions-cases-todo-item">
-            Tik op “Instellingen”
-          </li>
-          <li class="instructions-cases-todo-item">
-            Tik op “Gegevensuiwisseling”
-          </li>
-          <li class="instructions-cases-todo-item">
-            Tik op het Google Fit icoon
-          </li>
-          <li class="instructions-cases-todo-item">
-            Tik op “Aanmelden met Google”
+            Zorg ervoor dat Health Sync onder “Toegestane toegang” staat vermeld.
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          Als de gegevens niet in het rapport verschijnen, kun je het volgende doen:
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            Check of de gegevens naar Google Fit worden verzonden
-          </li>
-          <li class="instructions-cases-todo-item">
-            Check of Google Fit en de app met elkaar verbonden zijn. Ga naar <span
-            class="italic">Instellingen&nbsp;&mdash; Gegevensuiwisseling&nbsp;&mdash; Google Fit</span>
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          Als jouw polsband is aangesloten maar slechts enkele calorieën zijn meegerekend:
+          Als je fitnessband, Health Sync en Health Connect zijn verbonden, maar onjuiste activiteitsgegevens of geen gegevens verschijnen op het samenvattingsscherm van de training:
         </h3>
         <p class="instruction-cases-text">
-          Dit gebeurt wanneer de polsband het aantal verbrande calorieën zelf berekent zonder dat het trainingssysteem is ingeschakeld.
+          Dit gebeurt omdat de activiteitstracking app specifieke calorie-, stappenteller- en hartslaggegevens naar Health Sync stuurt. Ook kan Health Sync gegevens met vertraging naar Health Connect verzenden.
         </p>
         <p class="instruction-cases-text">
-          Om een nauwkeuriger aantal verbrande calorieën te kunnen weergeven, start een training via de polsband.
+          FitnessOnline toont alleen de gegevens die door Health Connect zijn ontvangen.
         </p>
-      </section>
-
-      <section class="instructions container" id="samsunghealth">
-        <div class="uline"></div>
-        <div class="title">
-          <div class="iconset">
-            <picture>
-              <source srcset="/img/braclets/icons/samsung_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/samsung_46.png" alt="apparaat pictogram">
-            </picture>
-          </div>
-          <h2 class="headers samsunghealth">
-            Om Samsung Health met FitnessOnline te verbinden zul je Google Fit moeten gebruiken
-          </h2>
-        </div>
-        <h5 class="headers instruction-comment">
-          Hiervoor heb je de app Health Sync, van een derde partij, nodig (een betaalde app). Als je geen betaalde app voor het synchroniseren van gegevens kunt gebruiken, keer dan terug naar het vorige venster en selecteer <span class="italic">synchroniseren met Google Fit</span> (er wordt dan geen rekening gehouden met de polsband).
-        </h5>
-        <h5 class="headers instruction-comment">
-          Om de app van een derde partij te gebruiken, is het volgende nodig op Play Market:
-        </h5>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item bolder">
-            Installeer Google Fit
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            Installeer de Health Sync app. Start de app en selecteer de <span class="italic">Samsung Health</span> als de primaire bron voor de synchronisatie en selecteer <span class="italic">Google Fit</span> als het synchronisatie-doel
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            Tik op “Akkoordverklaring”
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            <p class="instruction-cases-text bolder">
-              Volg vervolgens de instructies op de Health Sync app:
-            </p>
-            <ul class="instructions-todo-list">
-              <li class="instructions-todo-item">
-                Tik op “Controleer Google-accountverbinding”
-              </li>
-              <li class="instructions-todo-item">
-                Tik op “Controleer activiteitdetectie in Google Fit”
-              </li>
-              <li class="instructions-todo-item">
-                Vink de vereiste vakjes aan voor de synchronisatie met de Health Sync app
-              </li>
-            </ul>
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            <p class="instruction-cases-text bolder">
-              Google Fit met de app verbinden:
-            </p>
-            <ul class="instructions-todo-list">
-              <li class="instructions-todo-item">
-                Start een willekeurige training. Voordat je met een training begint, zal er, indien je de Google Fit app al hebt geïnstalleerd, worden gevraagd om te ‘koppelen’
-              </li>
-            </ul>
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          Als dit verzoek niet komt:
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            Ga naar de FitnessOnline app
-          </li>
-          <li class="instructions-cases-todo-item">
-            Tik op “Meer” rechts onderin
-          </li>
-          <li class="instructions-cases-todo-item">
-            Tik op “Instellingen”
-          </li>
-          <li class="instructions-cases-todo-item">
-            Tik op “Gegevensuiwisseling”
-          </li>
-          <li class="instructions-cases-todo-item">
-            Tik op het Google Fit icoon
-          </li>
-          <li class="instructions-cases-todo-item">
-            Tik op “Aanmelden met Google”
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          Als de gegevens niet in het rapport verschijnen, kun je het volgende doen:
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            Check of de gegevens naar Google Fit worden verzonden
-          </li>
-          <li class="instructions-cases-todo-item">
-            Check of Google Fit en de app met elkaar verbonden zijn. Ga naar <span
-            class="italic">Instellingen&nbsp;&mdash; Gegevensuiwisseling&nbsp;&mdash; Google Fit</span>
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          Als jouw polsband is aangesloten maar slechts enkele calorieën zijn meegerekend:
-        </h3>
-        <p class="instruction-cases-text">
-          Dit gebeurt wanneer de polsband het aantal verbrande calorieën zelf berekent zonder dat het trainingssysteem is ingeschakeld.
+        <p class="instruction-cases-text mb">
+          Om ervoor te zorgen dat er meer nauwkeurige activiteitsgegevens op het samenvattingsscherm van de training worden weergegeven, volg deze stappen:
         </p>
-        <p class="instruction-cases-text">
-          Om een nauwkeuriger aantal verbrande calorieën te kunnen weergeven, start een training via de polsband.
-        </p>
-      </section>
-
-      <section class="instructions container" id="garmin">
-        <div class="uline"></div>
-        <div class="title">
-          <div class="iconset">
-            <picture>
-              <source srcset="/img/braclets/icons/garmin_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/garmin_46.png" alt="apparaat pictogram">
-            </picture>
-          </div>
-          <h2 class="headers garmin">
-            Om Garmin met FitnessOnline te verbinden zul je Google Fit moeten gebruiken
-          </h2>
-        </div>
-        <h5 class="headers instruction-comment">
-          Hiervoor heb je de app Health Sync, van een derde partij, nodig (een betaalde app). Als je geen betaalde app voor het synchroniseren van gegevens kunt gebruiken, keer dan terug naar het vorige venster en selecteer synchroniseren met Google Fit (er wordt dan geen rekening gehouden met de polsband).
-        </h5>
-        <h3 class="headers instruction-cases">
-          Om de app van een derde partij te gebruiken, is het volgende nodig op Play Market:
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item bolder">
-            Installeer Google Fit
+        <ol class="instructions-todo-list">
+          <li class="instructions-cases-todo-item">
+            Start een systeemtraining op je fitnessband voordat je een training in FitnessOnline start.
           </li>
-          <li class="instructions-cases-todo-item bolder">
-            Installeer de Health Sync app. Start de app en selecteer de Garmin als de primaire bron voor de synchronisatie en selecteer Google Fit als het synchronisatie-doel
+          <li class="instructions-cases-todo-item">
+            Open voor het beëindigen van de training in FitnessOnline de app die wordt gebruikt voor activiteitstracking en verfris de synchronisatie tussen je fitnessband en je mobiele apparaat.
           </li>
-          <li class="instructions-cases-todo-item bolder">
-            Tik op “Akkoordverklaring”
+          <li class="instructions-cases-todo-item">
+            Open de Health Sync app en verfris de synchronisatie met Health Connect.
           </li>
-          <li class="instructions-cases-todo-item bolder">
-            <p class="instruction-cases-text bolder">
-              Volg vervolgens de instructies op de Health Sync app:
-            </p>
-            <ul class="instructions-todo-list">
-              <li class="instructions-todo-item">
-                Tik op “Controleer Google-accountverbinding”
-              </li>
-              <li class="instructions-todo-item">
-                Tik op “Controleer activiteitdetectie in Google Fit”
-              </li>
-              <li class="instructions-todo-item">
-                Tik op “Initializeer de Garmin verbinding”&nbsp;&mdash; maak en account aan of log in op uw Garmin account
-              </li>
-              <li class="instructions-todo-item">
-                Vink de vereiste vakjes aan voor de synchronisatie met de Health Sync app
-              </li>
-            </ul>
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            <p class="instruction-cases-text bolder">
-              Google Fit met de app verbinden:
-            </p>
-            <ul class="instructions-todo-list">
-              <li class="instructions-todo-item">
-                Start een willekeurige training. Voordat je met een training begint, zal er, indien je de Google Fit app al hebt geïnstalleerd, worden gevraagd om te ‘koppelen’
-              </li>
-            </ul>
+          <li class="instructions-cases-todo-item">
+            Keer terug naar de FitnessOnline app en voltooi de training.
           </li>
         </ol>
-        <h3 class="headers instruction-cases">
-          Als dit verzoek niet komt:
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            Ga naar de FitnessOnline app
-          </li>
-          <li class="instructions-cases-todo-item">
-            Tik op “Meer” rechts onderin
-          </li>
-          <li class="instructions-cases-todo-item">
-            Tik op “Instellingen”
-          </li>
-          <li class="instructions-cases-todo-item">
-            Tik op “Gegevensuiwisseling”
-          </li>
-          <li class="instructions-cases-todo-item">
-            Tik op het Google Fit icoon
-          </li>
-          <li class="instructions-cases-todo-item">
-            Tik op “Aanmelden met Google”
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          Als de gegevens niet in het rapport verschijnen, kun je het volgende doen:
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            Check of de gegevens naar Google Fit worden verzonden
-          </li>
-          <li class="instructions-cases-todo-item">
-            Check of Google Fit en de app met elkaar verbonden zijn. Ga naar <span
-            class="italic">Instellingen&nbsp;&mdash; Gegevensuiwisseling&nbsp;&mdash; Google Fit</span>
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          Als jouw polsband is aangesloten maar slechts enkele calorieën zijn meegerekend:
-        </h3>
-        <p class="instruction-cases-text">
-          Dit gebeurt wanneer de polsband het aantal verbrande calorieën zelf berekent zonder dat het trainingssysteem is ingeschakeld.
-        </p>
-        <p class="instruction-cases-text">
-          Om een nauwkeuriger aantal verbrande calorieën te kunnen weergeven, start een training via de polsband.
-        </p>
       </section>
     </div>
   </main>

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bracelets</title>
+  <title>手环</title>
   <link rel="stylesheet" href="/css/braclets/bracelets.css">
   <link rel="stylesheet" href="/css/braclets/bracelets-media.css">
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -32,18 +32,27 @@
   <main class="main">
     <section class="review container">
       <h1 class="review_header headers">
-        如何连接健身手环
+        连接健身追踪器
       </h1>
       <div class="review-model-pad" id="devices">
         <div class="review-model-frame" id="review-model-frame">
           <div class="review-model-band" id="review-model-band">
+            <a href="#healthconnect" class="model-card">
+              <div class="device_img healthconnect"></div>
+              <h4 class="device-name">
+                Google 健康连接
+              </h4>
+              <p class="device-app">
+                &nbsp;
+              </p>
+            </a>
             <a href="#zepplife" class="model-card">
               <div class="device_img zepplife"></div>
               <h4 class="device-name">
                 小米手环
               </h4>
               <p class="device-app">
-                Zepp生活应用程序<br>（之前的Mi fit小米运动）
+                Zepp Life 应用<br />(前称 Mi&nbsp;Fit)
               </p>
             </a>
             <a href="#zepp" class="model-card">
@@ -52,7 +61,7 @@
                 小米 Amazfit
               </h4>
               <p class="device-app">
-                Zepp应用
+                Zepp 应用
               </p>
             </a>
             <a href="#googlefit" class="model-card">
@@ -64,22 +73,31 @@
                 &nbsp;
               </p>
             </a>
+            <a href="#samsunghealth" class="model-card">
+              <div class="device_img samsung"></div>
+              <h4 class="device-name footnoted">
+                三星
+              </h4>
+              <p class="device-app">
+                三星健康应用
+              </p>
+            </a>
+            <a href="#garmin" class="model-card">
+              <div class="device_img garmin"></div>
+              <h4 class="device-name footnoted">
+                佳明
+              </h4>
+              <p class="device-app">
+                Connect 应用
+              </p>
+            </a>
             <a href="#fitbit" class="model-card">
               <div class="device_img fitbit"></div>
               <h4 class="device-name footnoted">
-                谷歌健身
+                Fitbit
               </h4>
               <p class="device-app">
-                FitbitFit to fit应用
-              </p>
-            </a>
-            <a href="#lg" class="model-card">
-              <div class="device_img lg"></div>
-              <h4 class="device-name footnoted">
-                LG
-              </h4>
-              <p class="device-app">
-                LG健康应用
+                Fitbit 应用
               </p>
             </a>
             <a href="#polar" class="model-card">
@@ -88,7 +106,7 @@
                 Polar
               </h4>
               <p class="device-app">
-                Polar flow 应用
+                Polar Flow 应用
               </p>
             </a>
             <a href="#huaweihealth" class="model-card">
@@ -100,24 +118,6 @@
                 华为健康应用
               </p>
             </a>
-            <a href="#samsunghealth" class="model-card">
-              <div class="device_img samsung"></div>
-              <h4 class="device-name">
-                三星
-              </h4>
-              <p class="device-app">
-                三星健康应用
-              </p>
-            </a>
-            <a href="#garmin" class="model-card">
-              <div class="device_img garmin"></div>
-              <h4 class="device-name">
-                Garmin
-              </h4>
-              <p class="device-app">
-                Garmin 连接应用
-              </p>
-            </a>
           </div>
         </div>
       </div>
@@ -127,88 +127,165 @@
         </label>
       </form>
       <p class="footnote">
-        对这些设备来说使用指南是完全相同的因为它们都是直接连接到谷歌运动
+        这些设备直接连接到 Health Connect 应用
       </p>
     </section>
 
     <div class="descriptions">
       <div class="backtop container">
-        <a class="up" href="#devices" tabindex="100"><img src="/img/braclets/top.svg" alt="Go to top"></a>
+        <a class="up" href="#devices" tabindex="100"><img src="/img/braclets/top.svg" alt="返回顶部"></a>
       </div>
+      <section class="instructions container" id="healthconnect">
+        <div class="uline"></div>
+        <div class="title">
+          <div class="iconset">
+            <picture>
+              <source srcset="/img/braclets/icons/healthconnect_100.png" media="(max-width: 1108px)">
+              <img src="/img/braclets/icons/healthconnect_46.png" alt="设备图标">
+            </picture>
+          </div>
+          <h2 class="headers googlefit">
+            为了同步 Google 健康连接（在 FitnessOnline 2.20.0 及更高版本提供）与应用程序，请按照以下步骤操作：
+          </h2>
+        </div>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            在您的设备上安装 Health Connect 应用。
+          </li>
+          <li class="instructions-cases-todo-item">
+            在设备上初次安装 FitnessOnline 并登录您的帐户后，授予读取 Health Connect 中数据的权限。
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          如果在应用程序的初次安装后未授予 Health Connect 的数据读取权限：
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            点击右下角的“更多”。
+          </li>
+          <li class="instructions-cases-todo-item">
+            点击“设置”。
+          </li>
+          <li class="instructions-cases-todo-item">
+            点击“数据共享”。
+          </li>
+          <li class="instructions-cases-todo-item">
+            点击Health Connect 图标。
+          </li>
+          <li class="instructions-cases-todo-item">
+            点击“打开设置”。
+          </li>
+          <li class="instructions-cases-todo-item">
+            授予读取 FitnessOnline 应用数据的权限。
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          如果数据未在锻炼摘要屏幕上显示，请按照以下步骤操作：
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            检查数据是否正在同步到 Health Connect。
+          </li>
+          <li class="instructions-cases-todo-item">
+            <p class="instruction-cases-text">通过在 FitnessOnline 应用中执行以下操作来验证 Health Connect 和 FitnessOnline 之间的同步状态：</p>
+            <ol class="instructions-cases-todo-list">
+              <li class="instructions-cases-todo-item">
+                点击右下角的“更多”。
+              </li>
+              <li class="instructions-cases-todo-item">
+                点击“设置”。
+              </li>
+              <li class="instructions-cases-todo-item">
+                点击“数据共享”。
+              </li>
+              <li class="instructions-cases-todo-item">
+                点击Health Connect 图标。
+              </li>
+            </ol>
+          </li>
+        </ol>
+      </section>
+
       <section class="instructions container" id="zepplife">
         <div class="title">
           <div class="iconset">
             <picture>
               <source srcset="/img/braclets/icons/zepplife_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/zepplife_46.png" alt="Device icon">
+              <img src="/img/braclets/icons/zepplife_46.png" alt="设备图标">
             </picture>
           </div>
           <h2 class="headers zepplife">
-            为了用app连接zepp life
+            为了将 Zepp Life 与 FitnessOnline 同步：
           </h2>
         </div>
-        <ul class="instructions-todo-list">
-          <li class="instructions-todo-item">
-            连接你的手环或者智能手表至zepp life 应用
-          </li>
-          <li class="instructions-todo-item">
-             开始任何锻炼。在开始锻炼前，app会提示你连接你的手环来追踪数据
-          </li>
-        </ul>
-        <h3 class="headers instruction-cases">
-          如果你没有被提示你应该：
-        </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            找到线上健康应用
+            将您的健身手环或智能手表连接到 Zepp Life 应用。
           </li>
           <li class="instructions-cases-todo-item">
-            轻触右下角的更多
-          </li>
-          <li class="instructions-cases-todo-item">
-            轻触设置
-          </li>
-          <li class="instructions-cases-todo-item">
-            轻触数据交换
-          </li>
-          <li class="instructions-cases-todo-item">
-            轻触应用图标
-          </li>
-          <li class="instructions-cases-todo-item">
-            轻触连接
+            在 FitnessOnline 中开始任何锻炼。在锻炼之前，应用会提示您同步健身手环以进行数据跟踪。
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          如果手环之前已连接了但是现在却不转移数据了你应该：
+          如果未出现同步提示，请按照以下步骤操作：
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            检查手环是否连接到了zepp life 软件上，你需要打开zepp life软件，选择资料，并确保手环在我的设备中已被连接
+            打开 FitnessOnline 应用。
           </li>
           <li class="instructions-cases-todo-item">
-            去线上健康app
+            点击右下角的“更多”。
           </li>
           <li class="instructions-cases-todo-item">
-            轻触右下角的更多按钮
+            点击“设置”。
           </li>
           <li class="instructions-cases-todo-item">
-            轻触设置
+            点击“数据共享”。
           </li>
           <li class="instructions-cases-todo-item">
-            轻触数据交换
+            点击应用的图标。
           </li>
           <li class="instructions-cases-todo-item">
-            轻触应用的图标
-          </li>
-          <li class="instructions-cases-todo-item">
-            轻触重复连接
+            点击“连接”。
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          如果你的手环已连接了但是只有很少的卡路里被算入：
+          如果您的健身手环已连接但数据未同步：
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            关闭蓝牙然后重新打开。
+          </li>
+          <li class="instructions-cases-todo-item">
+            检查您的健身手环与 Zepp Life 应用的同步状态。为此，打开 Zepp Life 应用，转到“个人资料”选项卡，并在“我的设备”部分中确保您的健身手环已连接。
+          </li>
+          <li class="instructions-cases-todo-item">
+            打开 FitnessOnline 应用。
+          </li>
+          <li class="instructions-cases-todo-item">
+            点击右下角的“更多”。
+          </li>
+          <li class="instructions-cases-todo-item">
+            点击“设置”。
+          </li>
+          <li class="instructions-cases-todo-item">
+            点击“数据共享”。
+          </li>
+          <li class="instructions-cases-todo-item">
+            点击应用的图标。
+          </li>
+          <li class="instructions-cases-todo-item">
+            点击“重新连接”。
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          如果您的健身手环已连接但在锻炼摘要屏幕上显示的卡路里较低：
         </h3>
         <p class="instruction-cases-text">
-          这种情况在手环自己记录燃烧的卡路里而系统锻炼没有被打开时会发生。为了显示更准确的燃烧的卡路里数量，在手环上开启一次锻炼。
+          这发生是因为您的健身手环计算了特定的燃烧卡路里量。
+        </p>
+        <p class="instruction-cases-text">
+          要更准确地显示燃烧的卡路里，您应该在健身手环上开始系统锻炼。
         </p>
       </section>
 
@@ -218,142 +295,152 @@
           <div class="iconset">
             <picture>
               <source srcset="/img/braclets/icons/zepp_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/zepp_46.png" alt="Device icon">
+              <img src="/img/braclets/icons/zepp_46.png" alt="设备图标">
             </picture>
           </div>
           <h2 class="headers zepp">
-            为了用app连接zepp
+            为了将 Zepp 与 FitnessOnline 同步：
           </h2>
         </div>
-        <ul class="instructions-todo-list">
-          <li class="instructions-todo-item">
-            连接你的手环或者智能手表至zepp 应用
-          </li>
-          <li class="instructions-todo-item">
-            开始任何锻炼。在开始锻炼前，app会提示你连接你的手环来追踪数据
-          </li>
-        </ul>
-        <h3 class="headers instruction-cases">
-          如果你没有被提示你应该：
-        </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            找到线上健康应用
+            将您的健身手环或智能手表连接到 Zepp 应用。
           </li>
           <li class="instructions-cases-todo-item">
-            轻触右下角的更多
-          </li>
-          <li class="instructions-cases-todo-item">
-            轻触设置
-          </li>
-          <li class="instructions-cases-todo-item">
-            轻触数据交换
-          </li>
-          <li class="instructions-cases-todo-item">
-            轻触应用图标
-          </li>
-          <li class="instructions-cases-todo-item">
-            轻触连接
+            在 FitnessOnline 中开始任何锻炼。在锻炼之前，应用会提示您同步健身手环以进行数据跟踪。
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          如果手环之前已连接了但是现在却不转移数据了你应该：
+          如果未出现同步提示，请按照以下步骤操作：
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            检查手环是否连接到了zepp 软件上，你需要打开zepp软件，选择资料，并确保手环在我的设备中已被连接
+            打开 FitnessOnline 应用。
           </li>
           <li class="instructions-cases-todo-item">
-            去线上健康app
+            点击右下角的“更多”。
           </li>
           <li class="instructions-cases-todo-item">
-            轻触右下角的更多按钮
+            点击“设置”。
           </li>
           <li class="instructions-cases-todo-item">
-            轻触设置
+            点击“数据共享”。
           </li>
           <li class="instructions-cases-todo-item">
-            轻触数据交换
+            点击应用的图标。
           </li>
           <li class="instructions-cases-todo-item">
-            轻触应用的图标
-          </li>
-          <li class="instructions-cases-todo-item">
-            轻触重复连接
+            点击“连接”。
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          如果你的手环已连接了但是只有很少的卡路里被算入：
+          如果您的健身手环已连接但数据未同步：
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            关闭蓝牙然后重新打开。
+          </li>
+          <li class="instructions-cases-todo-item">
+            检查您的健身手环与 Zepp 应用的同步状态。为此，打开 Zepp 应用，转到“个人资料”选项卡，并在“我的设备”部分中确保您的健身手环已连接。
+          </li>
+          <li class="instructions-cases-todo-item">
+            打开 FitnessOnline 应用。
+          </li>
+          <li class="instructions-cases-todo-item">
+            点击右下角的“更多”。
+          </li>
+          <li class="instructions-cases-todo-item">
+            点击“设置”。
+          </li>
+          <li class="instructions-cases-todo-item">
+            点击“数据共享”。
+          </li>
+          <li class="instructions-cases-todo-item">
+            点击应用的图标。
+          </li>
+          <li class="instructions-cases-todo-item">
+            点击“重新连接”。
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          如果您的健身手环已连接但在锻炼摘要屏幕上显示的卡路里较低：
         </h3>
         <p class="instruction-cases-text">
-          这种情况在手环自己记录燃烧的卡路里而系统锻炼没有被打开时会发生。为了显示更准确的燃烧的卡路里数量，在手环上开启一次锻炼。
+          这发生是因为您的健身手环计算了特定的燃烧卡路里量。
+        </p>
+        <p class="instruction-cases-text">
+          要更准确地显示燃烧的卡路里，您应该在健身手环上开始系统锻炼。
         </p>
       </section>
 
       <section class="instructions container" id="googlefit">
         <div class="uline"></div>
+        <p class="warning bolder">注意！Google Fit 将在2025年6月30日后不再提供服务：<br />
+          <nobr><a href="https://developers.google.com/fit">https://developers.google.com/fit</a></nobr>
+        </p>
         <div class="title">
           <div class="iconset">
             <picture>
               <source srcset="/img/braclets/icons/googlefit_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/googlefit_46.png" alt="Device icon">
+              <img src="/img/braclets/icons/googlefit_46.png" alt="设备图标">
             </picture>
           </div>
           <h2 class="headers googlefit">
-            用app连接谷歌运动：
+            为了同步 Google Fit（适用于 FitnessOnline 2.19.2及以下版本）与应用程序，请按照以下步骤操作：
           </h2>
         </div>
-        <ul class="instructions-todo-list">
-          <li class="instructions-todo-item">
-            开始任何锻炼。在开始锻炼前如果你已安装了谷歌运动app，你会被邀请配对
-          </li>
-        </ul>
-        <h3 class="headers instruction-cases">
-          如果你没有被提示你应该：
-        </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            找到线上健康应用
+            在您的设备上安装 Google Fit 应用。
           </li>
           <li class="instructions-cases-todo-item">
-            轻触右下角的更多
-          </li>
-          <li class="instructions-cases-todo-item">
-            轻触设置
-          </li>
-          <li class="instructions-cases-todo-item">
-            轻触数据交换
-          </li>
-          <li class="instructions-cases-todo-item">
-            轻触谷歌运动图标
-          </li>
-          <li class="instructions-cases-todo-item">
-            轻触用谷歌账号登录
+            在 FitnessOnline 中开始任何锻炼。在锻炼之前，应用会提示您与 Google Fit 同步以进行数据跟踪。
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          如果数据没有在报告中显示你应该：
+          如果未出现同步提示，请按照以下步骤操作：
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            检查数据是否被转移到了谷歌运动上。
+            打开 FitnessOnline 应用。
           </li>
           <li class="instructions-cases-todo-item">
-            <p class="instruction-cases-text">
-              检查谷歌运动和app的连接，在线上健康app中完成如下步骤：
-            </p>
+            点击右下角的“更多”。
+          </li>
+          <li class="instructions-cases-todo-item">
+            点击“设置”。
+          </li>
+          <li class="instructions-cases-todo-item">
+            点击“数据共享”。
+          </li>
+          <li class="instructions-cases-todo-item">
+            点击Google Fit 图标。
+          </li>
+          <li class="instructions-cases-todo-item">
+            点击“使用Google登录”。
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          如果数据未在锻炼摘要屏幕上显示，请按照以下步骤操作：
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            检查数据是否正在同步到 Google Fit。
+          </li>
+          <li class="instructions-cases-todo-item">
+            <p class="instruction-cases-text">通过在 FitnessOnline 应用中执行以下操作来验证 Google Fit 和 FitnessOnline 之间的同步状态：</p>
             <ol class="instructions-cases-todo-list">
               <li class="instructions-cases-todo-item">
-                轻触右下角的更多
+                点击右下角的“更多”。
               </li>
               <li class="instructions-cases-todo-item">
-                轻触设置
+                点击“设置”。
               </li>
               <li class="instructions-cases-todo-item">
-                轻触数据交换
+                点击“数据共享”。
               </li>
               <li class="instructions-cases-todo-item">
-                轻触谷歌运动图标
+                点击Google Fit 图标。
               </li>
             </ol>
           </li>
@@ -361,426 +448,281 @@
       </section>
 
       <section class="instructions container" id="fitbit">
-        <div id="lg"></div>
         <div id="polar"></div>
-        <div class="uline"></div>
-        <div class="title">
-          <div class="iconset">
-            <picture>
-              <source srcset="/img/braclets/icons/fitbit_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/fitbit_46.png" alt="Device icon">
-            </picture>
-            <picture>
-              <source srcset="/img/braclets/icons/lg_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/lg_46.png" alt="Device icon">
-            </picture>
-            <picture>
-              <source srcset="/img/braclets/icons/polar_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/polar_46.png" alt="Device icon">
-            </picture>
-          </div>
-          <h2 class="headers fitbit lg polar">
-            为了用app连接Fitbit, LG, Polar
-          </h2>
-        </div>
-        <h5 class="headers instruction-comment">
-          为了连接你的app并用谷歌运动追踪你的活动你需要用谷歌运动来同步你的app
-        </h5>
-        <h3 class="headers instruction-cases">
-          你应该：
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            安装谷歌运动app
-          </li>
-          <li class="instructions-cases-todo-item">
-            创建一个账户
-          </li>
-          <li class="instructions-cases-todo-item">
-            打开你用于追踪活动的app
-          </li>
-          <li class="instructions-cases-todo-item">
-            来到设置
-          </li>
-          <li class="instructions-cases-todo-item">
-            找到连接其他app的部分，它通常被称作“连接其他服务”“应用和设备”“管理连接”等待
-          </li>
-          <li class="instructions-cases-todo-item">
-            遵照用谷歌运动连接app的指示
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          接下来你需要通过如下操作来同步谷歌运动和线上健康app
-        </h3>
-        <ul class="instructions-todo-list">
-          <li class="instructions-todo-item">
-            开始任何锻炼。在开始锻炼前你会被邀请配对
-          </li>
-        </ul>
-        <h3 class="headers instruction-cases">
-          如果你没有被提示你应该：
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            找到线上健康应用
-          </li>
-          <li class="instructions-cases-todo-item">
-            轻触右下角的更多
-          </li>
-          <li class="instructions-cases-todo-item">
-            轻触设置
-          </li>
-          <li class="instructions-cases-todo-item">
-            轻触数据交换
-          </li>
-          <li class="instructions-cases-todo-item">
-            轻触谷歌运动图标
-          </li>
-          <li class="instructions-cases-todo-item">
-            轻触用谷歌账号登录
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          如果数据没有在报告中显示你应该：
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            检查数据是否被转移到了谷歌运动上。
-          </li>
-          <li class="instructions-cases-todo-item">
-            检查谷歌运动和应用是否连接，找到设置--数据交换--谷歌运动
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          为了连接你的app并用谷歌运动追踪你的活动你应该：
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            打开谷歌运动app
-          </li>
-          <li class="instructions-cases-todo-item">
-            轻触资料 -- 轻触设置
-          </li>
-          <li class="instructions-cases-todo-item">
-            轻触管理已连接的应用
-          </li>
-          <li class="instructions-cases-todo-item">
-            打开全部已连接应用的列表，按下在“所有应用和设备”下的箭头
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          如果你的手环已连接了但是只有很少的卡路里被算入：
-        </h3>
-        <p class="instruction-cases-text">
-          这种情况在手环自己记录燃烧的卡路里而系统锻炼没有被打开时会发生。为了显示更准确的燃烧的卡路里数量，在手环上开启一次锻炼。
-        </p>
-      </section>
-
-      <section class="instructions container" id="huaweihealth">
-        <div class="uline"></div>
-        <div class="title">
-          <div class="iconset">
-            <picture>
-              <source srcset="/img/braclets/icons/huawei_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/huawei_46.png" alt="Device icon">
-            </picture>
-          </div>
-          <h2 class="headers huaweihealth">
-            为了用线上健康来连接华为健康，你需要使用谷歌运动
-          </h2>
-        </div>
-        <h5 class="headers instruction-comment">
-          为了完成这个目标，你需要使用第三方健康同步软件（付费使用）。如果你不使用付费使用的软件来同步数据，你可以回到之前的窗口，选择用谷歌运动同步（手环数据不会被考虑在内）
-        </h5>
-        <h3 class="headers instruction-cases">
-          为了使用第三方应用，你需要在play market完成如下指示：
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item bolder">
-            安装谷歌运动
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            安装健康同步应用，启动软件，选择Garmin作为主要来源来同步并选择谷歌运动作为同步方向
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            轻触同意书
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            <p class="instruction-cases-text bolder">
-              然后你需要遵照健康同步app上的指示，也就是：
-            </p>
-            <ul class="instructions-todo-list">
-              <li class="instructions-todo-item">
-                轻触“检查谷歌账户连接”
-              </li>
-              <li class="instructions-todo-item">
-                轻触“检查谷歌运动中的活动追踪”
-              </li>
-              <li class="instructions-todo-item">
-                安装华为应用商城（来自官网的指示副本： <a
-                  href="https://consumer.huawei.com/my/mobileservices/appgallery/android-installation/">https://consumer.huawei.com/<wbr>my/mobileservices/appgallery/<wbr>android-installation</a>)
-              </li>
-              <li class="instructions-todo-item">
-                安装HTMS CORE（为了打开华为应用商城并在这里进入HTMS CORE）。应用商城需要请求从该产品的安装许可，许可必须被授予
-              </li>
-              <li class="instructions-todo-item">
-                安装华为健康（或者更新）
-              </li>
-              <li class="instructions-todo-item">
-                认证或者登录华为账户
-              </li>
-              <li class="instructions-todo-item">
-                检查需要同步的健康同步软件的选框
-              </li>
-            </ul>
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            <p class="instruction-cases-text bolder">
-              连接谷歌运动和app
-            </p>
-            <ul class="instructions-todo-list">
-              <li class="instructions-todo-item">
-                开始任何锻炼。开始锻炼前，如果已安装了谷歌运动app，你会被邀请配对。
-              </li>
-            </ul>
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          如果你没有被提示你应该：
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            找到线上健康应用
-          </li>
-          <li class="instructions-cases-todo-item">
-            轻触右下角的更多
-          </li>
-          <li class="instructions-cases-todo-item">
-            轻触设置
-          </li>
-          <li class="instructions-cases-todo-item">
-            轻触数据交换
-          </li>
-          <li class="instructions-cases-todo-item">
-            轻触谷歌运动图标
-          </li>
-          <li class="instructions-cases-todo-item">
-            轻触用谷歌账号登录
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          如果数据没有在报告中显示你应该：
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            检查数据是否被转移到了谷歌运动上。
-          </li>
-          <li class="instructions-cases-todo-item">
-            检查谷歌运动和应用是否连接，找到设置--数据交换--谷歌运动
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          如果你的手环已连接了但是只有很少的卡路里被算入：
-        </h3>
-        <p class="instruction-cases-text">
-          这种情况在手环自己记录燃烧的卡路里而系统锻炼没有被打开时会发生。为了显示更准确的燃烧的卡路里数量，在手环上开启一次锻炼。
-        </p>
-      </section>
-
-      <section class="instructions container" id="samsunghealth">
+        <div id="samsunghealth"></div>
+        <div id="garmin"></div>
         <div class="uline"></div>
         <div class="title">
           <div class="iconset">
             <picture>
               <source srcset="/img/braclets/icons/samsung_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/samsung_46.png" alt="Device icon">
+              <img src="/img/braclets/icons/samsung_46.png" alt="设备图标">
             </picture>
-          </div>
-          <h2 class="headers samsunghealth">
-            为了用线上健康来连接三星健康，你需要使用谷歌运动
-          </h2>
-        </div>
-        <h5 class="headers instruction-comment">
-          为了完成这个目标，你需要使用第三方健康同步软件（付费使用）。如果你不使用付费使用的软件来同步数据，你可以回到之前的窗口，选择用谷歌运动同步（手环数据不会被考虑在内）
-        </h5>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item bolder">
-            安装谷歌运动
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            安装健康同步应用，启动软件，选择Garmin作为主要来源来同步并选择谷歌运动作为同步方向
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            轻触同意书
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            <p class="instruction-cases-text bolder">
-              然后你需要遵照健康同步app上的指示，也就是：
-            </p>
-            <ul class="instructions-todo-list">
-              <li class="instructions-todo-item">
-                轻触“检查谷歌账户连接”
-              </li>
-              <li class="instructions-todo-item">
-                轻触“检查谷歌运动中的活动追踪”
-              </li>
-              <li class="instructions-todo-item">
-                检查健康同步软件中需要同步的选框。
-              </li>
-            </ul>
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            <p class="instruction-cases-text bolder">
-              连接谷歌运动和app
-            </p>
-            <ul class="instructions-todo-list">
-              <li class="instructions-todo-item">
-                开始任何锻炼。开始锻炼前，如果已安装了谷歌运动app，你会被邀请配对。
-              </li>
-            </ul>
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          如果你没有被提示你应该：
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            找到线上健康应用
-          </li>
-          <li class="instructions-cases-todo-item">
-            轻触右下角的更多
-          </li>
-          <li class="instructions-cases-todo-item">
-            轻触设置
-          </li>
-          <li class="instructions-cases-todo-item">
-            轻触数据交换
-          </li>
-          <li class="instructions-cases-todo-item">
-            轻触谷歌运动图标
-          </li>
-          <li class="instructions-cases-todo-item">
-            轻触用谷歌账号登录
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          如果数据没有在报告中显示你应该：
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            检查数据是否被转移到了谷歌运动上。
-          </li>
-          <li class="instructions-cases-todo-item">
-            检查谷歌运动和应用是否连接，找到设置--数据交换--谷歌运动
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          如果你的手环已连接了但是只有很少的卡路里被算入：
-        </h3>
-        <p class="instruction-cases-text">
-          这种情况在手环自己记录燃烧的卡路里而系统锻炼没有被打开时会发生。为了显示更准确的燃烧的卡路里数量，在手环上开启一次锻炼。
-        </p>
-      </section>
-
-      <section class="instructions container" id="garmin">
-        <div class="uline"></div>
-        <div class="title">
-          <div class="iconset">
             <picture>
               <source srcset="/img/braclets/icons/garmin_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/garmin_46.png" alt="Device icon">
+              <img src="/img/braclets/icons/garmin_46.png" alt="设备图标">
+            </picture>
+            <picture>
+              <source srcset="/img/braclets/icons/fitbit_100.png" media="(max-width: 1108px)">
+              <img src="/img/braclets/icons/fitbit_46.png" alt="设备图标">
+            </picture>
+            <picture>
+              <source srcset="/img/braclets/icons/polar_100.png" media="(max-width: 1108px)">
+              <img src="/img/braclets/icons/polar_46.png" alt="设备图标">
             </picture>
           </div>
-          <h2 class="headers garmin">
-            为了用线上健康来连接Garmin，你需要使用谷歌运动
+          <h2 class="headers fitbit lg polar">
+            通过 Google 健康连接，将 Samsung Health、Garmin、Fitbit 和 Polar Flow 的数据传输到 FitnessOnline
           </h2>
         </div>
-        <h5 class="headers instruction-comment">
-          为了完成这个目标，你需要使用第三方健康同步软件（付费使用）。如果你不使用付费使用的软件来同步数据，你可以回到之前的窗口，选择用谷歌运动同步（手环数据不会被考虑在内）
-        </h5>
         <h3 class="headers instruction-cases">
-          为了使用第三方应用，你需要在play market完成如下指示：
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item bolder">
-            安装谷歌运动
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            安装健康同步应用，启动软件，选择Garmin作为主要来源来同步并选择谷歌运动作为同步方向
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            轻触同意书
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            <p class="instruction-cases-text bolder">
-              然后你需要遵照健康同步app上的指示，也就是：
-            </p>
-            <ul class="instructions-todo-list">
-              <li class="instructions-todo-item">
-                轻触“检查谷歌账户连接”
-              </li>
-              <li class="instructions-todo-item">
-                轻触“检查谷歌运动中的活动追踪”
-              </li>
-              <li class="instructions-todo-item">
-                轻触“开始Garmin连接” --创建一个账户或者登录你的Garmin账户
-              </li>
-              <li class="instructions-todo-item">
-                检查健康同步软件中需要同步的选框。
-              </li>
-            </ul>
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            <p class="instruction-cases-text bolder">
-              连接谷歌运动和app
-            </p>
-            <ul class="instructions-todo-list">
-              <li class="instructions-todo-item">
-                开始任何锻炼。开始锻炼前，如果已安装了谷歌运动app，你会被邀请配对。
-              </li>
-            </ul>
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          如果你没有被提示你应该：
+          要连接，请按照以下步骤操作：
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            找到线上健康应用
+            安装 Health Connect 应用并登录。
           </li>
           <li class="instructions-cases-todo-item">
-            轻触右下角的更多
+            打开用于跟踪活动的应用程序。
           </li>
           <li class="instructions-cases-todo-item">
-            轻触设置
+            进入设置菜单。
           </li>
           <li class="instructions-cases-todo-item">
-            轻触数据交换
+            找到连接第三方应用程序的部分。通常标记为“连接其他服务”、“应用和设备”、“管理连接”或类似名称。
           </li>
           <li class="instructions-cases-todo-item">
-            轻触谷歌运动图标
-          </li>
-          <li class="instructions-cases-todo-item">
-            轻触用谷歌账号登录
+            按照说明将应用程序连接到 Health Connect。
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          如果数据没有在报告中显示你应该：
+          然后，将 Health Connect 与 FitnessOnline 应用同步，方法如下：
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            检查数据是否被转移到了谷歌运动上。
+            在 FitnessOnline 应用中，点击右下角的'更多'。
           </li>
           <li class="instructions-cases-todo-item">
-            检查谷歌运动和应用是否连接，找到设置--数据交换--谷歌运动
+            点击“设置”。
+          </li>
+          <li class="instructions-cases-todo-item">
+            点击“数据共享”。
+          </li>
+          <li class="instructions-cases-todo-item">
+            点击Health Connect 图标。
+          </li>
+          <li class="instructions-cases-todo-item">
+            点击“打开设置”。
+          </li>
+          <li class="instructions-cases-todo-item">
+            授予读取 FitnessOnline 应用数据的权限。
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          如果你的手环已连接了但是只有很少的卡路里被算入：
+          如果数据未在锻炼摘要屏幕上显示，请按照以下步骤操作：
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            验证用于活动跟踪的应用中的数据是否正在同步到 Health Connect。
+          </li>
+          <li class="instructions-cases-todo-item">
+            <p class="instruction-cases-text">通过在 FitnessOnline 应用中执行以下操作来验证 Health Connect 和 FitnessOnline 之间的同步状态：</p>
+            <ol class="instructions-cases-todo-list">
+              <li class="instructions-cases-todo-item">
+                点击右下角的“更多”。
+              </li>
+              <li class="instructions-cases-todo-item">
+                点击“设置”。
+              </li>
+              <li class="instructions-cases-todo-item">
+                点击“数据共享”。
+              </li>
+              <li class="instructions-cases-todo-item">
+                点击 Health Connect 图标。
+              </li>
+            </ol>
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          要检查 Health Connect 与用于活动跟踪的应用程序之间的连接，按以下步骤操作：
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            打开 Health Connect 应用。
+          </li>
+          <li class="instructions-cases-todo-item">
+            在“权限和数据”部分，点击“应用权限”。
+          </li>
+          <li class="instructions-cases-todo-item">
+            确保您正在使用的应用列在“允许访问”下。
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          如果您的健身手环和 Health Connect 已连接，但在锻炼总结屏幕上显示不准确的活动数据或没有数据：
         </h3>
         <p class="instruction-cases-text">
-          这种情况在手环自己记录燃烧的卡路里而系统锻炼没有被打开时会发生。为了显示更准确的燃烧的卡路里数量，在手环上开启一次锻炼。
+          发生这种情况是因为活动追踪应用程序将特定的卡路里、步数和心率数据发送到 Health Connect。
         </p>
+        <p class="instruction-cases-text">
+          FitnessOnline 只显示从 Health Connect 接收到的数据。
+        </p>
+        <p class="instruction-cases-text">为了确保更准确的活动数据显示在锻炼总结屏幕上：</p>
+        <ol class="instructions-todo-list">
+          <li class="instructions-cases-todo-item">
+            在 FitnessOnline 中开始锻炼之前，在健身手环上开始系统锻炼。
+          </li>
+          <li class="instructions-cases-todo-item">
+            在 FitnessOnline 中结束锻炼之前，打开用于活动跟踪的应用，并刷新健身手环与移动设备之间的同步。
+          </li>
+        </ol>
+      </section>
+
+      <section class="instructions container" id="huaweihealth">
+        <div class="uline"></div>
+                <div class="title">
+          <div class="iconset">
+            <picture>
+              <source srcset="/img/braclets/icons/huawei_100.png" media="(max-width: 1108px)">
+              <img src="/img/braclets/icons/huawei_46.png" alt="设备图标">
+            </picture>
+          </div>
+          <h2 class="headers huaweihealth">
+            华为健康应用到 FitnessOnline 的数据传输通过 Google 健康连接和健康同步实现（需要支付订阅费）
+          </h2>
+        </div>
+        <h3 class="headers instruction-cases">
+          要连接，请按照以下步骤操作：
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item bolder">
+            安装 Health Connect 应用并登录。
+          </li>
+          <li class="instructions-cases-todo-item bolder">
+            安装 Health Sync 应用。打开应用并选择华为健康套件作为主要同步源；选择 Health Connect 作为同步方向。
+          </li>
+          <li class="instructions-cases-todo-item bolder">
+            点击“同意声明”按钮。
+          </li>
+          <li class="instructions-cases-todo-item bolder">
+            <p class="instruction-cases-text bolder">
+              然后，按照 Health Sync 应用中的说明进行操作：
+            </p>
+            <ul class="instructions-todo-list embedded">
+              <li class="instructions-todo-item">
+                点击“检查 Google 帐户连接”。
+              </li>
+              <li class="instructions-todo-item">
+                点击“检查 Health Connect 中的活动追踪”。
+              </li>
+              <li class="instructions-todo-item">
+                安装华为应用商店（请参考官方指南：<a href="https://consumer.huawei.com/my/mobileservices/appgallery/android-installation/">华为支持</a>）。
+              </li>
+              <li class="instructions-todo-item">
+                从应用商店安装 HMS CORE（应用商店将要求系统权限来安装第三方应用）。
+              </li>
+              <li class="instructions-todo-item">
+                安装或更新华为健康。
+              </li>
+              <li class="instructions-todo-item">
+                登录到您的华为账户。
+              </li>
+              <li class="instructions-todo-item">
+                在Health Sync 中，勾选您希望传输到 Health Connect 的数据类型。
+              </li>
+            </ul>
+          </li>
+          <li class="instructions-cases-todo-item bolder">
+            确保 Health Sync 已在华为健康应用的“隐私管理”设置中成功连接。
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          然后，将 Health Connect 与 FitnessOnline 应用同步，方法如下：
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            在 FitnessOnline 应用中，点击右下角的'更多'。
+          </li>
+          <li class="instructions-cases-todo-item">
+            点击“设置”。
+          </li>
+          <li class="instructions-cases-todo-item">
+            点击“数据共享”。
+          </li>
+          <li class="instructions-cases-todo-item">
+            点击Health Connect 图标。
+          </li>
+          <li class="instructions-cases-todo-item">
+            点击“打开设置”。
+          </li>
+          <li class="instructions-cases-todo-item">
+            授予读取 FitnessOnline 应用数据的权限。
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          如果数据未在锻炼摘要屏幕上显示，请按照以下步骤操作：
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            验证 Health Sync 中的数据是否正在同步到 Health Connect。
+          </li>
+          <li class="instructions-cases-todo-item">
+            <p class="instruction-cases-text">通过在 FitnessOnline 应用中执行以下操作来验证 Health Connect 和 FitnessOnline 之间的同步状态：</p>
+            <ol class="instructions-cases-todo-list">
+              <li class="instructions-cases-todo-item">
+                点击右下角的“更多”。
+              </li>
+              <li class="instructions-cases-todo-item">
+                点击“设置”。
+              </li>
+              <li class="instructions-cases-todo-item">
+                点击“数据共享”。
+              </li>
+              <li class="instructions-cases-todo-item">
+                点击 Health Connect 图标。
+              </li>
+            </ol>
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          要检查 Health Connect 与 Health Sync 的连接，按照以下步骤操作：
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            打开 Health Connect 应用。
+          </li>
+          <li class="instructions-cases-todo-item">
+            在“权限和数据”部分，点击“应用权限”。
+          </li>
+          <li class="instructions-cases-todo-item">
+            确保 Health Sync 列在“允许访问”下。
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          如果您的健身手环、Health Sync 和 Health Connect 已连接，但在锻炼总结屏幕上显示不正确的活动数据或没有数据：
+        </h3>
+        <p class="instruction-cases-text">
+          发生这种情况是因为活动追踪应用程序将特定的卡路里、步数和心率数据发送到 Health Sync。此外，Health Sync 可能会延迟向 Health Connect 传输数据。
+        </p>
+        <p class="instruction-cases-text">
+          FitnessOnline 仅显示从 Health Connect 接收到的数据。
+        </p>
+        <p class="instruction-cases-text mb">
+          要确保锻炼总结屏幕上显示更准确的活动数据，请按照以下步骤操作：
+        </p>
+        <ol class="instructions-todo-list">
+          <li class="instructions-cases-todo-item">
+            在 FitnessOnline 中开始锻炼之前，在健身手环上开始系统锻炼。
+          </li>
+          <li class="instructions-cases-todo-item">
+            在 FitnessOnline 中完成锻炼之前，打开用于活动跟踪的应用，并刷新设备与手机之间的同步。
+          </li>
+          <li class="instructions-cases-todo-item">
+            打开 Health Sync 应用，刷新与 Health Connect 的同步。
+          </li>
+          <li class="instructions-cases-todo-item">
+            返回到 FitnessOnline 应用并完成锻炼。
+          </li>
+        </ol>
       </section>
     </div>
   </main>

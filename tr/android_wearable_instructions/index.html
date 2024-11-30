@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bracelets</title>
+  <title>Bilezikler</title>
   <link rel="stylesheet" href="/css/braclets/bracelets.css">
   <link rel="stylesheet" href="/css/braclets/bracelets-media.css">
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -32,18 +32,27 @@
   <main class="main">
     <section class="review container">
       <h1 class="review_header headers">
-        Fitness takip cihazı nasıl bağlanır?
+        Bir fitness takipçisini bağlama
       </h1>
       <div class="review-model-pad" id="devices">
         <div class="review-model-frame" id="review-model-frame">
           <div class="review-model-band" id="review-model-band">
+            <a href="#healthconnect" class="model-card">
+              <div class="device_img healthconnect"></div>
+              <h4 class="device-name">
+                Google Health Connect
+              </h4>
+              <p class="device-app">
+                &nbsp;
+              </p>
+            </a>
             <a href="#zepplife" class="model-card">
               <div class="device_img zepplife"></div>
               <h4 class="device-name">
                 Xiaomi Mi Band
               </h4>
               <p class="device-app">
-                Zepp life app (Mi fit)
+                Zepp Life uygulaması<br />(önceki adıyla Mi&nbsp;Fit)
               </p>
             </a>
             <a href="#zepp" class="model-card">
@@ -64,22 +73,31 @@
                 &nbsp;
               </p>
             </a>
+            <a href="#samsunghealth" class="model-card">
+              <div class="device_img samsung"></div>
+              <h4 class="device-name footnoted">
+                Samsung
+              </h4>
+              <p class="device-app">
+                Samsung Health uygulaması
+              </p>
+            </a>
+            <a href="#garmin" class="model-card">
+              <div class="device_img garmin"></div>
+              <h4 class="device-name footnoted">
+                Garmin
+              </h4>
+              <p class="device-app">
+                Connect uygulaması
+              </p>
+            </a>
             <a href="#fitbit" class="model-card">
               <div class="device_img fitbit"></div>
               <h4 class="device-name footnoted">
                 Fitbit
               </h4>
               <p class="device-app">
-                Fit to fit uygulaması
-              </p>
-            </a>
-            <a href="#lg" class="model-card">
-              <div class="device_img lg"></div>
-              <h4 class="device-name footnoted">
-                LG
-              </h4>
-              <p class="device-app">
-                Lg health uygulaması
+                Fitbit uygulaması
               </p>
             </a>
             <a href="#polar" class="model-card">
@@ -88,7 +106,7 @@
                 Polar
               </h4>
               <p class="device-app">
-                Polar flow uygulaması
+                Polar Flow uygulaması
               </p>
             </a>
             <a href="#huaweihealth" class="model-card">
@@ -100,24 +118,6 @@
                 Huawei Health uygulaması
               </p>
             </a>
-            <a href="#samsunghealth" class="model-card">
-              <div class="device_img samsung"></div>
-              <h4 class="device-name">
-                Samsung
-              </h4>
-              <p class="device-app">
-                Samsung Health uygulaması
-              </p>
-            </a>
-            <a href="#garmin" class="model-card">
-              <div class="device_img garmin"></div>
-              <h4 class="device-name">
-                Garmin
-              </h4>
-              <p class="device-app">
-                Garmin Connect uygulaması
-              </p>
-            </a>
           </div>
         </div>
       </div>
@@ -127,88 +127,165 @@
         </label>
       </form>
       <p class="footnote">
-        Bu cihazlar için talimatlar aynıdır çünkü bunlar doğrudan Google Fit'e bağlıdır
+        Bu cihazlar doğrudan Health Connect uygulamasına bağlanır.
       </p>
     </section>
 
     <div class="descriptions">
       <div class="backtop container">
-        <a class="up" href="#devices" tabindex="100"><img src="/img/braclets/top.svg" alt="Go to top"></a>
+        <a class="up" href="#devices" tabindex="100"><img src="/img/braclets/top.svg" alt="Yukarı git"></a>
       </div>
+      <section class="instructions container" id="healthconnect">
+        <div class="uline"></div>
+        <div class="title">
+          <div class="iconset">
+            <picture>
+              <source srcset="/img/braclets/icons/healthconnect_100.png" media="(max-width: 1108px)">
+              <img src="/img/braclets/icons/healthconnect_46.png" alt="Cihaz simgesi">
+            </picture>
+          </div>
+          <h2 class="headers googlefit">
+            Google Health Connect (FitnessOnline sürüm 2.20.0 ve üzeri sürümlerde mevcut) ile uygulamayı senkronize etmek için, şu adımları izleyin:
+          </h2>
+        </div>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            Cihazınıza Health Connect uygulamasını yükleyin.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Cihazınıza FitnessOnline'ı ilk kurulumdan sonra ve hesabınıza giriş yaptıktan sonra, Health Connect'teki verileri okumak için erişime izin verin.
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          Uygulamanın ilk kurulumu sonrasında Health Connect'te veri okuma izni verilmediyse:
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            Sağ alt köşedeki “Daha Fazla”ya dokunun.
+          </li>
+          <li class="instructions-cases-todo-item">
+            “Ayarlar”a dokunun.
+          </li>
+          <li class="instructions-cases-todo-item">
+            “Veri paylaşımı”na dokunun.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Health Connect simgesine dokunun.
+          </li>
+          <li class="instructions-cases-todo-item">
+            “Ayarları aç”a dokunun.
+          </li>
+          <li class="instructions-cases-todo-item">
+            FitnessOnline uygulaması için verileri okumak amacıyla erişim izni verin.
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          Veriler egzersiz özeti ekranında görüntülenmiyorsa, şu adımları izleyin:
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            Verilerin Health Connect'e senkronize edilip edilmediğini kontrol edin.
+          </li>
+          <li class="instructions-cases-todo-item">
+            <p class="instruction-cases-text">FitnessOnline uygulamasında aşağıdakileri yaparak Health Connect ve FitnessOnline arasındaki senkronizasyon durumunu doğrulayın:</p>
+            <ol class="instructions-cases-todo-list">
+              <li class="instructions-cases-todo-item">
+                Sağ alt köşedeki “Daha Fazla”ya dokunun.
+              </li>
+              <li class="instructions-cases-todo-item">
+                “Ayarlar”a dokunun.
+              </li>
+              <li class="instructions-cases-todo-item">
+                “Veri paylaşımı”na dokunun.
+              </li>
+              <li class="instructions-cases-todo-item">
+                Health Connect simgesine dokunun.
+              </li>
+            </ol>
+          </li>
+        </ol>
+      </section>
+
       <section class="instructions container" id="zepplife">
         <div class="title">
           <div class="iconset">
             <picture>
               <source srcset="/img/braclets/icons/zepplife_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/zepplife_46.png" alt="Device icon">
+              <img src="/img/braclets/icons/zepplife_46.png" alt="Cihaz simgesi">
             </picture>
           </div>
           <h2 class="headers zepplife">
-            Zepp Life'ı uygulamaya bağlamak için
+            Zepp Life'ı FitnessOnline ile senkronize etmek için:
           </h2>
         </div>
-        <ul class="instructions-todo-list">
-          <li class="instructions-todo-item">
-            Bilekliğinizi veya akıllı saatinizi Zepp Life uygulamasına bağlayın
-          </li>
-          <li class="instructions-todo-item">
-            Herhangi bir antrenmana başlayın. Uygulama, antrenmana başlamadan önce verileri izlemek için bilekliğinizi bağlamanızı ister
-          </li>
-        </ul>
-        <h3 class="headers instruction-cases">
-          Yönlendirilmezseniz yapmanız gerekenler:
-        </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            FitnessOnline uygulamasını açın
+            Fitness bandınızı veya akıllı saatinizi Zepp Life uygulamasına bağlayın.
           </li>
           <li class="instructions-cases-todo-item">
-            Sağ alt köşedeki “Diğer” e dokunun
-          </li>
-          <li class="instructions-cases-todo-item">
-            ”Ayarlar" a dokunun
-          </li>
-          <li class="instructions-cases-todo-item">
-            “Veri alışverişi” ne dokunun
-          </li>
-          <li class="instructions-cases-todo-item">
-            Uygulamanın simgesine dokunun
-          </li>
-          <li class="instructions-cases-todo-item">
-            ”Bağlan" a dokunun
+            FitnessOnline'da herhangi bir egzersize başlayın. Egzersiz öncesinde, uygulama size verileri izlemek için fitness bandınızı senkronize etmenizi isteyecektir.
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          Bilekliği daha önce bağladıysanız ancak veri aktarmıyorsa şunları yapmalısınız:
+          Senkronizasyon istemi görünmüyorsa, şu adımları izleyin:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            Bilekliğin Zepp Life uygulamasına bağlı olup olmadığını kontrol edin. Bunu yapmak için Zepp Life uygulamasını açmanız, “Profil“ e gitmeniz ve bilekliğin “Cihazlarım" altında bağlı olduğundan emin olmanız gerekir”
+            FitnessOnline uygulamasını açın.
           </li>
           <li class="instructions-cases-todo-item">
-            FitnessOnline uygulamasına gidin
+            Sağ alt köşedeki “Daha Fazla”ya dokunun.
           </li>
           <li class="instructions-cases-todo-item">
-            Sağ alt köşedeki “Diğer” e dokunun
+            “Ayarlar”a dokunun.
           </li>
           <li class="instructions-cases-todo-item">
-            ”Ayarlar" a dokunun
+            “Veri paylaşımı”na dokunun.
           </li>
           <li class="instructions-cases-todo-item">
-            “Veri alışverişi” ne dokunun
+            Uygulamanın simgesine dokunun.
           </li>
           <li class="instructions-cases-todo-item">
-            Uygulamanın simgesine dokunun
-          </li>
-          <li class="instructions-cases-todo-item">
-            “Tekrar bağlan” a dokunun
+            “Bağlan”a dokunun.
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          Bilekliğiniz bağlıysa ancak sadece birkaç kalori sayılmışsa:
+          Fitness bandınız bağlı ama veriler senkronize edilmiyorsa:
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            Bluetooth’u kapatıp tekrar açın.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Zepp Life uygulamasıyla fitness bandınızın senkronizasyon durumunu kontrol edin. Bunu yapmak için, Zepp Life uygulamasını açın, “Profil” sekmesine gidin ve “Cihazlarım” bölümünde fitness bandınızın bağlı olduğundan emin olun.
+          </li>
+          <li class="instructions-cases-todo-item">
+            FitnessOnline uygulamasını açın.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Sağ alt köşedeki “Daha Fazla”ya dokunun.
+          </li>
+          <li class="instructions-cases-todo-item">
+            “Ayarlar”a dokunun.
+          </li>
+          <li class="instructions-cases-todo-item">
+            “Veri paylaşımı”na dokunun.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Uygulamanın simgesine dokunun.
+          </li>
+          <li class="instructions-cases-todo-item">
+            “Yeniden bağla”ya dokunun.
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          Fitness bandınız bağlı ama egzersiz özeti ekranında düşük kalori gösteriyorsa:
         </h3>
         <p class="instruction-cases-text">
-          Bu durum, sistem antrenmanı açılmadığında bileklik kendi başına yakılan kalori sayısını hesapladığında olur. Daha doğru kalori hesaplaması için bileklikte bir antrenmana başlayın.
+          Bu, fitness bandınızın belirli bir kalori miktarını hesaplamasından kaynaklanır.
+        </p>
+        <p class="instruction-cases-text">
+          Yakılan kalorileri daha doğru bir şekilde görüntülemek için, fitness bandınızda sistem egzersizine başlamalısınız.
         </p>
       </section>
 
@@ -218,142 +295,152 @@
           <div class="iconset">
             <picture>
               <source srcset="/img/braclets/icons/zepp_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/zepp_46.png" alt="Device icon">
+              <img src="/img/braclets/icons/zepp_46.png" alt="Cihaz simgesi">
             </picture>
           </div>
           <h2 class="headers zepp">
-            Zepp Life uygulamasını bağlamak için
+            Zepp'i FitnessOnline ile senkronize etmek için:
           </h2>
         </div>
-        <ul class="instructions-todo-list">
-          <li class="instructions-todo-item">
-            Bilekliğinizi veya akıllı saatinizi Zepp uygulamasına bağlayın
-          </li>
-          <li class="instructions-todo-item">
-            Herhangi bir antrenmana başlayın. Uygulama, antrenmana başlamadan önce verileri izlemek için bilekliğinizi bağlamanızı ister
-          </li>
-        </ul>
-        <h3 class="headers instruction-cases">
-          Yönlendirilmezseniz yapmanız gerekenler:
-        </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            FitnessOnline uygulamasını açın
+            Fitness bandınızı veya akıllı saatinizi Zepp uygulamasına bağlayın.
           </li>
           <li class="instructions-cases-todo-item">
-            Sağ alt köşedeki “Diğer” e dokunun
-          </li>
-          <li class="instructions-cases-todo-item">
-            ”Ayarlar" a dokunun
-          </li>
-          <li class="instructions-cases-todo-item">
-            “Veri alışverişi” ne dokunun
-          </li>
-          <li class="instructions-cases-todo-item">
-            Uygulamanın simgesine dokunun
-          </li>
-          <li class="instructions-cases-todo-item">
-            ”Bağlan" a dokunun
+            FitnessOnline'da herhangi bir egzersize başlayın. Egzersiz öncesinde, uygulama size verileri izlemek için fitness bandınızı senkronize etmenizi isteyecektir.
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          Bilekliği daha önce bağladıysanız ancak veri aktarmıyorsa şunları yapmalısınız:
+          Senkronizasyon istemi görünmüyorsa, şu adımları izleyin:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            Bilekliğin Zepp uygulamasına bağlı olup olmadığını kontrol edin. Bunu yapmak için Zepp uygulamasını açmanız, “Profil” e gitmeniz ve bilekliğin “Cihazlarım" altında bağlı olduğundan emin olmanız gerekir”
+            FitnessOnline uygulamasını açın.
           </li>
           <li class="instructions-cases-todo-item">
-            FitnessOnline uygulamasına gidin
+            Sağ alt köşedeki “Daha Fazla”ya dokunun.
           </li>
           <li class="instructions-cases-todo-item">
-            Sağ alt köşedeki “Diğer” e dokunun
+            “Ayarlar”a dokunun.
           </li>
           <li class="instructions-cases-todo-item">
-            ”Ayarlar" a dokunun
+            “Veri paylaşımı”na dokunun.
           </li>
           <li class="instructions-cases-todo-item">
-            “Veri alışverişi” ne dokunun
+            Uygulamanın simgesine dokunun.
           </li>
           <li class="instructions-cases-todo-item">
-            Uygulamanın simgesine dokunun
-          </li>
-          <li class="instructions-cases-todo-item">
-            “Tekrar bağlan” a dokunun
+            “Bağlan”a dokunun.
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          Bilekliğiniz bağlıysa ancak sadece birkaç kalori sayılmışsa:
+          Fitness bandınız bağlı ama veriler senkronize edilmiyorsa:
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            Bluetooth’u kapatıp tekrar açın.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Zepp uygulamasıyla fitness bandınızın senkronizasyon durumunu kontrol edin. Bunu yapmak için, Zepp uygulamasını açın, “Profil” sekmesine gidin ve “Cihazlarım” bölümünde fitness bandınızın bağlı olduğundan emin olun.
+          </li>
+          <li class="instructions-cases-todo-item">
+            FitnessOnline uygulamasını açın.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Sağ alt köşedeki “Daha Fazla”ya dokunun.
+          </li>
+          <li class="instructions-cases-todo-item">
+            “Ayarlar”a dokunun.
+          </li>
+          <li class="instructions-cases-todo-item">
+            “Veri paylaşımı”na dokunun.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Uygulamanın simgesine dokunun.
+          </li>
+          <li class="instructions-cases-todo-item">
+            “Yeniden bağla”ya dokunun.
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          Fitness bandınız bağlı ama egzersiz özeti ekranında düşük kalori gösteriyorsa:
         </h3>
         <p class="instruction-cases-text">
-          Bu durum, sistem antrenmanı açılmadığında bileklik kendi başına yakılan kalori sayısını hesapladığında olur. Daha doğru kalori hesaplaması için bileklikte bir antrenmana başlayın.
+          Bu, fitness bandınızın belirli bir kalori miktarını hesaplamasından kaynaklanır.
+        </p>
+        <p class="instruction-cases-text">
+          Yakılan kalorileri daha doğru bir şekilde görüntülemek için, fitness bandınızda sistem egzersizine başlamalısınız.
         </p>
       </section>
 
       <section class="instructions container" id="googlefit">
         <div class="uline"></div>
+        <p class="warning bolder">Dikkat! Google Fit, 30 Haziran 2025'ten sonra kullanılamayacak:<br />
+          <nobr><a href="https://developers.google.com/fit">https://developers.google.com/fit</a></nobr>
+        </p>
         <div class="title">
           <div class="iconset">
             <picture>
               <source srcset="/img/braclets/icons/googlefit_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/googlefit_46.png" alt="Device icon">
+              <img src="/img/braclets/icons/googlefit_46.png" alt="Cihaz simgesi">
             </picture>
           </div>
           <h2 class="headers googlefit">
-            Google Fit uygulamasını bağlamak için
+            Google Fit (FitnessOnline sürüm 2.19.2 ve altı sürümlerde mevcut) ile uygulamayı senkronize etmek için, şu adımları izleyin:
           </h2>
         </div>
-        <ul class="instructions-todo-list">
-          <li class="instructions-todo-item">
-            Herhangi bir antrenmana başlayın. Bir antrenmana başlamadan önce, Google Fit uygulaması zaten yüklüyse eşleştirmeniz istenir
-          </li>
-        </ul>
-        <h3 class="headers instruction-cases">
-          Yönlendirilmezseniz yapmanız gerekenler:
-        </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            FitnessOnline uygulamasını açın
+            Cihazınıza Google Fit uygulamasını yükleyin.
           </li>
           <li class="instructions-cases-todo-item">
-            Sağ alt köşedeki “Diğer” e dokunun
-          </li>
-          <li class="instructions-cases-todo-item">
-            ”Ayarlar" a dokunun
-          </li>
-          <li class="instructions-cases-todo-item">
-            “Veri alışverişi” ne dokunun
-          </li>
-          <li class="instructions-cases-todo-item">
-            Google Fit simgesine dokunun
-          </li>
-          <li class="instructions-cases-todo-item">
-            “Google ile oturum Aç” a dokunun
+            FitnessOnline’da herhangi bir egzersize başlayın. Egzersiz öncesinde, uygulama size verileri izlemek için Google Fit ile senkronize etmenizi isteyecektir.
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          Veriler raporda görünmüyorsa şunları yapmalısınız:
+          Senkronizasyon istemi görünmüyorsa, şu adımları izleyin:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            Verilerin Google Fit'e aktarılıp aktarılmadığını kontrol edin
+            FitnessOnline uygulamasını açın.
           </li>
           <li class="instructions-cases-todo-item">
-            <p class="instruction-cases-text">
-              Google Fit ile uygulama arasındaki bağlantıyı kontrol edin, bunu yapmak için FitnessOnline uygulamasında aşağıdaki adımları izleyin:
-            </p>
+            Sağ alt köşedeki “Daha Fazla”ya dokunun.
+          </li>
+          <li class="instructions-cases-todo-item">
+            “Ayarlar”a dokunun.
+          </li>
+          <li class="instructions-cases-todo-item">
+            “Veri paylaşımı”na dokunun.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Google Fit simgesine dokunun.
+          </li>
+          <li class="instructions-cases-todo-item">
+            “Google ile Giriş Yap”a dokunun.
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          Veriler egzersiz özeti ekranında görüntülenmiyorsa, şu adımları izleyin:
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            Verilerin Google Fit'e senkronize edilip edilmediğini kontrol edin.
+          </li>
+          <li class="instructions-cases-todo-item">
+            <p class="instruction-cases-text">FitnessOnline uygulamasında aşağıdakileri yaparak Google Fit ve FitnessOnline arasındaki senkronizasyon durumunu doğrulayın:</p>
             <ol class="instructions-cases-todo-list">
               <li class="instructions-cases-todo-item">
-                Sağ alt köşedeki “Diğer” e dokunun
+                Sağ alt köşedeki “Daha Fazla”ya dokunun.
               </li>
               <li class="instructions-cases-todo-item">
-                ”Ayarlar" a dokunun
+                “Ayarlar”a dokunun.
               </li>
               <li class="instructions-cases-todo-item">
-                “Veri alışverişi” ne dokunun
+                “Veri paylaşımı”na dokunun.
               </li>
               <li class="instructions-cases-todo-item">
-                Google Fit simgesine dokunun
+                Google Fit simgesine dokunun.
               </li>
             </ol>
           </li>
@@ -361,119 +448,133 @@
       </section>
 
       <section class="instructions container" id="fitbit">
-        <div id="lg"></div>
         <div id="polar"></div>
+        <div id="samsunghealth"></div>
+        <div id="garmin"></div>
         <div class="uline"></div>
         <div class="title">
           <div class="iconset">
             <picture>
-              <source srcset="/img/braclets/icons/fitbit_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/fitbit_46.png" alt="Device icon">
+              <source srcset="/img/braclets/icons/samsung_100.png" media="(max-width: 1108px)">
+              <img src="/img/braclets/icons/samsung_46.png" alt="Cihaz simgesi">
             </picture>
             <picture>
-              <source srcset="/img/braclets/icons/lg_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/lg_46.png" alt="Device icon">
+              <source srcset="/img/braclets/icons/garmin_100.png" media="(max-width: 1108px)">
+              <img src="/img/braclets/icons/garmin_46.png" alt="Cihaz simgesi">
+            </picture>
+            <picture>
+              <source srcset="/img/braclets/icons/fitbit_100.png" media="(max-width: 1108px)">
+              <img src="/img/braclets/icons/fitbit_46.png" alt="Cihaz simgesi">
             </picture>
             <picture>
               <source srcset="/img/braclets/icons/polar_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/polar_46.png" alt="Device icon">
+              <img src="/img/braclets/icons/polar_46.png" alt="Cihaz simgesi">
             </picture>
           </div>
           <h2 class="headers fitbit lg polar">
-            Fitbit, LG, Polar uygulamalarını bağlamak için:
+            Samsung Health, Garmin, Fitbit ve Polar Flow’dan FitnessOnline’a veri aktarımı, Google Health Connect aracılığıyla gerçekleştirilir.
           </h2>
         </div>
-        <h5 class="headers instruction-comment">
-          Etkinliğinizi takip etmek için kullandığınız uygulamayı FitnessOnline uygulamasına bağlamak için uygulamanızı Google Fit ile senkronize etmeniz gerekir.
-        </h5>
         <h3 class="headers instruction-cases">
-          Bunun için aşağıdaki adımları izleyin:
+          Bağlamak için şu adımları izleyin:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            Google Fit uygulamasını yükleyin
+            Health Connect uygulamasını yükleyin ve giriş yapın.
           </li>
           <li class="instructions-cases-todo-item">
-            Hesap oluşturun
+            Aktivitenizi izlemek için kullanılan uygulamayı açın.
           </li>
           <li class="instructions-cases-todo-item">
-            Etkinliğinizi izlemek için kullandığınız uygulamayı açın
+            Ayar menüsüne gidin.
           </li>
           <li class="instructions-cases-todo-item">
-            Ayarlara git
+            Üçüncü parti uygulamalarla bağlantı kurma bölümü bulun. Bu genellikle “Diğer Hizmetleri Bağla”, “Uygulamalar ve Cihazlar”, “Bağlantıları Yönet” veya benzeri bir şey olarak etiketlenmiştir.
           </li>
           <li class="instructions-cases-todo-item">
-            Diğer uygulamaları bağlama bölümünü bulun. Bu bölüm genelde “Diğer hizmetleri bağla”, “Uygulamalar ve cihazlar”, “Bağlantıları yönet” gibi isimlerle anılır.
-          </li>
-          <li class="instructions-cases-todo-item">
-            Uygulamayı Google Fit'e bağlamak için talimatları izleyin
+            Uygulamayı Health Connect'e bağlamak için talimatları izleyin.
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          Ardından, aşağıdakileri yaparak Google Fit ve FitnessOnline uygulamasını senkronize etmeniz gerekir:
-        </h3>
-        <ul class="instructions-todo-list">
-          <li class="instructions-todo-item">
-            Herhangi bir antrenmana başlayın. Bir antrenmana başlamadan önce, eşleştirmeye yönlendirileceksiniz
-          </li>
-        </ul>
-        <h3 class="headers instruction-cases">
-          Yönlendirilmezseniz yapmanız gerekenler:
+          Ardından, Health Connect'i FitnessOnline uygulamasıyla şu şekilde senkronize edin:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            FitnessOnline uygulamasını açın
+            FitnessOnline uygulamasında, sağ alt köşedeki 'Daha Fazla'ya dokunun.
           </li>
           <li class="instructions-cases-todo-item">
-            Sağ alt köşedeki “Diğer” e dokunun
+            'Ayarlar'a dokunun.
           </li>
           <li class="instructions-cases-todo-item">
-            ”Ayarlar" a dokunun
+            'Veri paylaşımı'na dokunun.
           </li>
           <li class="instructions-cases-todo-item">
-            “Veri alışverişi” ne dokunun
+            Health Connect simgesine dokunun.
           </li>
           <li class="instructions-cases-todo-item">
-            Google Fit simgesine dokunun
+            'Ayarları aç'a dokunun.
           </li>
           <li class="instructions-cases-todo-item">
-            “Google ile oturum Aç” a dokunun
+            FitnessOnline uygulaması için veri okuma izni verin.
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          Veriler raporda görünmüyorsa şunları yapmalısınız:
+          Veriler egzersiz özeti ekranında görünmüyorsa, şu adımları izleyin:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            Verilerin Google Fit'e aktarılıp aktarılmadığını kontrol edin
+            Aktivite izlemek için kullanılan uygulamadaki verilerin Health Connect’e senkronize edildiğimi doğrulayın.
           </li>
           <li class="instructions-cases-todo-item">
-            Ayarlar — Veri alışverişi — Google Fit'e giderek Google Fit ve uygulamanın bağlı olup olmadığını kontrol edin
+            <p class="instruction-cases-text">Aşağıdaki işlemleri yaparak Health Connect ile FitnessOnline arasındaki senkronizasyon durumunu kontrol edin:</p>
+            <ol class="instructions-cases-todo-list">
+              <li class="instructions-cases-todo-item">
+                Sağ alt köşedeki “Daha Fazla”ya dokunun.
+              </li>
+              <li class="instructions-cases-todo-item">
+                “Ayarlar”a dokunun.
+              </li>
+              <li class="instructions-cases-todo-item">
+                “Veri paylaşımı”na dokunun.
+              </li>
+              <li class="instructions-cases-todo-item">
+                Health Connect simgesine dokunun.
+              </li>
+            </ol>
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          Etkinliğinizi izlemek için kullandığınız uygulamayı Google Fit'e bağlamak için şunları yapmalısınız:
+          Health Connect ile aktivite izlemek için kullanılan uygulama arasındaki bağlantıyı kontrol etmek için şu adımları izleyin:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            Google Fit uygulamasını açın
+            Health Connect uygulamasını açın.
           </li>
           <li class="instructions-cases-todo-item">
-            Profile dokunun — “Ayarlar” a dokunun
+            'İzinler ve veri' bölümünde 'Uygulama izinleri'ne dokunun.
           </li>
           <li class="instructions-cases-todo-item">
-            "Bağlı uygulamaları yönet" e dokunun
-          </li>
-          <li class="instructions-cases-todo-item">
-            Bağlı tüm uygulamaların listesini açmak için “Tüm uygulamalar ve cihazlar” ın altındaki aşağı yönlü oka basın.
+            Kullandığınız uygulamanın, 'İzin verilen erişim' altında listelendiğinden emin olun.
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          Bilekliğiniz bağlıysa ancak sadece birkaç kalori sayılmışsa:
+          Fitness bandınız ve Health Connect bağlıysa ancak yanlış aktivite verisi veya veri olmadığı durumlarda:
         </h3>
         <p class="instruction-cases-text">
-          Bu durum, sistem antrenmanı açılmadığında bileklik kendi başına yakılan kalori sayısını hesapladığında olur. Daha doğru kalori hesaplaması için bileklikte bir antrenmana başlayın.
+          Bu, aktivite izleme uygulamanızın Health Connect’e belirli kalori, adım sayısı ve kalp atış hızı verilerini göndermesinden dolayı olur.
         </p>
+        <p class="instruction-cases-text">
+          FitnessOnline yalnızca Health Connect'ten alınan verileri görüntüler.
+        </p>
+        <p class="instruction-cases-text">Egzersiz özeti ekranında daha doğru aktivite verilerinin görüntülenmesini sağlamak için:</p>
+        <ol class="instructions-todo-list">
+          <li class="instructions-cases-todo-item">
+            FitnessOnline’da bir egzersize başlamadan önce, fitness bandınızda bir sistem egzersizine başlayın.
+          </li>
+          <li class="instructions-cases-todo-item">
+            FitnessOnline'da egzersizi bitirmeden önce, aktivite izlemek için kullanılan uygulamayı açın ve fitness bandınız ile mobil cihaz arasındaki senkronizasyonu yenileyin.
+          </li>
+        </ol>
       </section>
 
       <section class="instructions container" id="huaweihealth">
@@ -482,308 +583,140 @@
           <div class="iconset">
             <picture>
               <source srcset="/img/braclets/icons/huawei_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/huawei_46.png" alt="Device icon">
+              <img src="/img/braclets/icons/huawei_46.png" alt="Cihaz simgesi">
             </picture>
           </div>
           <h2 class="headers huaweihealth">
-            Huawei Health uygulamasını FitnessOnline ile bağlamak için Google Fit'i kullanmanız gerekir
+            Huawei Health uygulamasından FitnessOnline’a veri aktarımı, Google Health Connect ve Health Sync aracılığıyla gerçekleştirilir (ücretli abonelik gerektirir).
           </h2>
         </div>
-        <h5 class="headers instruction-comment">
-          Bunun için üçüncü taraf ücretli olan Health Sync uygulamasını kullanmanız gerekir.
-          Verileri senkronize etmek için ücretli bir uygulama kullanmak istemiyorsanız, önceki pencereye geri dönebilir ve Google Fit ile senkronize et'i seçebilirsiniz (bileklik dikkate alınmaz).
-        </h5>
         <h3 class="headers instruction-cases">
-          Üçüncü taraf bir uygulamayı kullanmak için Play Store uygulamasında aşağıdakileri yapmanız gerekir:
+          Bağlamak için şu adımları izleyin:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item bolder">
-            Google Fit'i yükleyin
+            Health Connect uygulamasını yükleyin ve giriş yapın.
           </li>
           <li class="instructions-cases-todo-item bolder">
-            Health Sync uygulamasını yükleyin. Uygulamayı başlatın ve senkronize edilecek ana kaynak olarak Huawei Health Kit'i seçin ve senkronizasyon yönü olarak Google Fit'i seçin
+            Health Sync uygulamasını yükleyin. Uygulamayı açın ve ana senkronizasyon kaynağı olarak Huawei Health Kit'i seçin; senkronizasyon yönü için Health Connect'i seçin.
           </li>
           <li class="instructions-cases-todo-item bolder">
-            ”Onayla" ya dokunun
+            ‘Onay Beyanı’ butonuna dokunun.
           </li>
           <li class="instructions-cases-todo-item bolder">
             <p class="instruction-cases-text bolder">
-              Ardından, Health Sync uygulamasındaki talimatları uygulamanız gerekir:
+              Ardından, Health Sync uygulamasındaki talimatları izleyin:
             </p>
-            <ul class="instructions-todo-list">
+            <ul class="instructions-todo-list embedded">
               <li class="instructions-todo-item">
-                “Google hesabı bağlantısını kontrol et” e dokunun
+                ‘Google Hesabına Bağlantıyı Kontrol Et’e dokunun.
               </li>
               <li class="instructions-todo-item">
-                “Google Fit'te etkinlik izlemeyi kontrol et” e dokunun
+                ‘Health Connect'te Aktivite İzlemeyi Kontrol Et’e dokunun.
               </li>
               <li class="instructions-todo-item">
-                Huawei AppGallery'i yükleyin (resmi web sitesindeki talimatlar <a
-                  href="https://consumer.huawei.com/my/mobileservices/appgallery/android-installation/">https://consumer.huawei.com/<wbr>my/mobileservices/appgallery/<wbr>android-installation</a>)
+                Huawei AppGallery’yi yükleyin (resmi talimatları inceleyin: <a href="https://consumer.huawei.com/my/mobileservices/appgallery/android-installation/">Huawei Destek</a>).
               </li>
               <li class="instructions-todo-item">
-                HMS core'u yükleyin (Bunu yapmak için AppGallery'i açın ve HMS Core'u arayın). AppGallery yükleme izni isteyecek ve izin verin
+                HMS CORE'u AppGallery'den yükleyin (AppGallery, üçüncü taraf uygulamaları yüklemek için sistem iznine ihtiyaç duyacaktır).
               </li>
               <li class="instructions-todo-item">
-                Huawei Health'i yükleyin (veya güncelleyin)
-              </li>
-              <li class="instructions-todo-item">
-                Huawei hesabınızın kimliğini doğrulayın veya oturum açın
-              </li>
-              <li class="instructions-todo-item">
-                Health Sync uygulamasını senkronize etmek için gerekli kutuları işaretleyin
+         Uygulamalar içindeki  emir listelesini kontrol edin.
               </li>
             </ul>
           </li>
           <li class="instructions-cases-todo-item bolder">
-            <p class="instruction-cases-text bolder">
-              Google Fit uygulamasını bağlamak için
-            </p>
-            <ul class="instructions-todo-list">
-              <li class="instructions-todo-item">
-                Herhangi bir antrenmana başlayın. Bir antrenmana başlamadan önce, Google Fit uygulaması zaten yüklüyse eşleştirmeniz istenir
+            Health Sync'in, Huawei Health uygulamasının 'Gizlilik yönetimi' ayarlarında düzgün şekilde bağlandığından emin olun.
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          Sonra, Health Connect'i FitnessOnline uygulamasıyla şu şekilde senkronize edin:
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            FitnessOnline uygulamasında, sağ alt köşedeki 'Daha Fazla'ya dokunun.
+          </li>
+          <li class="instructions-cases-todo-item">
+            'Ayarlar'a dokunun.
+          </li>
+          <li class="instructions-cases-todo-item">
+            'Veri paylaşımı'na dokunun.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Health Connect simgesine dokunun.
+          </li>
+          <li class="instructions-cases-todo-item">
+            'Ayarları aç'a dokunun.
+          </li>
+          <li class="instructions-cases-todo-item">
+            FitnessOnline uygulaması için verileri okumak amacıyla erişim izni verin.
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          Veriler egzersiz özeti ekranında görüntülenmiyorsa, şu adımları izleyin:
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            Health Sync verilerinin Health Connect'e senkronize edilip edilmediğini kontrol edin.
+          </li>
+          <li class="instructions-cases-todo-item">
+            <p class="instruction-cases-text">Health Connect ve FitnessOnline arasındaki senkronizasyon durumunu kontrol etmek için aşağıdaki işlemleri yapın:</p>
+            <ol class="instructions-cases-todo-list">
+              <li class="instructions-cases-todo-item">
+                Sağ alt köşedeki “Daha Fazla”ya dokunun.
               </li>
-            </ul>
+              <li class="instructions-cases-todo-item">
+                “Ayarlar”a dokunun.
+              </li>
+              <li class="instructions-cases-todo-item">
+                “Veri paylaşımı”na dokunun.
+              </li>
+              <li class="instructions-cases-todo-item">
+                Health Connect simgesine dokunun.
+              </li>
+            </ol>
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          Yönlendirilmezseniz yapmanız gerekenler:
+          Health Connect ve Health Sync arasındaki bağlantıyı kontrol etmek için şu adımları izleyin:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            FitnessOnline uygulamasına gidin
+            Health Connect uygulamasını açın.
           </li>
           <li class="instructions-cases-todo-item">
-            Sağ alt köşedeki “Diğer” e dokunun
+            'İzinler ve veri' kısmında 'Uygulama izinleri'ne dokunun.
           </li>
           <li class="instructions-cases-todo-item">
-            ”Ayarlar" a dokunun
-          </li>
-          <li class="instructions-cases-todo-item">
-            “Veri alışverişi” ne dokunun
-          </li>
-          <li class="instructions-cases-todo-item">
-            Google Fit simgesine dokunun
-          </li>
-          <li class="instructions-cases-todo-item">
-            “Google ile oturum Aç” a dokunun
+            Health Sync'in 'İzin verilen erişim' altında listelendiğinden emin olun.
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          Veriler raporda görünmüyorsa şunları yapmalısınız:
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            Verilerin Google Fit'e aktarılıp aktarılmadığını kontrol edin
-          </li>
-          <li class="instructions-cases-todo-item">
-            Ayarlar — Veri alışverişi — Google Fit'e giderek Google Fit ve uygulamanın bağlı olup olmadığını kontrol edin
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          Bilekliğiniz bağlıysa ancak sadece birkaç kalori sayılmışsa:
+          Fitness bandınız, Health Sync ve Health Connect bağlı, ancak yanlış aktivite verisi veya veri yoksa:
         </h3>
         <p class="instruction-cases-text">
-          Bu durum, sistem antrenmanı açılmadığında bileklik kendi başına yakılan kalori sayısını hesapladığında olur. Daha doğru kalori hesaplaması için bileklikte bir antrenmana başlayın.
+          Bu, aktivite izleme uygulamanızın Health Sync'e belirli kalori, adım sayısı ve kalp atış hızı verilerini göndermesinden kaynaklanır. Ayrıca Health Sync, verileri Health Connect'e gecikmeli olarak aktarabilir.
         </p>
-      </section>
-
-      <section class="instructions container" id="samsunghealth">
-        <div class="uline"></div>
-        <div class="title">
-          <div class="iconset">
-            <picture>
-              <source srcset="/img/braclets/icons/samsung_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/samsung_46.png" alt="Device icon">
-            </picture>
-          </div>
-          <h2 class="headers samsunghealth">
-            Samsung Health uygulamasını FitnessOnline ile bağlamak için Google Fit'i kullanmanız gerekir
-          </h2>
-        </div>
-        <h5 class="headers instruction-comment">
-          Bunun için üçüncü taraf ücretli olan Health Sync uygulamasını kullanmanız gerekir.
-          Verileri senkronize etmek için ücretli bir uygulama kullanmak istemiyorsanız, önceki pencereye geri dönebilir ve Google Fit ile senkronize et'i seçebilirsiniz (bileklik dikkate alınmaz).
-        </h5>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item bolder">
-            Google Fit'i yükleyin
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            Health Sync uygulamasını yükleyin. Uygulamayı başlatın ve senkronize edilecek ana kaynak olarak Samsung Health'i seçin ve senkronizasyon yönü olarak Google Fit'i seçin
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            ”Onayla" ya dokunun
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            <p class="instruction-cases-text bolder">
-              Ardından, Health Sync uygulamasındaki talimatları uygulamanız gerekir:
-            </p>
-            <ul class="instructions-todo-list">
-              <li class="instructions-todo-item">
-                “Google hesabı bağlantısını kontrol et” e dokunun
-              </li>
-              <li class="instructions-todo-item">
-                “Google Fit'te etkinlik izlemeyi kontrol et” e dokunun
-              </li>
-              <li class="instructions-todo-item">
-                Senkronize etmek için Health Sync uygulamasındaki gerekli kutuları işaretleyin
-              </li>
-            </ul>
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            <p class="instruction-cases-text bolder">
-              Google Fit uygulamasını bağlamak için
-            </p>
-            <ul class="instructions-todo-list">
-              <li class="instructions-todo-item">
-                Herhangi bir antrenmana başlayın. Bir antrenmana başlamadan önce, Google Fit uygulaması zaten yüklüyse eşleştirmeniz istenir
-              </li>
-            </ul>
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          Yönlendirilmezseniz yapmanız gerekenler:
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            FitnessOnline uygulamasına gidin
-          </li>
-          <li class="instructions-cases-todo-item">
-            Sağ alt köşedeki “Diğer” e dokunun
-          </li>
-          <li class="instructions-cases-todo-item">
-            ”Ayarlar" a dokunun
-          </li>
-          <li class="instructions-cases-todo-item">
-            “Veri alışverişi” ne dokunun
-          </li>
-          <li class="instructions-cases-todo-item">
-            Google Fit simgesine dokunun
-          </li>
-          <li class="instructions-cases-todo-item">
-            “Google ile oturum Aç” a dokunun
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          Veriler raporda görünmüyorsa şunları yapmalısınız:
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            Verilerin Google Fit'e aktarılıp aktarılmadığını kontrol edin
-          </li>
-          <li class="instructions-cases-todo-item">
-            Ayarlar — Veri alışverişi — Google Fit'e giderek Google Fit ve uygulamanın bağlı olup olmadığını kontrol edin
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          Bilekliğiniz bağlıysa ancak sadece birkaç kalori sayılmışsa:
-        </h3>
         <p class="instruction-cases-text">
-          Bu durum, sistem antrenmanı açılmadığında bileklik kendi başına yakılan kalori sayısını hesapladığında olur. Daha doğru kalori hesaplaması için bileklikte bir antrenmana başlayın.
+          FitnessOnline yalnızca Health Connect'ten alınan verileri görüntüler.
         </p>
-      </section>
-
-      <section class="instructions container" id="garmin">
-        <div class="uline"></div>
-        <div class="title">
-          <div class="iconset">
-            <picture>
-              <source srcset="/img/braclets/icons/garmin_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/garmin_46.png" alt="Device icon">
-            </picture>
-          </div>
-          <h2 class="headers garmin">
-            Garmin uygulamasını FitnessOnline ile bağlamak için Google Fit'i kullanmanız gerekir
-          </h2>
-        </div>
-        <h5 class="headers instruction-comment">
-          Bunun için üçüncü taraf ücretli olan Health Sync uygulamasını kullanmanız gerekir.
-          Verileri senkronize etmek için ücretli bir uygulama kullanmak istemiyorsanız, önceki pencereye geri dönebilir ve Google Fit ile senkronize et'i seçebilirsiniz (bileklik dikkate alınmaz).
-        </h5>
-        <h3 class="headers instruction-cases">
-          Üçüncü taraf bir uygulamayı kullanmak için Play Store uygulamasında aşağıdakileri yapmanız gerekir:
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item bolder">
-            Google Fit'i yükleyin
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            Health Sync uygulamasını yükleyin. Uygulamayı başlatın ve senkronize edilecek ana kaynak olarak Garmin'i seçin ve senkronizasyon yönü olarak Google Fit'i seçin
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            ”Onayla" ya dokunun
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            <p class="instruction-cases-text bolder">
-              Ardından, Health Sync uygulamasındaki talimatları uygulamanız gerekir:
-            </p>
-            <ul class="instructions-todo-list">
-              <li class="instructions-todo-item">
-                “Google hesabı bağlantısını kontrol et” e dokunun
-              </li>
-              <li class="instructions-todo-item">
-                “Google Fit'te etkinlik izlemeyi kontrol et” e dokunun
-              </li>
-              <li class="instructions-todo-item">
-                "Garmin bağlantısını başlat" a dokunun - bir hesap oluşturun veya Garmin hesabınıza girin
-              </li>
-              <li class="instructions-todo-item">
-                Senkronize etmek için Health Sync uygulamasındaki gerekli kutuları işaretleyin
-              </li>
-            </ul>
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            <p class="instruction-cases-text bolder">
-              Google Fit uygulamasını bağlamak için
-            </p>
-            <ul class="instructions-todo-list">
-              <li class="instructions-todo-item">
-                Herhangi bir antrenmana başlayın. Bir antrenmana başlamadan önce, Google Fit uygulaması zaten yüklüyse eşleştirmeniz istenir
-              </li>
-            </ul>
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          Yönlendirilmezseniz yapmanız gerekenler:
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            FitnessOnline uygulamasına gidin
-          </li>
-          <li class="instructions-cases-todo-item">
-            Sağ alt köşedeki “Diğer” e dokunun
-          </li>
-          <li class="instructions-cases-todo-item">
-            ”Ayarlar" a dokunun
-          </li>
-          <li class="instructions-cases-todo-item">
-            “Veri alışverişi” ne dokunun
-          </li>
-          <li class="instructions-cases-todo-item">
-            Google Fit simgesine dokunun
-          </li>
-          <li class="instructions-cases-todo-item">
-            “Google ile oturum Aç” a dokunun
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          Veriler raporda görünmüyorsa şunları yapmalısınız:
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            Verilerin Google Fit'e aktarılıp aktarılmadığını kontrol edin
-          </li>
-          <li class="instructions-cases-todo-item">
-            Ayarlar — Veri alışverişi — Google Fit'e giderek Google Fit ve uygulamanın bağlı olup olmadığını kontrol edin
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          Bilekliğiniz bağlıysa ancak sadece birkaç kalori sayılmışsa:
-        </h3>
-        <p class="instruction-cases-text">
-          Bu durum, sistem antrenmanı açılmadığında bileklik kendi başına yakılan kalori sayısını hesapladığında olur. Daha doğru kalori hesaplaması için bileklikte bir antrenmana başlayın.
+        <p class="instruction-cases-text mb">
+          Egzersiz özeti ekranında daha doğru aktivite verilerinin görüntülenmesini sağlamak için, şu adımları izleyin:
         </p>
+        <ol class="instructions-todo-list">
+          <li class="instructions-cases-todo-item">
+            FitnessOnline'da bir egzersize başlamadan önce, fitness bandınızda bir sistem egzersizine başlayın.
+          </li>
+          <li class="instructions-cases-todo-item">
+            FitnessOnline'da egzersizi tamamlamadan önce, aktivite izlemek için kullanılan uygulamayı açın ve fitness bandınız ile mobil cihaz arasındaki senkronizasyonu yenileyin.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Health Sync uygulamasını açın ve Health Connect ile senkronizasyonu yenileyin.
+          </li>
+          <li class="instructions-cases-todo-item">
+            FitnessOnline uygulamasına dönün ve egzersizi tamamlayın.
+          </li>
+        </ol>
       </section>
     </div>
   </main>

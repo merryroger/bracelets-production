@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bracelets</title>
+  <title>Vòng tay</title>
   <link rel="stylesheet" href="/css/braclets/bracelets.css">
   <link rel="stylesheet" href="/css/braclets/bracelets-media.css">
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -32,18 +32,27 @@
   <main class="main">
     <section class="review container">
       <h1 class="review_header headers">
-        Cách kết nối với thiết bị theo dõi sức khỏe
+        Kết nối máy theo dõi sức khỏe
       </h1>
       <div class="review-model-pad" id="devices">
         <div class="review-model-frame" id="review-model-frame">
           <div class="review-model-band" id="review-model-band">
+            <a href="#healthconnect" class="model-card">
+              <div class="device_img healthconnect"></div>
+              <h4 class="device-name">
+                Google Health Connect
+              </h4>
+              <p class="device-app">
+                &nbsp;
+              </p>
+            </a>
             <a href="#zepplife" class="model-card">
               <div class="device_img zepplife"></div>
               <h4 class="device-name">
                 Xiaomi Mi Band
               </h4>
               <p class="device-app">
-                Ứng dụng Zepp Life<br>(trước đây là Mi Fit)
+                Ứng dụng Zepp Life<br />(trước đây gọi là Mi&nbsp;Fit)
               </p>
             </a>
             <a href="#zepp" class="model-card">
@@ -64,22 +73,31 @@
                 &nbsp;
               </p>
             </a>
+            <a href="#samsunghealth" class="model-card">
+              <div class="device_img samsung"></div>
+              <h4 class="device-name footnoted">
+                Samsung
+              </h4>
+              <p class="device-app">
+                Ứng dụng Samsung Health
+              </p>
+            </a>
+            <a href="#garmin" class="model-card">
+              <div class="device_img garmin"></div>
+              <h4 class="device-name footnoted">
+                Garmin
+              </h4>
+              <p class="device-app">
+                Ứng dụng Connect
+              </p>
+            </a>
             <a href="#fitbit" class="model-card">
               <div class="device_img fitbit"></div>
               <h4 class="device-name footnoted">
                 Fitbit
               </h4>
               <p class="device-app">
-                Ứng dụng FitToFit
-              </p>
-            </a>
-            <a href="#lg" class="model-card">
-              <div class="device_img lg"></div>
-              <h4 class="device-name footnoted">
-                LG
-              </h4>
-              <p class="device-app">
-                Ứng dụng LG Health
+                Ứng dụng Fitbit
               </p>
             </a>
             <a href="#polar" class="model-card">
@@ -100,24 +118,6 @@
                 Ứng dụng Huawei Health
               </p>
             </a>
-            <a href="#samsunghealth" class="model-card">
-              <div class="device_img samsung"></div>
-              <h4 class="device-name">
-                Samsung
-              </h4>
-              <p class="device-app">
-                Ứng dụng Samsung Health
-              </p>
-            </a>
-            <a href="#garmin" class="model-card">
-              <div class="device_img garmin"></div>
-              <h4 class="device-name">
-                Garmin
-              </h4>
-              <p class="device-app">
-                Ứng dụng Garmin Connect
-              </p>
-            </a>
           </div>
         </div>
       </div>
@@ -127,88 +127,165 @@
         </label>
       </form>
       <p class="footnote">
-        Đối với những thiết bị này, hướng dẫn kết nối giống nhau vì chúng được kết nối trực tiếp với Google Fit
+        Những thiết bị này có kết nối trực tiếp với ứng dụng Health Connect.
       </p>
     </section>
 
     <div class="descriptions">
       <div class="backtop container">
-        <a class="up" href="#devices" tabindex="100"><img src="/img/braclets/top.svg" alt="Go to top"></a>
+        <a class="up" href="#devices" tabindex="100"><img src="/img/braclets/top.svg" alt="Lên đầu trang"></a>
       </div>
+      <section class="instructions container" id="healthconnect">
+        <div class="uline"></div>
+        <div class="title">
+          <div class="iconset">
+            <picture>
+              <source srcset="/img/braclets/icons/healthconnect_100.png" media="(max-width: 1108px)">
+              <img src="/img/braclets/icons/healthconnect_46.png" alt="Biểu tượng thiết bị">
+            </picture>
+          </div>
+          <h2 class="headers googlefit">
+            Để đồng bộ Google Health Connect (có sẵn trong các phiên bản 2.20.0 trở lên của FitnessOnline) với ứng dụng, hãy thực hiện các bước sau:
+          </h2>
+        </div>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            Cài đặt ứng dụng Health Connect trên thiết bị của bạn.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Sau khi cài đặt ban đầu FitnessOnline trên thiết bị của bạn và sau khi đăng nhập vào tài khoản của bạn, hãy cấp quyền truy cập để đọc dữ liệu trong Health Connect.
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          Nếu quyền truy cập để đọc dữ liệu trong Health Connect không được cấp sau khi cài đặt ban đầu của ứng dụng:
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            Nhấn vào “Thêm” ở góc dưới bên phải.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Nhấn vào “Cài đặt”.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Nhấn vào “Chia sẻ dữ liệu”.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Nhấn vào biểu tượng Health Connect.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Nhấn vào “Mở cài đặt”.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Cấp quyền truy cập để đọc dữ liệu cho ứng dụng FitnessOnline.
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          Nếu dữ liệu không được hiển thị trên màn hình tóm tắt bài tập, hãy thực hiện các bước sau:
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            Kiểm tra xem dữ liệu có đang được đồng bộ với Health Connect không.
+          </li>
+          <li class="instructions-cases-todo-item">
+            <p class="instruction-cases-text">Xác minh trạng thái đồng bộ giữa Health Connect và FitnessOnline bằng cách thực hiện những điều sau trong ứng dụng FitnessOnline:</p>
+            <ol class="instructions-cases-todo-list">
+              <li class="instructions-cases-todo-item">
+                Nhấn vào “Thêm” ở góc dưới bên phải.
+              </li>
+              <li class="instructions-cases-todo-item">
+                Nhấn vào “Cài đặt”.
+              </li>
+              <li class="instructions-cases-todo-item">
+                Nhấn vào “Chia sẻ dữ liệu”.
+              </li>
+              <li class="instructions-cases-todo-item">
+                Nhấn vào biểu tượng Health Connect.
+              </li>
+            </ol>
+          </li>
+        </ol>
+      </section>
+
       <section class="instructions container" id="zepplife">
         <div class="title">
           <div class="iconset">
             <picture>
               <source srcset="/img/braclets/icons/zepplife_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/zepplife_46.png" alt="Device icon">
+              <img src="/img/braclets/icons/zepplife_46.png" alt="Biểu tượng thiết bị">
             </picture>
           </div>
           <h2 class="headers zepplife">
-            Để kết nối Zepp Life với ứng dụng
+            Để đồng bộ Zepp Life với FitnessOnline:
           </h2>
         </div>
-        <ul class="instructions-todo-list">
-          <li class="instructions-todo-item">
-            Kết nối vòng đeo tay hoặc đồng hồ thông minh của bạn với ứng dụng Zepp Life
-          </li>
-          <li class="instructions-todo-item">
-            Bắt đầu một bài tập bất kỳ, trước khi bắt đầu bài tập, ứng dụng sẽ gợi ý bạn kết nối với vòng đeo tay để theo dõi dữ liệu.
-          </li>
-        </ul>
-        <h3 class="headers instruction-cases">
-          Nếu không nhận được gợi ý kết nối, bạn nên:
-        </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            Mở ứng dụng FitnessOnline
+            Kết nối vòng tay hoặc đồng hồ thông minh của bạn với ứng dụng Zepp Life.
           </li>
           <li class="instructions-cases-todo-item">
-            Chọn vào “Thêm” ở góc dưới cùng bên phải
-          </li>
-          <li class="instructions-cases-todo-item">
-            Chọn vào “Cài đặt”
-          </li>
-          <li class="instructions-cases-todo-item">
-            Chọn vào “Trao đổi dữ liệu”
-          </li>
-          <li class="instructions-cases-todo-item">
-            Chọn vào biểu tượng của ứng dụng
-          </li>
-          <li class="instructions-cases-todo-item">
-            Chọn vào “Kết nối”
+            Bắt đầu bất kỳ bài tập nào trong FitnessOnline. Trước khi bắt đầu, ứng dụng sẽ nhắc bạn đồng bộ vòng tay để theo dõi dữ liệu.
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          Nếu vòng đeo tay đã được kết nối trước đó nhưng không truyền dữ liệu, bạn nên:
+          Nếu thông báo đồng bộ không xuất hiện, hãy thực hiện các bước sau:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            Kiểm tra xem vòng đeo tay đã được kết nối với ứng dụng Zepp Life hay chưa. Để kiểm tra, bạn cần mở ứng dụng Zepp Life, vào phần “Hồ Sơ“ và đảm bảo rằng vòng đeo tay đã được kết nối trong mục “Thiết bị của tôi"
+            Mở ứng dụng FitnessOnline.
           </li>
           <li class="instructions-cases-todo-item">
-            Mở ứng dụng FitnessOnline
+            Nhấn vào “Thêm” ở góc dưới bên phải.
           </li>
           <li class="instructions-cases-todo-item">
-            Chọn vào “Thêm“ ở góc dưới cùng bên phải
+            Nhấn vào “Cài đặt”.
           </li>
           <li class="instructions-cases-todo-item">
-            Chọn vào “Cài đặt”
+            Nhấn vào “Chia sẻ dữ liệu”.
           </li>
           <li class="instructions-cases-todo-item">
-            Chọn vào “Trao đổi dữ liệu”
+            Nhấn vào biểu tượng ứng dụng.
           </li>
           <li class="instructions-cases-todo-item">
-            Chọn vào biểu tượng của ứng dụng
-          </li>
-          <li class="instructions-cases-todo-item">
-            Chọn vào “Lặp lại kết nối”
+            Nhấn vào “Kết nối”.
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          Nếu vòng đeo tay của bạn được kết nối nhưng chỉ có một ít chỉ số calo được tính:
+          Nếu vòng tay của bạn được kết nối nhưng dữ liệu không đồng bộ:
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            Tắt và bật lại Bluetooth.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Kiểm tra trạng thái đồng bộ của vòng tay với ứng dụng Zepp Life. Để thực hiện điều này, mở ứng dụng Zepp Life, vào tab “Hồ sơ” và trong phần “Thiết bị của tôi”, đảm bảo rằng vòng tay của bạn đã được kết nối.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Mở ứng dụng FitnessOnline.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Nhấn vào “Thêm” ở góc dưới bên phải.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Nhấn vào “Cài đặt”.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Nhấn vào “Chia sẻ dữ liệu”.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Nhấn vào biểu tượng ứng dụng.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Nhấn vào “Kết nối lại”.
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          Nếu vòng tay của bạn được kết nối nhưng hiển thị lượng calo thấp trên màn hình tóm tắt bài tập:
         </h3>
         <p class="instruction-cases-text">
-          Điều này xảy ra khi vòng tay tự tính toán số lượng calo được đốt cháy khi hệ thống tập luyện không được bật. Để hiển thị số lượng calo được đốt cháy chính xác hơn, hãy bắt đầu một bài tập trên vòng đeo tay.
+          Điều này xảy ra vì vòng tay của bạn tính lượng calo cụ thể đã đốt cháy.
+        </p>
+        <p class="instruction-cases-text">
+          Để hiển thị lượng calo đốt cháy một cách chính xác hơn, bạn nên bắt đầu một bài tập hệ thống trên vòng tay của mình.
         </p>
       </section>
 
@@ -218,142 +295,152 @@
           <div class="iconset">
             <picture>
               <source srcset="/img/braclets/icons/zepp_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/zepp_46.png" alt="Device icon">
+              <img src="/img/braclets/icons/zepp_46.png" alt="Biểu tượng thiết bị">
             </picture>
           </div>
           <h2 class="headers zepp">
-            Để kết nối Zepp với ứng dụng:
+            Để đồng bộ Zepp với FitnessOnline:
           </h2>
         </div>
-        <ul class="instructions-todo-list">
-          <li class="instructions-todo-item">
-            Kết nối vòng đeo tay hoặc đồng hồ thông minh của bạn với ứng dụng Zepp
-          </li>
-          <li class="instructions-todo-item">
-            Bắt đầu một bài tập bất kỳ, trước khi bắt đầu bài tập, ứng dụng sẽ gợi ý bạn kết nối với vòng đeo tay để theo dõi dữ liệu.
-          </li>
-        </ul>
-        <h3 class="headers instruction-cases">
-          Nếu không nhận được gợi ý kết nối, bạn nên:
-        </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            Mở ứng dụng FitnessOnline
+            Kết nối vòng tay hoặc đồng hồ thông minh của bạn với ứng dụng Zepp.
           </li>
           <li class="instructions-cases-todo-item">
-            Chọn vào “Thêm” ở góc dưới cùng bên phải
-          </li>
-          <li class="instructions-cases-todo-item">
-            Chọn vào “Cài đặt”
-          </li>
-          <li class="instructions-cases-todo-item">
-            Chọn vào “Trao đổi dữ liệu”
-          </li>
-          <li class="instructions-cases-todo-item">
-            Chọn vào biểu tượng của ứng dụng
-          </li>
-          <li class="instructions-cases-todo-item">
-            Chọn vào “Kết nối”
+            Bắt đầu bất kỳ bài tập nào trong FitnessOnline. Trước khi bắt đầu, ứng dụng sẽ nhắc bạn đồng bộ vòng tay để theo dõi dữ liệu.
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          Nếu vòng đeo tay đã được kết nối trước đó nhưng không truyền dữ liệu, bạn nên:
+          Nếu thông báo đồng bộ không xuất hiện, hãy thực hiện các bước sau:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            Kiểm tra xem vòng đeo tay đã được kết nối với ứng dụng Zepp chưa. Để làm điều này, bạn sẽ cần mở ứng dụng Zepp, vào phần “Hồ sơ” và đảm bảo rằng vòng đeo tay đã được kết nối trong mục “Thiết bị của tôi”
+            Mở ứng dụng FitnessOnline.
           </li>
           <li class="instructions-cases-todo-item">
-            Mở ứng dụng FitnessOnline
+            Nhấn vào “Thêm” ở góc dưới bên phải.
           </li>
           <li class="instructions-cases-todo-item">
-            Chọn vào “Thêm” ở góc dưới cùng bên phải
+            Nhấn vào “Cài đặt”.
           </li>
           <li class="instructions-cases-todo-item">
-            Chọn vào “Cài đặt”
+            Nhấn vào “Chia sẻ dữ liệu”.
           </li>
           <li class="instructions-cases-todo-item">
-            Chọn vào “Trao đổi dữ liệu”
+            Nhấn vào biểu tượng ứng dụng.
           </li>
           <li class="instructions-cases-todo-item">
-            Chọn vào biểu tượng của ứng dụng
-          </li>
-          <li class="instructions-cases-todo-item">
-            Chọn vào “Lặp lại kết nối”
+            Nhấn vào “Kết nối”.
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          Nếu vòng đeo tay của bạn đã kết nối nhưng chỉ có một ít chỉ số calo đã được tính:
+          Nếu vòng tay của bạn được kết nối nhưng dữ liệu không đồng bộ:
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            Tắt và bật lại Bluetooth.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Kiểm tra trạng thái đồng bộ của vòng tay với ứng dụng Zepp. Để thực hiện điều này, mở ứng dụng Zepp, vào tab “Hồ sơ” và trong phần “Thiết bị của tôi”, đảm bảo rằng vòng tay của bạn đã được kết nối.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Mở ứng dụng FitnessOnline.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Nhấn vào “Thêm” ở góc dưới bên phải.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Nhấn vào “Cài đặt”.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Nhấn vào “Chia sẻ dữ liệu”.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Nhấn vào biểu tượng ứng dụng.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Nhấn vào “Kết nối lại”.
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          Nếu vòng tay của bạn được kết nối nhưng hiển thị lượng calo thấp trên màn hình tóm tắt bài tập:
         </h3>
         <p class="instruction-cases-text">
-          Điều này xảy ra khi vòng tay tự tính toán số lượng calo đã đốt cháy khi hệ thống tập luyện không được bật. Để hiển thị số lượng calo được đốt cháy chính xác hơn, hãy bắt đầu một bài tập trên vòng đeo tay.
+          Điều này xảy ra vì vòng tay của bạn tính lượng calo cụ thể đã đốt cháy.
+        </p>
+        <p class="instruction-cases-text">
+          Để hiển thị lượng calo đốt cháy một cách chính xác hơn, bạn nên bắt đầu một bài tập hệ thống trên vòng tay của mình.
         </p>
       </section>
 
       <section class="instructions container" id="googlefit">
         <div class="uline"></div>
+        <p class="warning bolder">Chú ý! Google Fit sẽ không còn khả dụng sau ngày 30 tháng 6 năm 2025:<br />
+          <nobr><a href="https://developers.google.com/fit">https://developers.google.com/fit</a></nobr>
+        </p>
         <div class="title">
           <div class="iconset">
             <picture>
               <source srcset="/img/braclets/icons/googlefit_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/googlefit_46.png" alt="Device icon">
+              <img src="/img/braclets/icons/googlefit_46.png" alt="Biểu tượng thiết bị">
             </picture>
           </div>
           <h2 class="headers googlefit">
-            Để kết nối Google Fit với ứng dụng:
+            Để đồng bộ Google Fit (có sẵn trong các phiên bản 2.19.2 trở xuống của FitnessOnline) với ứng dụng, hãy thực hiện các bước sau:
           </h2>
         </div>
-        <ul class="instructions-todo-list">
-          <li class="instructions-todo-item">
-            Bắt đầu một bài tập bất kỳ. Trước khi bắt đầu bài tập, bạn sẽ được mời ghép nối nếu bạn đã cài đặt ứng dụng Google Fit
-          </li>
-        </ul>
-        <h3 class="headers instruction-cases">
-          Nếu không nhận được thông báo mời ghép nối, bạn nên:
-        </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            Mở ứng dụng FitnessOnline
+            Cài đặt ứng dụng Google Fit trên thiết bị của bạn.
           </li>
           <li class="instructions-cases-todo-item">
-            Chọn vào “Thêm” ở góc dưới cùng bên phải
-          </li>
-          <li class="instructions-cases-todo-item">
-            Chọn vào “Cài đặt”
-          </li>
-          <li class="instructions-cases-todo-item">
-            Chọn vào “Trao đổi dữ liệu”
-          </li>
-          <li class="instructions-cases-todo-item">
-            Chọn vào biểu tượng Google Fit
-          </li>
-          <li class="instructions-cases-todo-item">
-            Chọn vào “Đăng nhập bằng Google”
+            Bắt đầu bất kỳ bài tập nào trong FitnessOnline. Trước khi bắt đầu, ứng dụng sẽ nhắc bạn đồng bộ với Google Fit để theo dõi dữ liệu.
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          Nếu dữ liệu không xuất hiện trong báo cáo, bạn nên:
+          Nếu thông báo đồng bộ không xuất hiện, hãy thực hiện các bước sau:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            Kiểm tra xem dữ liệu có được chuyển đến Google Fit hay không
+            Mở ứng dụng FitnessOnline.
           </li>
           <li class="instructions-cases-todo-item">
-            <p class="instruction-cases-text">
-              Kiểm tra kết nối giữa Google Fit và ứng dụng, thực hiện các bước sau trong ứng dụng FitnessOnline để kiểm tra:
-            </p>
+            Nhấn vào “Thêm” ở góc dưới bên phải.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Nhấn vào “Cài đặt”.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Nhấn vào “Chia sẻ dữ liệu”.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Nhấn vào biểu tượng cho Google Fit.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Nhấn vào “Đăng nhập bằng Google”.
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          Nếu dữ liệu không được hiển thị trên màn hình tóm tắt bài tập, hãy thực hiện các bước sau:
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            Kiểm tra xem dữ liệu có đang được đồng bộ với Google Fit không.
+          </li>
+          <li class="instructions-cases-todo-item">
+            <p class="instruction-cases-text">Xác minh trạng thái đồng bộ giữa Google Fit và FitnessOnline bằng cách thực hiện những điều sau trong ứng dụng FitnessOnline:</p>
             <ol class="instructions-cases-todo-list">
               <li class="instructions-cases-todo-item">
-                Chọn vào “Thêm” ở góc dưới cùng bên phải
+                Nhấn vào “Thêm” ở góc dưới bên phải.
               </li>
               <li class="instructions-cases-todo-item">
-                Chọn vào “Cài đặt”
+                Nhấn vào “Cài đặt”.
               </li>
               <li class="instructions-cases-todo-item">
-                Chọn vào “Trao đổi dữ liệu”
+                Nhấn vào “Chia sẻ dữ liệu”.
               </li>
               <li class="instructions-cases-todo-item">
-                Chọn vào biểu tượng Google Fit
+                Nhấn vào biểu tượng Google Fit.
               </li>
             </ol>
           </li>
@@ -361,119 +448,133 @@
       </section>
 
       <section class="instructions container" id="fitbit">
-        <div id="lg"></div>
         <div id="polar"></div>
+        <div id="samsunghealth"></div>
+        <div id="garmin"></div>
         <div class="uline"></div>
         <div class="title">
           <div class="iconset">
             <picture>
-              <source srcset="/img/braclets/icons/fitbit_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/fitbit_46.png" alt="Device icon">
+              <source srcset="/img/braclets/icons/samsung_100.png" media="(max-width: 1108px)">
+              <img src="/img/braclets/icons/samsung_46.png" alt="Biểu tượng thiết bị">
             </picture>
             <picture>
-              <source srcset="/img/braclets/icons/lg_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/lg_46.png" alt="Device icon">
+              <source srcset="/img/braclets/icons/garmin_100.png" media="(max-width: 1108px)">
+              <img src="/img/braclets/icons/garmin_46.png" alt="Biểu tượng thiết bị">
+            </picture>
+            <picture>
+              <source srcset="/img/braclets/icons/fitbit_100.png" media="(max-width: 1108px)">
+              <img src="/img/braclets/icons/fitbit_46.png" alt="Biểu tượng thiết bị">
             </picture>
             <picture>
               <source srcset="/img/braclets/icons/polar_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/polar_46.png" alt="Device icon">
+              <img src="/img/braclets/icons/polar_46.png" alt="Biểu tượng thiết bị">
             </picture>
           </div>
           <h2 class="headers fitbit lg polar">
-            Để kết nối Fitbit, LG, Polar với ứng dụng:
+            Chuyển dữ liệu từ Samsung Health, Garmin, Fitbit, và Polar Flow sang FitnessOnline được thực hiện thông qua Google Health Connect
           </h2>
         </div>
-        <h5 class="headers instruction-comment">
-          Để kết nối ứng dụng theo dõi hoạt động bạn đang dùng với ứng dụng FitnessOnline, bạn cần phải đồng bộ hóa ứng dụng bạn đang dùng với Google Fit.
-        </h5>
         <h3 class="headers instruction-cases">
-          Bạn cần phải:
+          Để kết nối, hãy thực hiện các bước sau:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            Cài đặt ứng dụng Google Fit
+            Cài đặt ứng dụng Health Connect và đăng nhập.
           </li>
           <li class="instructions-cases-todo-item">
-            Tạo một tài khoản
+            Mở ứng dụng được sử dụng để theo dõi hoạt động của bạn.
           </li>
           <li class="instructions-cases-todo-item">
-            Mở ứng dụng theo dõi hoạt động bạn đang dùng.
+            Đi vào menu cài đặt.
           </li>
           <li class="instructions-cases-todo-item">
-            Vào phần cài đặt
+            Tìm phần để kết nối các ứng dụng bên thứ ba. Thường được gắn nhãn là “Kết nối dịch vụ khác”, “Ứng dụng và Thiết bị”, “Quản lý Kết nối” hoặc tương tự.
           </li>
           <li class="instructions-cases-todo-item">
-            Tìm mục để kết nối các ứng dụng khác. Mục này thường sẽ có tên là “Kết nối các dịch vụ khác”, “Ứng dụng và thiết bị”, “Quản lý kết nối” v.v.
-          </li>
-          <li class="instructions-cases-todo-item">
-            Làm theo hướng dẫn để kết nối ứng dụng với Google Fit
+            Làm theo hướng dẫn để kết nối ứng dụng với Health Connect.
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          Tiếp theo, bạn cần đồng bộ hóa Google Fit và ứng dụng FitnessOnline bằng cách làm theo các bước sau:
-        </h3>
-        <ul class="instructions-todo-list">
-          <li class="instructions-todo-item">
-            Bắt đầu một bài tập bất kỳ. Trước khi bắt đầu một bài tập, bạn sẽ được mời ghép nối.
-          </li>
-        </ul>
-        <h3 class="headers instruction-cases">
-          Nếu không nhận được thông báo mời ghép nối, bạn nên:
+          Sau đó, đồng bộ Health Connect với ứng dụng FitnessOnline như sau:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            Mở ứng dụng FitnessOnline
+            Trong ứng dụng FitnessOnline, nhấn vào “Thêm” ở góc dưới bên phải.
           </li>
           <li class="instructions-cases-todo-item">
-            Chọn vào “Thêm” ở góc dưới cùng bên phải
+            Nhấn vào “Cài đặt”.
           </li>
           <li class="instructions-cases-todo-item">
-            Chọn vào “Cài đặt”
+            Nhấn vào “Chia sẻ dữ liệu”.
           </li>
           <li class="instructions-cases-todo-item">
-            Chọn vào “Trao đổi dữ liệu”
+            Nhấn vào biểu tượng Health Connect.
           </li>
           <li class="instructions-cases-todo-item">
-            Chọn vào biểu tượng Google Fit
+            Nhấn vào “Mở cài đặt”.
           </li>
           <li class="instructions-cases-todo-item">
-            Chọn vào “Đăng nhập bằng Google”
+            Cấp quyền truy cập để đọc dữ liệu cho ứng dụng FitnessOnline.
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          Nếu dữ liệu không xuất hiện trong báo cáo, bạn nên:
+          Nếu dữ liệu không được hiển thị trên màn hình tóm tắt bài tập, hãy thực hiện các bước sau:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            Kiểm tra xem dữ liệu có được chuyển đến Google Fit hay không
+            Xác minh xem dữ liệu từ ứng dụng được sử dụng để theo dõi hoạt động có đang được đồng bộ với Health Connect không.
           </li>
           <li class="instructions-cases-todo-item">
-            Kiểm tra xem Google Fit và ứng dụng có được kết nối không bằng cách vào Cài đặt — Trao đổi dữ liệu — Google Fit
+            <p class="instruction-cases-text">Xác minh trạng thái đồng bộ giữa Health Connect và FitnessOnline bằng cách thực hiện những điều sau trong ứng dụng FitnessOnline:</p>
+            <ol class="instructions-cases-todo-list">
+              <li class="instructions-cases-todo-item">
+                Nhấn vào “Thêm” ở góc dưới bên phải.
+              </li>
+              <li class="instructions-cases-todo-item">
+                Nhấn vào “Cài đặt”.
+              </li>
+              <li class="instructions-cases-todo-item">
+                Nhấn vào “Chia sẻ dữ liệu”.
+              </li>
+              <li class="instructions-cases-todo-item">
+                Nhấn vào biểu tượng Health Connect.
+              </li>
+            </ol>
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          Để kết nối ứng dụng theo dõi hoạt động bạn đang dùng với ứng dụng Google Fit, bạn cần phải:
+          Để kiểm tra kết nối giữa Health Connect và ứng dụng được sử dụng để theo dõi hoạt động, hãy thực hiện các bước sau:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            Mở ứng dụng Google Fit
+            Mở ứng dụng Health Connect.
           </li>
           <li class="instructions-cases-todo-item">
-            Chọn vào Hồ sơ — Chọn vào “Cài đặt”
+            Trong phần “Quyền và dữ liệu”, nhấn vào “Quyền ứng dụng”.
           </li>
           <li class="instructions-cases-todo-item">
-            Chọn vào “Quản lý các ứng dụng đã kết nối”
-          </li>
-          <li class="instructions-cases-todo-item">
-            Để mở danh sách tất cả các ứng dụng đã kết nối, nhấn vào mũi tên hướng xuống nằm bên dưới “Tất cả ứng dụng và thiết bị”
+            Đảm bảo rằng ứng dụng bạn đang sử dụng được liệt kệ dưới “Truy cập được phép”.
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          Nếu vòng đeo tay của bạn đã kết nối nhưng chỉ có một ít chỉ số calo đã được tính:
+          Nếu vòng tay sức khỏe của bạn và Health Connect đã kết nối nhưng dữ liệu hoạt động không chính xác hoặc không có dữ liệu nào xuất hiện trên màn hình tóm tắt bài tập:
         </h3>
         <p class="instruction-cases-text">
-          Điều này xảy ra khi vòng tay tự tính toán số lượng calo đã đốt cháy khi hệ thống tập luyện không được bật. Để hiển thị số lượng calo được đốt cháy chính xác hơn, hãy bắt đầu một bài tập trên vòng đeo tay.
+          Điều này xảy ra vì ứng dụng theo dõi hoạt động gửi dữ liệu cụ thể về calo, số bước và nhịp tim tới Health Connect.
         </p>
+        <p class="instruction-cases-text">
+          FitnessOnline chỉ hiển thị dữ liệu nhận được từ Health Connect.
+        </p>
+        <p class="instruction-cases-text">Để đảm bảo dữ liệu hoạt động chính xác hơn hiển thị trên màn hình tóm tắt bài tập:</p>
+        <ol class="instructions-todo-list">
+          <li class="instructions-cases-todo-item">
+            Trước khi bắt đầu một bài tập trong FitnessOnline, hãy bắt đầu một bài tập hệ thống trên vòng tay sức khỏe của bạn.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Trước khi kết thúc bài tập trong FitnessOnline, hãy mở ứng dụng sử dụng để theo dõi hoạt động và làm mới đồng bộ giữa vòng tay sức khỏe của bạn và thiết bị di động.
+          </li>
+        </ol>
       </section>
 
       <section class="instructions container" id="huaweihealth">
@@ -482,308 +583,146 @@
           <div class="iconset">
             <picture>
               <source srcset="/img/braclets/icons/huawei_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/huawei_46.png" alt="Device icon">
+              <img src="/img/braclets/icons/huawei_46.png" alt="Biểu tượng thiết bị">
             </picture>
           </div>
           <h2 class="headers huaweihealth">
-            Để kết nối Huawei Health với FitnessOnline, bạn cần phải sử dụng Google Fit
+            Chuyển dữ liệu từ ứng dụng Huawei Health sang FitnessOnline được thực hiện thông qua Google Health Connect và Health Sync (yêu cầu thuê bao trả phí)
           </h2>
         </div>
-        <h5 class="headers instruction-comment">
-          Để làm điều này, bạn sẽ cần phải sử dụng ứng dụng Health Sync (một ứng dụng có thu phí) của một bên thứ ba.
-          Nếu bạn không thể sử dụng ứng dụng có thu phí để đồng bộ hóa dữ liệu thì bạn có thể quay lại cửa sổ trước đó và chọn đồng bộ hóa với Google Fit (vòng đeo tay sẽ không hiển thị trong tài khoản).
-        </h5>
         <h3 class="headers instruction-cases">
-          Để sử dụng ứng dụng của bên thứ ba, bạn sẽ cần thực hiện cách bước sau trên Google Play:
+          Để kết nối, hãy thực hiện các bước sau:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item bolder">
-            Cài đặt Google Fit
+            Cài đặt ứng dụng Health Connect và đăng nhập.
           </li>
           <li class="instructions-cases-todo-item bolder">
-            Cài đặt ứng dụng Health Sync. Mở ứng dụng và chọn Huawei Health Kit làm nguồn chính để đồng bộ hóa và chọn Google Fit làm hướng đồng bộ hóa
+            Cài đặt ứng dụng Health Sync. Mở ứng dụng và chọn Huawei Health Kit làm nguồn đồng bộ chính; cho hướng đồng bộ, chọn Health Connect.
           </li>
           <li class="instructions-cases-todo-item bolder">
-            Nhấn vào “Tuyên bố đồng ý”
+            Nhấn vào nút “Tuyên bố đồng ý”.
           </li>
           <li class="instructions-cases-todo-item bolder">
             <p class="instruction-cases-text bolder">
-              Sau đó, bạn cần làm theo các hướng dẫn trên ứng dụng Health Sync, cụ thể là:
+              Sau đó, làm theo hướng dẫn trong ứng dụng Health Sync:
             </p>
-            <ul class="instructions-todo-list">
+            <ul class="instructions-todo-list embedded">
               <li class="instructions-todo-item">
-                Chọn vào “Kiểm tra kết nối tài khoản Google”
+                Nhấn vào “Kiểm tra kết nối tới tài khoản Google”.
               </li>
               <li class="instructions-todo-item">
-                Chọn vào “Kiểm tra theo dõi hoạt động trong Google Fit”
+                Nhấn vào “Kiểm tra theo dõi hoạt động trong Health Connect”.
               </li>
               <li class="instructions-todo-item">
-                Cài đặt Huawei AppGallery (thực hiện hướng dẫn từ trang web chính thức <a
-                  href="https://consumer.huawei.com/my/mobileservices/appgallery/android-installation/">https://consumer.huawei.com/<wbr>my/mobileservices/appgallery/<wbr>android-installation</a>)
+                Cài đặt Huawei AppGallery (xem hướng dẫn chính thức: <a href="https://consumer.huawei.com/my/mobileservices/appgallery/android-installation/">Hỗ trợ Huawei</a>).
               </li>
               <li class="instructions-todo-item">
-                Cài đặt HMS CORE (Để thực hiện việc này, mở AppGallery lên và nhập HMS CORE vào đó). AppGallery sẽ yêu cầu quyền cài đặt từ sản phẩm này và phải được đồng ý cấp quyền.
+                Cài đặt HMS CORE từ AppGallery (AppGallery sẽ yêu cầu quyền hệ thống để cài đặt ứng dụng của bên thứ ba).
               </li>
               <li class="instructions-todo-item">
-                Cài đặt Huawei Health (hoặc cập nhật)
+                Cài đặt hoặc cập nhật Huawei Health.
               </li>
               <li class="instructions-todo-item">
-                Xác thực hoặc đăng nhập vào tài khoản Huawei của bạn
+                Đăng nhập vào tài khoản Huawei của bạn.
               </li>
               <li class="instructions-todo-item">
-                Chọn vào các ô cần thiết để đồng bộ hóa ứng dụng Health Sync
+                Trong Health Sync, chọn các ô cho các loại dữ liệu bạn muốn chuyển đến Health Connect.
               </li>
             </ul>
           </li>
           <li class="instructions-cases-todo-item bolder">
-            <p class="instruction-cases-text bolder">
-              Để kết nối Google Fit với ứng dụng:
-            </p>
-            <ul class="instructions-todo-list">
-              <li class="instructions-todo-item">
-                Bắt đầu một bài tập bất kỳ. Trước khi bắt đầu bài tập, bạn sẽ được mời ghép nối nếu bạn đã cài đặt ứng dụng Google Fit
+            Đảm bảo rằng Health Sync được kết nối thành công với Huawei Health trong cài đặt “Quản lý quyền riêng tư” của ứng dụng Huawei Health.
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          Sau đó, đồng bộ Health Connect với ứng dụng FitnessOnline như sau:
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            Trong ứng dụng FitnessOnline, nhấn vào “Thêm” ở góc dưới bên phải.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Nhấn vào “Cài đặt”.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Nhấn vào “Chia sẻ dữ liệu”.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Nhấn vào biểu tượng Health Connect.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Nhấn vào “Mở cài đặt”.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Cấp quyền truy cập để đọc dữ liệu cho ứng dụng FitnessOnline.
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          Nếu dữ liệu không được hiển thị trên màn hình tóm tắt bài tập, hãy thực hiện các bước sau:
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            Xác minh xem dữ liệu từ Health Sync có đang được đồng bộ với Health Connect không.
+          </li>
+          <li class="instructions-cases-todo-item">
+            <p class="instruction-cases-text">Xác minh trạng thái đồng bộ giữa Health Connect và FitnessOnline bằng cách thực hiện những điều sau trong ứng dụng FitnessOnline:</p>
+            <ol class="instructions-cases-todo-list">
+              <li class="instructions-cases-todo-item">
+                Nhấn vào “Thêm” ở góc dưới bên phải.
               </li>
-            </ul>
+              <li class="instructions-cases-todo-item">
+                Nhấn vào “Cài đặt”.
+              </li>
+              <li class="instructions-cases-todo-item">
+                Nhấn vào “Chia sẻ dữ liệu”.
+              </li>
+              <li class="instructions-cases-todo-item">
+                Nhấn vào biểu tượng Health Connect.
+              </li>
+            </ol>
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          Nếu không nhận được gợi ý kết nối, bạn nên:
+          Để kiểm tra kết nối giữa Health Connect và Health Sync, hãy thực hiện các bước sau:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            Mở ứng dụng FitnessOnline
+            Mở ứng dụng Health Connect.
           </li>
           <li class="instructions-cases-todo-item">
-            Chọn vào “Thêm” ở góc dưới cùng bên phải
+            Trong phần “Quyền và dữ liệu”, nhấn vào “Quyền ứng dụng”.
           </li>
           <li class="instructions-cases-todo-item">
-            Chọn vào “Cài đặt”
-          </li>
-          <li class="instructions-cases-todo-item">
-            Chọn vào “Trao đổi dữ liệu”
-          </li>
-          <li class="instructions-cases-todo-item">
-            Chọn vào biểu tượng Google Fit
-          </li>
-          <li class="instructions-cases-todo-item">
-            Chọn vào “Đăng nhập bằng Google”
+            Đảm bảo rằng Health Sync được liệt kệ dưới “Truy cập được phép”.
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          Nếu dữ liệu không xuất hiện trong báo cáo, bạn nên:
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            Kiểm tra xem dữ liệu có được chuyển đến Google Fit hay không.
-          </li>
-          <li class="instructions-cases-todo-item">
-            Kiểm tra xem Google Fit và ứng dụng có được kết nối không bằng cách vào Cài đặt — Trao đổi dữ liệu — Google Fit
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          Nếu vòng đeo tay của bạn đã kết nối nhưng chỉ có một ít chỉ số calo đã được tính:
+          Nếu vòng tay sức khỏe của bạn, Health Sync, và Health Connect đã kết nối nhưng dữ liệu hoạt động không chính xác hoặc không có dữ liệu nào xuất hiện trên màn hình tóm tắt bài tập:
         </h3>
         <p class="instruction-cases-text">
-          Điều này xảy ra khi vòng tay tự tính toán số lượng calo đã đốt cháy khi hệ thống tập luyện không được bật. Để hiển thị số lượng calo được đốt cháy chính xác hơn, hãy bắt đầu một bài tập trên vòng đeo tay.
+          Điều này xảy ra vì ứng dụng theo dõi hoạt động gửi dữ liệu cụ thể về calo, số bước và nhịp tim tới Health Sync. Cũng như, Health Sync có thể truyền dữ liệu tới Health Connect với một độ trễ.
         </p>
-      </section>
-
-      <section class="instructions container" id="samsunghealth">
-        <div class="uline"></div>
-        <div class="title">
-          <div class="iconset">
-            <picture>
-              <source srcset="/img/braclets/icons/samsung_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/samsung_46.png" alt="Device icon">
-            </picture>
-          </div>
-          <h2 class="headers samsunghealth">
-            Để kết nối Samsung Health với FitnessOnline, bạn cần phải sử dụng Google Fit
-          </h2>
-        </div>
-        <h5 class="headers instruction-comment">
-          Để làm điều này, bạn sẽ cần phải sử dụng ứng dụng Health Sync (một ứng dụng có thu phí) của một bên thứ ba.
-          Nếu bạn không thể sử dụng ứng dụng có thu phí để đồng bộ hóa dữ liệu thì bạn có thể quay lại cửa sổ trước đó và chọn đồng bộ hóa với Google Fit (vòng đeo tay sẽ không hiển thị trong tài khoản).
-        </h5>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item bolder">
-            Cài đặt Google Fit
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            Cài đặt ứng dụng Health Sync, mở ứng dụng và chọn Samsung Health làm nguồn chính để đồng bộ hóa và chọn Google Fit làm hướng đồng bộ hóa
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            Nhấn vào “Tuyên bố đồng ý”
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            <p class="instruction-cases-text bolder">
-              Sau đó, bạn cần phải làm theo các hướng dẫn trên ứng dụng Health Sync, cụ thể là:
-            </p>
-            <ul class="instructions-todo-list">
-              <li class="instructions-todo-item">
-                Chọn vào “Kiểm tra kết nối tài khoản Google”
-              </li>
-              <li class="instructions-todo-item">
-                Chọn vào “Kiểm tra theo dõi hoạt động trong Google Fit”
-              </li>
-              <li class="instructions-todo-item">
-                Kiểm tra các hộp trong ứng dụng Health Sync cần thiết để đồng bộ hóa
-              </li>
-            </ul>
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            <p class="instruction-cases-text bolder">
-              Để kết nối Google Fit với ứng dụng:
-            </p>
-            <ul class="instructions-todo-list">
-              <li class="instructions-todo-item">
-                Bắt đầu một bài tập bất kỳ. Trước khi bắt đầu bài tập, bạn sẽ được mời ghép nối nếu bạn đã cài đặt ứng dụng Google Fit
-              </li>
-            </ul>
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          Nếu không nhận được thông báo mời ghép nối, bạn nên:
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            Mở ứng dụng FitnessOnline
-          </li>
-          <li class="instructions-cases-todo-item">
-            Chọn vào “Thêm” ở góc dưới cùng bên phải
-          </li>
-          <li class="instructions-cases-todo-item">
-            Chọn vào “Cài đặt”
-          </li>
-          <li class="instructions-cases-todo-item">
-            Chọn vào “Trao đổi dữ liệu”
-          </li>
-          <li class="instructions-cases-todo-item">
-            Chọn vào biểu tượng Google Fit
-          </li>
-          <li class="instructions-cases-todo-item">
-            Chọn vào “Đăng nhập bằng Google”
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          Nếu dữ liệu không xuất hiện trong báo cáo, bạn nên:
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            Kiểm tra xem dữ liệu có được chuyển đến Google Fit hay không
-          </li>
-          <li class="instructions-cases-todo-item">
-            Kiểm tra xem Google Fit và ứng dụng có được kết nối không bằng cách vào Cài đặt — Trao đổi dữ liệu — Google Fit
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          Nếu vòng đeo tay của bạn đã kết nối nhưng chỉ có một ít chỉ số calo đã được tính:
-        </h3>
         <p class="instruction-cases-text">
-          Điều này xảy ra khi vòng tay tự tính toán số lượng calo đã đốt cháy khi hệ thống tập luyện không được bật. Để hiển thị số lượng calo được đốt cháy chính xác hơn, hãy bắt đầu một bài tập trên vòng đeo tay.
+          FitnessOnline chỉ hiển thị dữ liệu nhận được từ Health Connect.
         </p>
-      </section>
-
-      <section class="instructions container" id="garmin">
-        <div class="uline"></div>
-        <div class="title">
-          <div class="iconset">
-            <picture>
-              <source srcset="/img/braclets/icons/garmin_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/garmin_46.png" alt="Device icon">
-            </picture>
-          </div>
-          <h2 class="headers garmin">
-            Để kết nối Garmin với FitnessOnline, bạn cần phải sử dụng Google Fit
-          </h2>
-        </div>
-        <h5 class="headers instruction-comment">
-          Để làm điều này, bạn sẽ cần phải sử dụng ứng dụng Health Sync (một ứng dụng có thu phí) của một bên thứ ba.
-          Nếu bạn không thể sử dụng ứng dụng có thu phí để đồng bộ hóa dữ liệu thì bạn có thể quay lại cửa sổ trước đó và chọn đồng bộ hóa với Google Fit (vòng đeo tay sẽ không hiển thị trong tài khoản).
-        </h5>
-        <h3 class="headers instruction-cases">
-          Để sử dụng ứng dụng của bên thứ ba, bạn sẽ cần thực hiện cách bước sau trên Google Play:
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item bolder">
-            Cài đặt Google Fit
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            Cài đặt ứng dụng Health Sync, mở ứng dụng và chọn Garmin làm nguồn chính để đồng bộ hóa và chọn Google Fit làm hướng đồng bộ hóa
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            Nhấn vào “Tuyên bố đồng ý”
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            <p class="instruction-cases-text bolder">
-              Sau đó, bạn cần phải làm theo các hướng dẫn trên ứng dụng Health Sync, cụ thể là:
-            </p>
-            <ul class="instructions-todo-list">
-              <li class="instructions-todo-item">
-                Chọn vào “Kiểm tra kết nối tài khoản Google”
-              </li>
-              <li class="instructions-todo-item">
-                Chọn vào “Kiểm tra theo dõi hoạt động trong Google Fit”
-              </li>
-              <li class="instructions-todo-item">
-                Chọn vào “Bắt đầu kết nối Garmin” — tạo một tài khoản hoặc đăng nhập vào tài khoản Garmin của bạn.
-              </li>
-              <li class="instructions-todo-item">
-                Kiểm tra các hộp trong ứng dụng Health Sync cần thiết để đồng bộ hóa
-              </li>
-            </ul>
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            <p class="instruction-cases-text bolder">
-              Để kết nối Google Fit với ứng dụng:
-            </p>
-            <ul class="instructions-todo-list">
-              <li class="instructions-todo-item">
-                Bắt đầu một bài tập bất kỳ. Trước khi bắt đầu bài tập, bạn sẽ được mời ghép nối nếu bạn đã cài đặt ứng dụng Google Fit
-              </li>
-            </ul>
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          Nếu không nhận được thông báo mời ghép nối, bạn nên:
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            Mở ứng dụng FitnessOnline
-          </li>
-          <li class="instructions-cases-todo-item">
-            Chọn vào “Thêm” ở góc dưới cùng bên phải
-          </li>
-          <li class="instructions-cases-todo-item">
-            Chọn vào “Cài đặt”
-          </li>
-          <li class="instructions-cases-todo-item">
-            Chọn vào “Trao đổi dữ liệu”
-          </li>
-          <li class="instructions-cases-todo-item">
-            Chọn vào biểu tượng Google Fit
-          </li>
-          <li class="instructions-cases-todo-item">
-            Chọn vào “Đăng nhập bằng Google”
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          Nếu dữ liệu không xuất hiện trong báo cáo, bạn nên:
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            Kiểm tra xem dữ liệu có được chuyển đến Google Fit hay không
-          </li>
-          <li class="instructions-cases-todo-item">
-            Kiểm tra xem Google Fit và ứng dụng có được kết nối không bằng cách vào Cài đặt — Trao đổi dữ liệu — Google Fit
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          Nếu vòng đeo tay của bạn được kết nối nhưng chỉ có một ít chỉ số calo đã được tính:
-        </h3>
-        <p class="instruction-cases-text">
-          Điều này xảy ra khi vòng tay tự tính toán số lượng calo đã đốt cháy khi hệ thống tập luyện không được bật. Để hiển thị số lượng calo được đốt cháy chính xác hơn, hãy bắt đầu một bài tập trên vòng đeo tay.
+        <p class="instruction-cases-text mb">
+          Để đảm bảo dữ liệu hoạt động chính xác hơn hiển thị trên màn hình tóm tắt bài tập, hãy thực hiện các bước sau:
         </p>
+        <ol class="instructions-todo-list">
+          <li class="instructions-cases-todo-item">
+            Trước khi bắt đầu một bài tập trong FitnessOnline, hãy bắt đầu một bài tập hệ thống trên vòng tay sức khỏe của bạn.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Trước khi kết thúc bài tập trong FitnessOnline, hãy mở ứng dụng sử dụng để theo dõi hoạt động và làm mới đồng bộ giữa vòng tay sức khỏe của bạn và thiết bị di động.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Mở ứng dụng Health Sync và làm mới đồng bộ với Health Connect.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Trở lại ứng dụng FitnessOnline và hoàn thành bài tập.
+          </li>
+        </ol>
       </section>
     </div>
   </main>
