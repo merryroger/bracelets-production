@@ -32,7 +32,7 @@
   <main class="main">
     <section class="review container">
       <h1 class="review_header headers">
-        เชื่อมต่อเครื่องติดตามฟิตเนส
+        การเชื่อมต่อเครื่องติดตามฟิตเนส
       </h1>
       <div class="review-model-pad" id="devices">
         <div class="review-model-frame" id="review-model-frame">
@@ -40,7 +40,7 @@
             <a href="#healthconnect" class="model-card">
               <div class="device_img healthconnect"></div>
               <h4 class="device-name">
-                การเชื่อมต่อสุขภาพของ Google
+                Google Health Connect
               </h4>
               <p class="device-app">
                 &nbsp;
@@ -121,469 +121,609 @@
           </div>
         </div>
       </div>
-      <form class="review-band-controls" id="review-band-controls">
-        <label for="review-control-01" class="review-control-label" tabindex="0">
-          <input type="radio" class="review-control" name="review-page" id="review-control-01" value="1" checked>
-        </label>
-      </form>
-      <p class="footnote">
-        อุปกรณ์เหล่านี้เชื่อมต่อโดยตรงกับแอป Health Connect
-      </p>
-    </section>
+<form class="review-band-controls" id="review-band-controls">
+  <label for="review-control-01" class="review-control-label" tabindex="0">
+    <input type="radio" class="review-control" name="review-page" id="review-control-01" value="1" checked>
+  </label>
+</form>
+<p class="footnote">
+  อุปกรณ์เหล่านี้มีการเชื่อมต่อโดยตรงกับแอป Health Connect
+</p>
+</section>
 
-    <div class="descriptions">
-      <div class="backtop container">
-        <a class="up" href="#devices" tabindex="100"><img src="/img/braclets/top.svg" alt="กลับไปด้านบน"></a>
+<div class="descriptions">
+  <div class="backtop container">
+    <a class="up" href="#devices" tabindex="100"><img src="/img/braclets/top.svg" alt="ไปด้านบน"></a>
+  </div>
+  <section class="instructions container" id="healthconnect">
+    <div class="uline"></div>
+    <div class="title">
+      <div class="iconset">
+        <picture>
+          <source srcset="/img/braclets/icons/healthconnect_100.png" media="(max-width: 1108px)">
+          <img src="/img/braclets/icons/healthconnect_46.png" alt="ไอคอนอุปกรณ์">
+        </picture>
       </div>
-      <section class="instructions container" id="healthconnect">
-        <div class="uline"></div>
-        <div class="title">
-          <div class="iconset">
-            <picture>
-              <source srcset="/img/braclets/icons/healthconnect_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/healthconnect_46.png" alt="ไอคอนอุปกรณ์">
-            </picture>
-          </div>
-          <h2 class="headers googlefit">
-            ในการซิงค์ Google Health Connect (มีให้ใน FitnessOnline เวอร์ชัน 2.20.0 ขึ้นไป) กับแอป ให้ทำตามขั้นตอนเหล่านี้:
-          </h2>
-        </div>
+      <h2 class="headers googlefit">
+        ในการซิงค์ Google Health Connect (ใช้ได้ใน FitnessOnline เวอร์ชัน 2.20.0 และสูงกว่า) กับแอป ให้ทำตามขั้นตอนเหล่านี้:
+      </h2>
+    </div>
+    <ol class="instructions-cases-todo-list">
+      <li class="instructions-cases-todo-item">
+        ติดตั้งแอป Health Connect บนอุปกรณ์ของคุณ
+      </li>
+      <li class="instructions-cases-todo-item">
+        หลังจากติดตั้ง FitnessOnline บนอุปกรณ์ของคุณและลงชื่อเข้าใช้บัญชีของคุณแล้ว ให้อนุญาตการเข้าถึงเพื่ออ่านข้อมูลใน Health Connect
+      </li>
+    </ol>
+    <h3 class="headers instruction-cases">
+      หากไม่ได้อนุญาตการเข้าถึงเพื่ออ่านข้อมูลใน Health Connect หลังการติดตั้งแอปครั้งแรก:
+    </h3>
+    <ol class="instructions-cases-todo-list">
+      <li class="instructions-cases-todo-item">
+        แตะ "เพิ่มเติม" ที่มุมล่างขวา
+      </li>
+      <li class="instructions-cases-todo-item">
+        แตะ "การตั้งค่า"
+      </li>
+      <li class="instructions-cases-todo-item">
+        แตะ "การแชร์ข้อมูล"
+      </li>
+      <li class="instructions-cases-todo-item">
+        แตะไอคอน Health Connect
+      </li>
+      <li class="instructions-cases-todo-item">
+        แตะ "เปิดการตั้งค่า"
+      </li>
+      <li class="instructions-cases-todo-item">
+        อนุญาตการเข้าถึงเพื่ออ่านข้อมูลสำหรับแอป FitnessOnline
+      </li>
+    </ol>
+    <h3 class="headers instruction-cases">
+      หากข้อมูลไม่แสดงบนหน้าจอสรุปการออกกำลังกาย ให้ทำตามขั้นตอนเหล่านี้:
+    </h3>
+    <ol class="instructions-cases-todo-list">
+      <li class="instructions-cases-todo-item">
+        ตรวจสอบว่าข้อมูลกำลังซิงค์กับ Health Connect หรือไม่
+      </li>
+      <li class="instructions-cases-todo-item">
+        <p class="instruction-cases-text">ตรวจสอบสถานะการซิงค์ระหว่าง Health Connect และ FitnessOnline โดยทำตามขั้นตอนต่อไปนี้ในแอป FitnessOnline:</p>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            ติดตั้งแอป Health Connect บนอุปกรณ์ของคุณ
+            แตะ "เพิ่มเติม" ที่มุมล่างขวา
           </li>
           <li class="instructions-cases-todo-item">
-            หลังจากติดตั้ง FitnessOnline ครั้งแรกบนอุปกรณ์ของคุณและหลังจากที่เข้าสู่ระบบบัญชีของคุณ ให้อนุญาตการเข้าถึงเพื่ออ่านข้อมูลใน Health Connect
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          หากยังไม่ได้อนุญาตให้เข้าถึงเพื่ออ่านข้อมูลใน Health Connect หลังจากการติดตั้งแอปครั้งแรก:
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            แตะ “เพิ่มเติม” ที่มุมด้านขวาล่าง
+            แตะ "การตั้งค่า"
           </li>
           <li class="instructions-cases-todo-item">
-            แตะ “การตั้งค่า”
-          </li>
-          <li class="instructions-cases-todo-item">
-            แตะ “การแชร์ข้อมูล”
+            แตะ "การแชร์ข้อมูล"
           </li>
           <li class="instructions-cases-todo-item">
             แตะไอคอน Health Connect
           </li>
-          <li class="instructions-cases-todo-item">
-            แตะ “เปิดการตั้งค่า”
-          </li>
-          <li class="instructions-cases-todo-item">
-            อนุญาตการเข้าถึงเพื่ออ่านข้อมูลสำหรับแอป FitnessOnline
-          </li>
         </ol>
-        <h3 class="headers instruction-cases">
-          หากข้อมูลไม่แสดงในหน้าจอสรุปการออกกำลังกาย ให้ทำตามขั้นตอนเหล่านี้:
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            ตรวจสอบว่าข้อมูลกำลังถูกซิงค์กับ Health Connect อยู่หรือไม่
-          </li>
-          <li class="instructions-cases-todo-item">
-            <p class="instruction-cases-text">ตรวจสอบสถานะการซิงค์ระหว่าง Health Connect และ FitnessOnline โดยทำตามสิ่งนี้ในแอป FitnessOnline:</p>
-            <ol class="instructions-cases-todo-list">
-              <li class="instructions-cases-todo-item">
-                แตะ “เพิ่มเติม” ที่มุมด้านขวาล่าง
-              </li>
-              <li class="instructions-cases-todo-item">
-                แตะ “การตั้งค่า”
-              </li>
-              <li class="instructions-cases-todo-item">
-                แตะ “การแชร์ข้อมูล”
-              </li>
-              <li class="instructions-cases-todo-item">
-                แตะไอคอน Health Connect
-              </li>
-            </ol>
-          </li>
-        </ol>
-      </section>
+      </li>
+    </ol>
+  </section>
 
-      <section class="instructions container" id="zepplife">
-        <div class="title">
-          <div class="iconset">
-            <picture>
-              <source srcset="/img/braclets/icons/zepplife_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/zepplife_46.png" alt="ไอคอนอุปกรณ์">
-            </picture>
-          </div>
-          <h2 class="headers zepplife">
-            ในการซิงค์ Zepp Life กับ FitnessOnline:
-          </h2>
-        </div>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            เชื่อมต่อสายรัดข้อมือหรือสมาร์ทวอทช์ของคุณกับแอป Zepp Life
-          </li>
-          <li class="instructions-cases-todo-item">
-            เริ่มออกกำลังกายใดๆ ใน FitnessOnline ก่อนการออกกำลังกาย แอปจะเตือนให้คุณซิงค์สายรัดข้อมือเพื่อการติดตามข้อมูล
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          หากไม่มีการแจ้งเตือนให้ซิงค์ปรากฏขึ้น ให้ทำตามขั้นตอนเหล่านี้:
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            เปิดแอป FitnessOnline
-          </li>
-          <li class="instructions-cases-todo-item">
-            แตะ “เพิ่มเติม” ที่มุมด้านขวาล่าง
-          </li>
-          <li class="instructions-cases-todo-item">
-            แตะ “การตั้งค่า”
-          </li>
-          <li class="instructions-cases-todo-item">
-            แตะ “การแชร์ข้อมูล”
-          </li>
-          <li class="instructions-cases-todo-item">
-            แตะไอคอนแอป
-          </li>
-          <li class="instructions-cases-todo-item">
-            แตะ “เชื่อมต่อ”
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          หากสายรัดข้อมือของคุณเชื่อมต่ออยู่แต่ข้อมูลไม่ซิงค์:
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            ปิด Bluetooth และเปิดใหม่อีกครั้ง
-          </li>
-          <li class="instructions-cases-todo-item">
-            ตรวจสอบสถานะการซิงค์ของสายรัดข้อมือของคุณกับแอป Zepp Life เพื่อทำสิ่งนี้ เปิดแอป Zepp Life ไปที่แท็บ “โปรไฟล์” และในส่วน “อุปกรณ์ของฉัน” ตรวจสอบว่าสายรัดข้อมือของคุณเชื่อมต่ออยู่
-          </li>
-          <li class="instructions-cases-todo-item">
-            เปิดแอป FitnessOnline
-          </li>
-          <li class="instructions-cases-todo-item">
-            แตะ “เพิ่มเติม” ที่มุมด้านขวาล่าง
-          </li>
-          <li class="instructions-cases-todo-item">
-            แตะ “การตั้งค่า”
-          </li>
-          <li class="instructions-cases-todo-item">
-            แตะ “การแชร์ข้อมูล”
-          </li>
-          <li class="instructions-cases-todo-item">
-            แตะไอคอนแอป
-          </li>
-          <li class="instructions-cases-todo-item">
-            แตะ “เชื่อมต่อใหม่”
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          หากสายรัดข้อมือของคุณเชื่อมต่ออยู่แต่แสดงพลังงานน้อยในหน้าจอสรุปการออกกำลังกาย:
-        </h3>
-        <p class="instruction-cases-text">
-          สิ่งนี้เกิดขึ้นเนื่องจากสายรัดข้อมือของคุณคำนวณจำนวนพลังงานที่ถูกเผาผลาญ
-        </p>
-        <p class="instruction-cases-text">
-          สำหรับการแสดงผลแคลอรี่ที่เผาผลาญอย่างแม่นยำยิ่งขึ้น คุณควรเริ่มเซสชั่นออกกำลังกายระบบบนสายรัดข้อมือของคุณ
-        </p>
-      </section>
+<section class="instructions container" id="zepplife">
+  <div class="title">
+    <div class="iconset">
+      <picture>
+        <source srcset="/img/braclets/icons/zepplife_100.png" media="(max-width: 1108px)">
+        <img src="/img/braclets/icons/zepplife_46.png" alt="ไอคอนอุปกรณ์">
+      </picture>
+    </div>
+    <h2 class="headers zepplife">
+      ในการซิงค์ Zepp Life กับ FitnessOnline:
+    </h2>
+  </div>
+  <ol class="instructions-cases-todo-list">
+    <li class="instructions-cases-todo-item">
+      เชื่อมต่อสายรัดฟิตเนสหรือสมาร์ทวอทช์ของคุณกับแอป Zepp Life
+    </li>
+    <li class="instructions-cases-todo-item">
+      เริ่มการออกกำลังกายใด ๆ ใน FitnessOnline ก่อนการออกกำลังกาย แอปจะเตือนให้คุณซิงค์สายรัดฟิตเนสของคุณเพื่อการติดตามข้อมูล
+    </li>
+  </ol>
+  <h3 class="headers instruction-cases">
+    หากไม่มีการเตือนการซิงค์ปรากฏขึ้น ให้ทำตามขั้นตอนเหล่านี้:
+  </h3>
+  <ol class="instructions-cases-todo-list">
+    <li class="instructions-cases-todo-item">
+      เปิดแอป FitnessOnline
+    </li>
+    <li class="instructions-cases-todo-item">
+      แตะ "เพิ่มเติม" ที่มุมล่างขวา
+    </li>
+    <li class="instructions-cases-todo-item">
+      แตะ "การตั้งค่า"
+    </li>
+    <li class="instructions-cases-todo-item">
+      แตะ "การแชร์ข้อมูล"
+    </li>
+    <li class="instructions-cases-todo-item">
+      แตะไอคอนของแอป
+    </li>
+    <li class="instructions-cases-todo-item">
+      แตะ "เชื่อมต่อ"
+    </li>
+  </ol>
+  <h3 class="headers instruction-cases">
+    หากสายรัดฟิตเนสของคุณเชื่อมต่อแล้วแต่ข้อมูลไม่ซิงค์:
+  </h3>
+  <ol class="instructions-cases-todo-list">
+    <li class="instructions-cases-todo-item">
+      ปิดและเปิดบลูทูธใหม่
+    </li>
+    <li class="instructions-cases-todo-item">
+      ตรวจสอบสถานะการซิงค์ของสายรัดฟิตเนสของคุณกับแอป Zepp Life โดยเปิดแอป Zepp Life ไปที่แท็บ "โปรไฟล์" และในส่วน "อุปกรณ์ของฉัน" ตรวจสอบให้แน่ใจว่าสายรัดฟิตเนสของคุณเชื่อมต่ออยู่
+    </li>
+    <li class="instructions-cases-todo-item">
+      เปิดแอป FitnessOnline
+    </li>
+    <li class="instructions-cases-todo-item">
+      แตะ "เพิ่มเติม" ที่มุมล่างขวา
+    </li>
+    <li class="instructions-cases-todo-item">
+      แตะ "การตั้งค่า"
+    </li>
+    <li class="instructions-cases-todo-item">
+      แตะ "การแชร์ข้อมูล"
+    </li>
+    <li class="instructions-cases-todo-item">
+      แตะไอคอนของแอป
+    </li>
+    <li class="instructions-cases-todo-item">
+      แตะ "เชื่อมต่อใหม่"
+    </li>
+  </ol>
+  <h3 class="headers instruction-cases">
+    หากสายรัดฟิตเนสของคุณเชื่อมต่อแล้วแต่แสดงแคลอรีต่ำบนหน้าจอสรุปการออกกำลังกาย:
+  </h3>
+  <p class="instruction-cases-text">
+    สิ่งนี้เกิดขึ้นเพราะสายรัดฟิตเนสของคุณคำนวณจำนวนแคลอรีที่เผาผลาญได้ตามที่กำหนด
+  </p>
+  <p class="instruction-cases-text">
+    สำหรับการแสดงแคลอรีที่เผาผลาญได้อย่างแม่นยำยิ่งขึ้น คุณควรเริ่มการออกกำลังกายระบบบนสายรัดฟิตเนสของคุณ
+  </p>
+</section>
 
-      <section class="instructions container" id="zepp">
-        <div class="uline"></div>
-        <div class="title">
-          <div class="iconset">
-            <picture>
-              <source srcset="/img/braclets/icons/zepp_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/zepp_46.png" alt="ไอคอนอุปกรณ์">
-            </picture>
-          </div>
-          <h2 class="headers zepp">
-            ในการซิงค์ Zepp กับ FitnessOnline:
-          </h2>
-        </div>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            เชื่อมต่อสายรัดข้อมือหรือสมาร์ทวอทช์ของคุณกับแอป Zepp
-          </li>
-          <li class="instructions-cases-todo-item">
-            เริ่มออกกำลังกายใดๆ ใน FitnessOnline ก่อนการออกกำลังกาย แอปจะเตือนให้คุณซิงค์สายรัดข้อมือเพื่อการติดตามข้อมูล
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          หากไม่มีการแจ้งเตือนให้ซิงค์ปรากฏขึ้น ให้ทำตามขั้นตอนเหล่านี้:
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            เปิดแอป FitnessOnline
-          </li>
-          <li class="instructions-cases-todo-item">
-            แตะ “เพิ่มเติม” ที่มุมด้านขวาล่าง
-          </li>
-          <li class="instructions-cases-todo-item">
-            แตะ “การตั้งค่า”
-          </li>
-          <li class="instructions-cases-todo-item">
-            แตะ “การแชร์ข้อมูล”
-          </li>
-          <li class="instructions-cases-todo-item">
-            แตะไอคอนแอป
-          </li>
-          <li class="instructions-cases-todo-item">
-            แตะ “เชื่อมต่อ”
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          หากสายรัดข้อมือของคุณเชื่อมต่ออยู่แต่ข้อมูลไม่ซิงค์:
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            ปิด Bluetooth และเปิดใหม่อีกครั้ง
-          </li>
-          <li class="instructions-cases-todo-item">
-            ตรวจสอบสถานะการซิงค์ของสายรัดข้อมือของคุณกับแอป Zepp เพื่อทำสิ่งนี้ เปิดแอป Zepp ไปที่แท็บ “โปรไฟล์” และในส่วน “อุปกรณ์ของฉัน” ตรวจสอบว่าสายรัดข้อมือของคุณเชื่อมต่ออยู่
-          </li>
-          <li class="instructions-cases-todo-item">
-            เปิดแอป FitnessOnline
-          </li>
-          <li class="instructions-cases-todo-item">
-            แตะ “เพิ่มเติม” ที่มุมด้านขวาล่าง
-          </li>
-          <li class="instructions-cases-todo-item">
-            แตะ “การตั้งค่า”
-          </li>
-          <li class="instructions-cases-todo-item">
-            แตะ “การแชร์ข้อมูล”
-          </li>
-          <li class="instructions-cases-todo-item">
-            แตะไอคอนแอป
-          </li>
-          <li class="instructions-cases-todo-item">
-            แตะ “เชื่อมต่อใหม่”
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          หากสายรัดข้อมือของคุณเชื่อมต่ออยู่แต่แสดงพลังงานน้อยในหน้าจอสรุปการออกกำลังกาย:
-        </h3>
-        <p class="instruction-cases-text">
-          สิ่งนี้เกิดขึ้นเนื่องจากสายรัดข้อมือของคุณคำนวณจำนวนพลังงานที่ถูกเผาผลาญ
-        </p>
-        <p class="instruction-cases-text">
-          สำหรับการแสดงผลแคลอรี่ที่เผาผลาญอย่างแม่นยำยิ่งขึ้น คุณควรเริ่มเซสชั่นออกกำลังกายระบบบนสายรัดข้อมือของคุณ
-        </p>
-      </section>
+<section class="instructions container" id="zepp">
+  <div class="uline"></div>
+  <div class="title">
+    <div class="iconset">
+      <picture>
+        <source srcset="/img/braclets/icons/zepp_100.png" media="(max-width: 1108px)">
+        <img src="/img/braclets/icons/zepp_46.png" alt="ไอคอนอุปกรณ์">
+      </picture>
+    </div>
+    <h2 class="headers zepp">
+      ในการซิงค์ Zepp กับ FitnessOnline:
+    </h2>
+  </div>
+  <ol class="instructions-cases-todo-list">
+    <li class="instructions-cases-todo-item">
+      เชื่อมต่อสายรัดฟิตเนสหรือสมาร์ทวอทช์ของคุณกับแอป Zepp
+    </li>
+    <li class="instructions-cases-todo-item">
+      เริ่มการออกกำลังกายใด ๆ ใน FitnessOnline ก่อนการออกกำลังกาย แอปจะเตือนให้คุณซิงค์สายรัดฟิตเนสของคุณเพื่อการติดตามข้อมูล
+    </li>
+  </ol>
+  <h3 class="headers instruction-cases">
+    หากไม่มีการเตือนการซิงค์ปรากฏขึ้น ให้ทำตามขั้นตอนเหล่านี้:
+  </h3>
+  <ol class="instructions-cases-todo-list">
+    <li class="instructions-cases-todo-item">
+      เปิดแอป FitnessOnline
+    </li>
+    <li class="instructions-cases-todo-item">
+      แตะ "เพิ่มเติม" ที่มุมล่างขวา
+    </li>
+    <li class="instructions-cases-todo-item">
+      แตะ "การตั้งค่า"
+    </li>
+    <li class="instructions-cases-todo-item">
+      แตะ "การแชร์ข้อมูล"
+    </li>
+    <li class="instructions-cases-todo-item">
+      แตะไอคอนของแอป
+    </li>
+    <li class="instructions-cases-todo-item">
+      แตะ "เชื่อมต่อ"
+    </li>
+  </ol>
+  <h3 class="headers instruction-cases">
+    หากสายรัดฟิตเนสของคุณเชื่อมต่อแล้วแต่ข้อมูลไม่ซิงค์:
+  </h3>
+  <ol class="instructions-cases-todo-list">
+    <li class="instructions-cases-todo-item">
+      ปิดและเปิดบลูทูธใหม่
+    </li>
+    <li class="instructions-cases-todo-item">
+      ตรวจสอบสถานะการซิงค์ของสายรัดฟิตเนสของคุณกับแอป Zepp โดยเปิดแอป Zepp ไปที่แท็บ "โปรไฟล์" และในส่วน "อุปกรณ์ของฉัน" ตรวจสอบให้แน่ใจว่าสายรัดฟิตเนสของคุณเชื่อมต่ออยู่
+    </li>
+    <li class="instructions-cases-todo-item">
+      เปิดแอป FitnessOnline
+    </li>
+    <li class="instructions-cases-todo-item">
+      แตะ "เพิ่มเติม" ที่มุมล่างขวา
+    </li>
+    <li class="instructions-cases-todo-item">
+      แตะ "การตั้งค่า"
+    </li>
+    <li class="instructions-cases-todo-item">
+      แตะ "การแชร์ข้อมูล"
+    </li>
+    <li class="instructions-cases-todo-item">
+      แตะไอคอนของแอป
+    </li>
+    <li class="instructions-cases-todo-item">
+      แตะ "เชื่อมต่อใหม่"
+    </li>
+  </ol>
+  <h3 class="headers instruction-cases">
+    หากสายรัดฟิตเนสของคุณเชื่อมต่อแล้วแต่แสดงแคลอรีต่ำบนหน้าจอสรุปการออกกำลังกาย:
+  </h3>
+  <p class="instruction-cases-text">
+    สิ่งนี้เกิดขึ้นเพราะสายรัดฟิตเนสของคุณคำนวณจำนวนแคลอรีที่เผาผลาญได้ตามที่กำหนด
+  </p>
+  <p class="instruction-cases-text">
+    สำหรับการแสดงแคลอรีที่เผาผลาญได้อย่างแม่นยำยิ่งขึ้น คุณควรเริ่มการออกกำลังกายระบบบนสายรัดฟิตเนสของคุณ
+  </p>
+</section>
 
-      <section class="instructions container" id="googlefit">
-        <div class="uline"></div>
-        <p class="warning bolder">คำเตือน! Google Fit จะไม่สามารถใช้งานได้หลังจากวันที่ 30 มิถุนายน 2025:<br />
-          <nobr><a href="https://developers.google.com/fit">https://developers.google.com/fit</a></nobr>
-        </p>
-        <div class="title">
-          <div class="iconset">
-            <picture>
-              <source srcset="/img/braclets/icons/googlefit_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/googlefit_46.png" alt="ไอคอนอุปกรณ์">
-            </picture>
-          </div>
-          <h2 class="headers googlefit">
-            ในการซิงค์ Google Fit (มีให้ใน FitnessOnline เวอร์ชัน 2.19.2 และต่ำกว่า) กับแอป ให้ทำตามขั้นตอนเหล่านี้:
-          </h2>
-        </div>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            ติดตั้งแอป Google Fit บนอุปกรณ์ของคุณ
-          </li>
-          <li class="instructions-cases-todo-item">
-            เริ่มออกกำลังกายใดๆ ใน FitnessOnline ก่อนการออกกำลังกาย แอปจะเตือนให้คุณซิงค์กับ Google Fit เพื่อการติดตามข้อมูล
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          หากไม่มีการแจ้งเตือนให้ซิงค์ปรากฏขึ้น ให้ทำตามขั้นตอนเหล่านี้:
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            เปิดแอป FitnessOnline
-          </li>
-          <li class="instructions-cases-todo-item">
-            แตะ “เพิ่มเติม” ที่มุมด้านขวาล่าง
-          </li>
-          <li class="instructions-cases-todo-item">
-            แตะ “การตั้งค่า”
-          </li>
-          <li class="instructions-cases-todo-item">
-            แตะ “การแชร์ข้อมูล”
-          </li>
-          <li class="instructions-cases-todo-item">
-            แตะไอคอนสำหรับ Google Fit
-          </li>
-          <li class="instructions-cases-todo-item">
-            แตะ “เข้าสู่ระบบด้วย Google”
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          หากข้อมูลไม่แสดงในหน้าจอสรุปการออกกำลังกาย ให้ทำตามขั้นตอนเหล่านี้:
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            ตรวจสอบว่าข้อมูลกำลังถูกซิงค์กับ Google Fit อยู่หรือไม่
-          </li>
-          <li class="instructions-cases-todo-item">
-            <p class="instruction-cases-text">ตรวจสอบสถานะการซิงค์ระหว่าง Google Fit และ FitnessOnline โดยทำตามสิ่งนี้ในแอป FitnessOnline:</p>
-            <ol class="instructions-cases-todo-list">
-              <li class="instructions-cases-todo-item">
-                แตะ “เพิ่มเติม” ที่มุมด้านขวาล่าง
-              </li>
-              <li class="instructions-cases-todo-item">
-                แตะ “การตั้งค่า”
-              </li>
-              <li class="instructions-cases-todo-item">
-                แตะ “การแชร์ข้อมูล”
-              </li>
-              <li class="instructions-cases-todo-item">
-                แตะไอคอนสำหรับ Google Fit
-              </li>
-            </ol>
-          </li>
-        </ol>
-      </section>
+<section class="instructions container" id="googlefit">
+  <div class="uline"></div>
+  <p class="warning bolder">โปรดทราบ! Google Fit จะไม่สามารถใช้งานได้หลังจากวันที่ 30 มิถุนายน 2025:<br />
+    <nobr><a href="https://developers.google.com/fit">https://developers.google.com/fit</a></nobr>
+  </p>
+  <div class="title">
+    <div class="iconset">
+      <picture>
+        <source srcset="/img/braclets/icons/googlefit_100.png" media="(max-width: 1108px)">
+        <img src="/img/braclets/icons/googlefit_46.png" alt="ไอคอนอุปกรณ์">
+      </picture>
+    </div>
+    <h2 class="headers googlefit">
+      ในการซิงค์ Google Fit (ใช้ได้ใน FitnessOnline เวอร์ชัน 2.19.2 และต่ำกว่า) กับแอป ให้ทำตามขั้นตอนเหล่านี้:
+    </h2>
+  </div>
+  <ol class="instructions-cases-todo-list">
+    <li class="instructions-cases-todo-item">
+      ติดตั้งแอป Google Fit บนอุปกรณ์ของคุณ
+    </li>
+    <li class="instructions-cases-todo-item">
+      เริ่มการออกกำลังกายใด ๆ ใน FitnessOnline ก่อนการออกกำลังกาย แอปจะเตือนให้คุณซิงค์กับ Google Fit เพื่อการติดตามข้อมูล
+    </li>
+  </ol>
+  <h3 class="headers instruction-cases">
+    หากไม่มีการเตือนการซิงค์ปรากฏขึ้น ให้ทำตามขั้นตอนเหล่านี้:
+  </h3>
+  <ol class="instructions-cases-todo-list">
+    <li class="instructions-cases-todo-item">
+      เปิดแอป FitnessOnline
+    </li>
+    <li class="instructions-cases-todo-item">
+      แตะ "เพิ่มเติม" ที่มุมล่างขวา
+    </li>
+    <li class="instructions-cases-todo-item">
+      แตะ "การตั้งค่า"
+    </li>
+    <li class="instructions-cases-todo-item">
+      แตะ "การแชร์ข้อมูล"
+    </li>
+    <li class="instructions-cases-todo-item">
+      แตะไอคอนสำหรับ Google Fit
+    </li>
+    <li class="instructions-cases-todo-item">
+      แตะ "ลงชื่อเข้าใช้ด้วย Google"
+    </li>
+  </ol>
+  <h3 class="headers instruction-cases">
+    หากข้อมูลไม่แสดงบนหน้าจอสรุปการออกกำลังกาย ให้ทำตามขั้นตอนเหล่านี้:
+  </h3>
+  <ol class="instructions-cases-todo-list">
+    <li class="instructions-cases-todo-item">
+      ตรวจสอบว่าข้อมูลกำลังซิงค์กับ Google Fit หรือไม่
+    </li>
+    <li class="instructions-cases-todo-item">
+      <p class="instruction-cases-text">ตรวจสอบสถานะการซิงค์ระหว่าง Google Fit และ FitnessOnline โดยทำตามขั้นตอนต่อไปนี้ในแอป FitnessOnline:</p>
+      <ol class="instructions-cases-todo-list">
+        <li class="instructions-cases-todo-item">
+          แตะ "เพิ่มเติม" ที่มุมล่างขวา
+        </li>
+        <li class="instructions-cases-todo-item">
+          แตะ "การตั้งค่า"
+        </li>
+        <li class="instructions-cases-todo-item">
+          แตะ "การแชร์ข้อมูล"
+        </li>
+        <li class="instructions-cases-todo-item">
+          แตะไอคอน Google Fit
+        </li>
+      </ol>
+    </li>
+  </ol>
+</section>
 
-      <section class="instructions container" id="fitbit">
-        <div id="polar"></div>
-        <div id="samsunghealth"></div>
-        <div id="garmin"></div>
-        <div class="uline"></div>
-        <div class="title">
-          <div class="iconset">
+<section class="instructions container" id="fitbit">
+    <div id="polar"></div>
+    <div id="samsunghealth"></div>
+    <div id="garmin"></div>
+    <div class="uline"></div>
+    <div class="title">
+        <div class="iconset">
             <picture>
-              <source srcset="/img/braclets/icons/samsung_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/samsung_46.png" alt="ไอคอนอุปกรณ์">
+                <source srcset="/img/braclets/icons/samsung_100.png" media="(max-width: 1108px)">
+                <img src="/img/braclets/icons/samsung_46.png" alt="Device icon">
             </picture>
             <picture>
-              <source srcset="/img/braclets/icons/garmin_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/garmin_46.png" alt="ไอคอนอุปกรณ์">
+                <source srcset="/img/braclets/icons/garmin_100.png" media="(max-width: 1108px)">
+                <img src="/img/braclets/icons/garmin_46.png" alt="Device icon">
             </picture>
             <picture>
-              <source srcset="/img/braclets/icons/fitbit_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/fitbit_46.png" alt="ไอคอนอุปกรณ์">
+                <source srcset="/img/braclets/icons/fitbit_100.png" media="(max-width: 1108px)">
+                <img src="/img/braclets/icons/fitbit_46.png" alt="Device icon">
             </picture>
             <picture>
-              <source srcset="/img/braclets/icons/polar_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/polar_46.png" alt="ไอคอนอุปกรณ์">
+                <source srcset="/img/braclets/icons/polar_100.png" media="(max-width: 1108px)">
+                <img src="/img/braclets/icons/polar_46.png" alt="Device icon">
             </picture>
-          </div>
-          <h2 class="headers fitbit lg polar">
-            การโอนถ่ายข้อมูลจาก Samsung Health, Garmin, Fitbit และ Polar Flow ไปยัง FitnessOnline ได้รับการอำนวยความสะดวกผ่าน Google Health Connect
-          </h2>
         </div>
-        <h3 class="headers instruction-cases">
-          ในการเชื่อมต่อ ให้ทำตามขั้นตอนเหล่านี้:
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            ติดตั้งแอป Health Connect และเข้าสู่ระบบ
-          </li>
-          <li class="instructions-cases-todo-item">
-            เปิดแอปที่ใช้สำหรับติดตามกิจกรรมของคุณ
-          </li>
-          <li class="instructions-cases-todo-item">
+        <h2 class="headers fitbit lg polar">
+            การถ่ายโอนข้อมูลจาก Samsung Health, Garmin, Fitbit และ Polar Flow ไปยัง FitnessOnline ผ่าน Google Health Connect
+        </h2>
+    </div>
+    <h3 class="headers instruction-cases">
+        ในการเชื่อมต่อ ให้ทำตามขั้นตอนเหล่านี้:
+    </h3>
+    <ol class="instructions-cases-todo-list">
+        <li class="instructions-cases-todo-item">
+            ติดตั้งแอป Health Connect และลงชื่อเข้าใช้
+        </li>
+        <li class="instructions-cases-todo-item">
+            เปิดแอปที่ใช้ในการติดตามกิจกรรมของคุณ
+        </li>
+        <li class="instructions-cases-todo-item">
             ไปที่เมนูการตั้งค่า
-          </li>
-          <li class="instructions-cases-todo-item">
-            ค้นหาส่วนสำหรับเชื่อมต่อแอปจากบุคคลที่สาม โดยทั่วไปจะแสดงป้ายชื่อว่า “เชื่อมต่อบริการอื่น”, “แอปและอุปกรณ์”, “การจัดการการเชื่อมต่อ” หรือสิ่งที่คล้ายกัน
-          </li>
-          <li class="instructions-cases-todo-item">
+        </li>
+        <li class="instructions-cases-todo-item">
+            ค้นหาส่วนสำหรับเชื่อมต่อแอปภายนอก มักจะมีป้ายกำกับว่า “Connect Other Services”, “Apps and Devices”, “Manage Connections” หรือคล้ายกัน
+        </li>
+        <li class="instructions-cases-todo-item">
             ทำตามคำแนะนำเพื่อเชื่อมต่อแอปกับ Health Connect
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          จากนั้นซิงค์ Health Connect กับแอป FitnessOnline ตามขั้นตอนต่อไปนี้:
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            ในแอป FitnessOnline แตะ “เพิ่มเติม” ที่มุมด้านขวาล่าง
-          </li>
-          <li class="instructions-cases-todo-item">
+        </li>
+    </ol>
+    <h3 class="headers instruction-cases">
+        ถัดไป ซิงค์ Health Connect กับแอป FitnessOnline ตามขั้นตอนดังนี้:
+    </h3>
+    <ol class="instructions-cases-todo-list">
+        <li class="instructions-cases-todo-item">
+            ในแอป FitnessOnline แตะ “เพิ่มเติม” ที่มุมขวาล่าง
+        </li>
+        <li class="instructions-cases-todo-item">
             แตะ “การตั้งค่า”
-          </li>
-          <li class="instructions-cases-todo-item">
+        </li>
+        <li class="instructions-cases-todo-item">
             แตะ “การแชร์ข้อมูล”
-          </li>
-          <li class="instructions-cases-todo-item">
+        </li>
+        <li class="instructions-cases-todo-item">
             แตะไอคอน Health Connect
-          </li>
-          <li class="instructions-cases-todo-item">
+        </li>
+        <li class="instructions-cases-todo-item">
             แตะ “เปิดการตั้งค่า”
-          </li>
-          <li class="instructions-cases-todo-item">
-            อนุญาตการเข้าถึงเพื่ออ่านข้อมูลสำหรับแอป FitnessOnline
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          หากข้อมูลไม่แสดงในหน้าจอสรุปการออกกำลังกาย ให้ทำตามขั้นตอนเหล่านี้:
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            ตรวจสอบว่าข้อมูลจากแอปที่ใช้สำหรับติดตามกิจกรรมกำลังถูกซิงค์กับ Health Connect อยู่หรือไม่
-          </li>
-          <li class="instructions-cases-todo-item">
-            <p class="instruction-cases-text">ตรวจสอบสถานะการซิงค์ระหว่าง Health Connect และ FitnessOnline โดยทำตามสิ่งนี้ในแอป FitnessOnline:</p>
+        </li>
+        <li class="instructions-cases-todo-item">
+            อนุญาตให้เข้าถึงข้อมูลสำหรับแอป FitnessOnline
+        </li>
+    </ol>
+    <h3 class="headers instruction-cases">
+        หากข้อมูลไม่แสดงบนหน้าจอสรุปการออกกำลังกาย ให้ทำตามขั้นตอนเหล่านี้:
+    </h3>
+    <ol class="instructions-cases-todo-list">
+        <li class="instructions-cases-todo-item">
+            ตรวจสอบว่าข้อมูลจากแอปที่ใช้ในการติดตามกิจกรรมถูกซิงค์ไปยัง Health Connect หรือไม่
+        </li>
+<li class="instructions-cases-todo-item">
+    <p class="instruction-cases-text">ตรวจสอบสถานะการซิงค์ระหว่าง Health Connect และ FitnessOnline โดยทำตามขั้นตอนในแอป FitnessOnline ดังนี้:</p>
+    <ol class="instructions-cases-todo-list">
+        <li class="instructions-cases-todo-item">
+            แตะ “เพิ่มเติม” ที่มุมขวาล่าง
+        </li>
+        <li class="instructions-cases-todo-item">
+            แตะ “การตั้งค่า”
+        </li>
+        <li class="instructions-cases-todo-item">
+            แตะ “การแชร์ข้อมูล”
+        </li>
+        <li class="instructions-cases-todo-item">
+            แตะไอคอน Health Connect
+        </li>
+    </ol>
+</li>
+</ol>
+<h3 class="headers instruction-cases">
+    เพื่อตรวจสอบการเชื่อมต่อระหว่าง Health Connect และแอปที่ใช้ในการติดตามกิจกรรม ให้ทำตามขั้นตอนเหล่านี้:
+</h3>
+<ol class="instructions-cases-todo-list">
+    <li class="instructions-cases-todo-item">
+        เปิดแอป Health Connect
+    </li>
+    <li class="instructions-cases-todo-item">
+        ในส่วน “การอนุญาตและข้อมูล” แตะ “การอนุญาตแอป”
+    </li>
+    <li class="instructions-cases-todo-item">
+        ตรวจสอบว่าแอปที่คุณใช้มีรายชื่ออยู่ภายใต้ “การเข้าถึงที่อนุญาต”
+    </li>
+</ol>
+<h3 class="headers instruction-cases">
+    หากสายรัดข้อมือฟิตเนสของคุณและ Health Connect เชื่อมต่อกันแล้ว แต่ข้อมูลกิจกรรมไม่ถูกต้องหรือไม่มีข้อมูลแสดงบนหน้าจอสรุปการออกกำลังกาย:
+</h3>
+<p class="instruction-cases-text">
+    สิ่งนี้เกิดขึ้นเนื่องจากแอปติดตามกิจกรรมส่งข้อมูลแคลอรี่ จำนวนก้าว และอัตราการเต้นของหัวใจเฉพาะไปยัง Health Connect
+</p>
+<p class="instruction-cases-text">
+    FitnessOnline จะแสดงข้อมูลที่ได้รับจาก Health Connect เท่านั้น
+</p>
+<p class="instruction-cases-text">เพื่อให้แน่ใจว่าข้อมูลกิจกรรมที่ถูกต้องมากขึ้นแสดงบนหน้าจอสรุปการออกกำลังกาย:</p>
+<ol class="instructions-todo-list">
+    <li class="instructions-cases-todo-item">
+        ก่อนเริ่มการออกกำลังกายใน FitnessOnline ให้เริ่มการออกกำลังกายระบบบนสายรัดข้อมือฟิตเนสของคุณ
+    </li>
+    <li class="instructions-cases-todo-item">
+        ก่อนสิ้นสุดการออกกำลังกายใน FitnessOnline ให้เปิดแอปที่ใช้ในการติดตามกิจกรรมและรีเฟรชการซิงค์ระหว่างสายรัดข้อมือฟิตเนสและอุปกรณ์มือถือของคุณ
+    </li>
+</ol>
+</section>
+
+<section class="instructions container" id="huaweihealth">
+    <div class="uline"></div>
+    <div class="title">
+        <div class="iconset">
+            <picture>
+                <source srcset="/img/braclets/icons/huawei_100.png" media="(max-width: 1108px)">
+                <img src="/img/braclets/icons/huawei_46.png" alt="Device icon">
+            </picture>
+        </div>
+        <h2 class="headers huaweihealth">
+            การถ่ายโอนข้อมูลจากแอป Huawei Health ไปยัง FitnessOnline ทำได้ผ่าน Google Health Connect และ Health Sync (ต้องสมัครสมาชิกแบบชำระเงิน)
+        </h2>
+    </div>
+    <h3 class="headers instruction-cases">
+        ในการเชื่อมต่อ ให้ทำตามขั้นตอนเหล่านี้:
+    </h3>
+    <ol class="instructions-cases-todo-list">
+        <li class="instructions-cases-todo-item bolder">
+            ติดตั้งแอป Health Connect และลงชื่อเข้าใช้
+        </li>
+        <li class="instructions-cases-todo-item bolder">
+            ติดตั้งแอป Health Sync เปิดแอปและเลือก Huawei Health Kit เป็นแหล่งซิงค์หลัก; สำหรับทิศทางการซิงค์ เลือก Health Connect
+        </li>
+        <li class="instructions-cases-todo-item bolder">
+            แตะปุ่ม “Consent Statement”
+        </li>
+        <li class="instructions-cases-todo-item bolder">
+            <p class="instruction-cases-text bolder">
+                จากนั้น ทำตามคำแนะนำในแอป Health Sync:
+            </p>
+            <ul class="instructions-todo-list embedded">
+                <li class="instructions-todo-item">
+                    แตะ “ตรวจสอบการเชื่อมต่อกับบัญชี Google”
+                </li>
+                <li class="instructions-todo-item">
+                    แตะ “ตรวจสอบการติดตามกิจกรรมใน Health Connect”
+                </li>
+                <li class="instructions-todo-item">
+                    ติดตั้ง Huawei AppGallery (ดูคำแนะนำอย่างเป็นทางการ: <a href="https://consumer.huawei.com/my/mobileservices/appgallery/android-installation/"> Huawei Support</a>)
+                </li>
+                <li class="instructions-todo-item">
+                    ติดตั้ง HMS CORE จาก AppGallery (AppGallery จะต้องการสิทธิ์ของระบบในการติดตั้งแอปของบุคคลที่สาม)
+                </li>
+                <li class="instructions-todo-item">
+                    ติดตั้งหรืออัปเดต Huawei Health
+                </li>
+                <li class="instructions-todo-item">
+                    ลงชื่อเข้าใช้บัญชี Huawei ของคุณ
+                </li>
+                <li class="instructions-todo-item">
+                    ใน Health Sync ให้ทำเครื่องหมายในช่องสำหรับประเภทข้อมูลที่คุณต้องการถ่ายโอนไปยัง Health Connect
+                </li>
+            </ul>
+        </li>
+        <li class="instructions-cases-todo-item bolder">
+            ตรวจสอบว่า Health Sync เชื่อมต่อกับ Huawei Health สำเร็จใน “การจัดการความเป็นส่วนตัว” ของแอป Huawei Health
+        </li>
+    </ol>
+    <h3 class="headers instruction-cases">
+        ถัดไป ซิงค์ Health Connect กับแอป FitnessOnline ตามขั้นตอนดังนี้:
+    </h3>
+    <ol class="instructions-cases-todo-list">
+        <li class="instructions-cases-todo-item">
+            ในแอป FitnessOnline แตะ “เพิ่มเติม” ที่มุมขวาล่าง
+        </li>
+        <li class="instructions-cases-todo-item">
+            แตะ “การตั้งค่า”
+        </li>
+        <li class="instructions-cases-todo-item">
+            แตะ “การแชร์ข้อมูล”
+        </li>
+        <li class="instructions-cases-todo-item">
+            แตะไอคอน Health Connect
+        </li>
+        <li class="instructions-cases-todo-item">
+            แตะ “เปิดการตั้งค่า”
+        </li>
+        <li class="instructions-cases-todo-item">
+            อนุญาตให้เข้าถึงข้อมูลสำหรับแอป FitnessOnline
+        </li>
+    </ol>
+    <h3 class="headers instruction-cases">
+        หากข้อมูลไม่แสดงบนหน้าจอสรุปการออกกำลังกาย ให้ทำตามขั้นตอนเหล่านี้:
+    </h3>
+    <ol class="instructions-cases-todo-list">
+        <li class="instructions-cases-todo-item">
+            ตรวจสอบว่าข้อมูลจาก Health Sync ถูกซิงค์ไปยัง Health Connect หรือไม่
+        </li>
+        <li class="instructions-cases-todo-item">
+            <p class="instruction-cases-text">ตรวจสอบสถานะการซิงค์ระหว่าง Health Connect และ FitnessOnline โดยทำตามขั้นตอนในแอป FitnessOnline ดังนี้:</p>
             <ol class="instructions-cases-todo-list">
-              <li class="instructions-cases-todo-item">
-                แตะ “เพิ่มเติม” ที่มุมด้านขวาล่าง
-              </li>
-              <li class="instructions-cases-todo-item">
-                แตะ “การตั้งค่า”
-              </li>
-              <li class="instructions-cases-todo-item">
-                แตะ “การแชร์ข้อมูล”
-              </li>
-              <li class="instructions-cases-todo-item">
-                แตะไอคอน Health Connect
-              </li>
+                <li class="instructions-cases-todo-item">
+                    แตะ “เพิ่มเติม” ที่มุมขวาล่าง
+                </li>
+                <li class="instructions-cases-todo-item">
+                    แตะ “การตั้งค่า”
+                </li>
+                <li class="instructions-cases-todo-item">
+                    แตะ “การแชร์ข้อมูล”
+                </li>
+                <li class="instructions-cases-todo-item">
+                    แตะไอคอน Health Connect
+                </li>
             </ol>
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          ในการตรวจสอบการเชื่อมต่อระหว่าง Health Connect และแอปที่ใช้สำหรับติดตามกิจกรรม ให้ทำตามขั้นตอนเหล่านี้:
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            เปิดแอป Health Connect
-          </li>
-          <li class="instructions-cases-todo-item">
-            ในส่วน “สิทธิ์และข้อมูล” แตะ “สิทธิ์แอป”
-          </li>
-          <li class="instructions-cases-todo-item">
-            ตรวจสอบว่าแอปที่คุณใช้ถูกระบุใต้ "การเข้าถึงที่ได้รับอนุญาต"
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          หากสายรัดข้อมือ, Health Sync และ Health Connect ของคุณเชื่อมต่ออยู่ แต่ข้อมูลกิจกรรมผิดพลาดหรือไม่มีข้อมูลปรากฏขึ้นบนหน้าจอสรุปการออกกำลังกาย:
-        </h3>
-        <p class="instruction-cases-text">
-          สิ่งนี้เกิดขึ้นเนื่องจากแอปการติดตามกิจกรรมส่งข้อมูลแคลอรี่เฉพาะ, จำนวนก้าว และอัตราการเต้นของหัวใจไปยัง Health Sync และ Health Sync อาจส่งข้อมูลไปยัง Health Connect ด้วยความล่าช้า
-        </p>
-        <p class="instruction-cases-text">
-          FitnessOnline จะเปิดเผยข้อมูลที่ได้รับจาก Health Connect เท่านั้น
-        </p>
-        <p class="instruction-cases-text mb">
-          เพื่อให้แน่ใจว่าการแสดงข้อมูลกิจกรรมที่แม่นยำยิ่งขึ้นปรากฏบนหน้าจอสรุปการออกกำลังกาย ให้ทำตามขั้นตอนเหล่านี้:
-        </p>
-        <ol class="instructions-todo-list">
-          <li class="instructions-cases-todo-item">
-            ก่อนที่จะเริ่มต้นการออกกำลังกายใน FitnessOnline ให้เริ่มต้นการออกกำลังกายระบบบนสายรัดข้อมือของคุณ
-          </li>
-          <li class="instructions-cases-todo-item">
-            ก่อนจบการออกกำลังกายใน FitnessOnline ให้เปิดแอปที่ใช้สำหรับติดตามกิจกรรมและอัปเดตการซิงค์ระหว่างสายรัดข้อมือและอุปกรณ์มือถือ
-          </li>
-          <li class="instructions-cases-todo-item">
-            เปิดแอป Health Sync และอัปเดตการซิงค์กับ Health Connect
-          </li>
-          <li class="instructions-cases-todo-item">
-            กลับไปยังแอป FitnessOnline และจบการออกกำลังกาย
-          </li>
-        </ol>
-      </section>
+        </li>
+    </ol>
+<h3 class="headers instruction-cases">
+    เพื่อตรวจสอบการเชื่อมต่อระหว่าง Health Connect และ Health Sync ให้ทำตามขั้นตอนเหล่านี้:
+</h3>
+<ol class="instructions-cases-todo-list">
+    <li class="instructions-cases-todo-item">
+        เปิดแอป Health Connect
+    </li>
+    <li class="instructions-cases-todo-item">
+        ในส่วน “การอนุญาตและข้อมูล” แตะ “การอนุญาตแอป”
+    </li>
+    <li class="instructions-cases-todo-item">
+        ตรวจสอบว่า Health Sync มีรายชื่ออยู่ภายใต้ “การเข้าถึงที่อนุญาต”
+    </li>
+</ol>
+<h3 class="headers instruction-cases">
+    หากสายรัดข้อมือฟิตเนส Health Sync และ Health Connect เชื่อมต่อกันแล้ว แต่ข้อมูลกิจกรรมไม่ถูกต้องหรือไม่มีข้อมูลแสดงบนหน้าจอสรุปการออกกำลังกาย:
+</h3>
+<p class="instruction-cases-text">
+    สิ่งนี้เกิดขึ้นเนื่องจากแอปติดตามกิจกรรมส่งข้อมูลแคลอรี่ จำนวนก้าว และอัตราการเต้นของหัวใจเฉพาะไปยัง Health Sync นอกจากนี้ Health Sync อาจส่งข้อมูลไปยัง Health Connect ด้วยความล่าช้า
+</p>
+<p class="instruction-cases-text">
+    FitnessOnline จะแสดงเฉพาะข้อมูลที่ได้รับจาก Health Connect เท่านั้น
+</p>
+<p class="instruction-cases-text mb">
+    เพื่อให้แน่ใจว่าข้อมูลกิจกรรมที่ถูกต้องมากขึ้นแสดงบนหน้าจอสรุปการออกกำลังกาย ให้ทำตามขั้นตอนเหล่านี้:
+</p>
+<ol class="instructions-todo-list">
+    <li class="instructions-cases-todo-item">
+        ก่อนเริ่มการออกกำลังกายใน FitnessOnline ให้เริ่มการออกกำลังกายระบบบนสายรัดข้อมือฟิตเนสของคุณ
+    </li>
+    <li class="instructions-cases-todo-item">
+        ก่อนสิ้นสุดการออกกำลังกายใน FitnessOnline ให้เปิดแอปที่ใช้ในการติดตามกิจกรรมและรีเฟรชการซิงค์ระหว่างสายรัดข้อมือฟิตเนสและอุปกรณ์มือถือของคุณ
+    </li>
+    <li class="instructions-cases-todo-item">
+        เปิดแอป Health Sync และรีเฟรชการซิงค์กับ Health Connect
+    </li>
+    <li class="instructions-cases-todo-item">
+        กลับไปที่แอป FitnessOnline และสิ้นสุดการออกกำลังกาย
+    </li>
+</ol>
+ </section>
     </div>
   </main>
   <div class="off" id="swip-spot-layer"></div>
