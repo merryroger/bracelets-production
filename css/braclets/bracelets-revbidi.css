@@ -19,7 +19,8 @@
 }
 
 .instructions-todo-list.rev-bidi,
-.instructions-cases-todo-list.rev-bidi {
+.instructions-cases-todo-list.rev-bidi,
+.instructions-cases-todo-item .instructions-cases-todo-list {
   padding-left: 0;
   padding-right: 25px;
 }

@@ -159,6 +159,12 @@ body {
   font-size: 0;
 }
 
+.instructions-todo-list.embedded,
+.instructions-cases-todo-list.embedded {
+  margin: 0;
+  margin-bottom: 12px;
+}
+
 .instructions-cases-todo-list:last-child {
   margin-bottom: 0;
 }
@@ -171,6 +177,10 @@ body {
   font-size: 18px;
   line-height: 1.3;
   color: var(--bracelets-txt-clr);
+}
+
+p.instruction-cases-text.mb {
+  margin-bottom: 16px;
 }
 
 .instructions-todo-item {
@@ -205,6 +215,10 @@ body {
   width: 100%;
   height: 1px;
   background-color: var(--bracelets-sect-ul-clr);
+}
+
+.warning {
+  color: var(--bracelets-hlt-txt-clr);
 }
 
 /*** Header section ***/
@@ -278,6 +292,10 @@ body {
   flex-basis: 171px;
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+.device_img.healthconnect {
+  background-image: url("/img/braclets/devices/healthconnect_126.png");
 }
 
 .device_img.zepplife {

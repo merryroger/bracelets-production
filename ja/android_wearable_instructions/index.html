@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bracelets</title>
+  <title>ブレスレット</title>
   <link rel="stylesheet" href="/css/braclets/bracelets.css">
   <link rel="stylesheet" href="/css/braclets/bracelets-media.css">
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -32,18 +32,27 @@
   <main class="main">
     <section class="review container">
       <h1 class="review_header headers">
-        フィットネス・トラッカーの接続方法
+        フィットネストラッカーを接続する
       </h1>
       <div class="review-model-pad" id="devices">
         <div class="review-model-frame" id="review-model-frame">
           <div class="review-model-band" id="review-model-band">
+            <a href="#healthconnect" class="model-card">
+              <div class="device_img healthconnect"></div>
+              <h4 class="device-name">
+                Google Health Connect
+              </h4>
+              <p class="device-app">
+                &nbsp;
+              </p>
+            </a>
             <a href="#zepplife" class="model-card">
               <div class="device_img zepplife"></div>
               <h4 class="device-name">
-                Xiaomi Mi Band
+                Xiaomi Mi バンド
               </h4>
               <p class="device-app">
-                Zepp life アプリ（旧Mi fit）
+                Zepp Life アプリ<br />(以前はMi&nbsp;Fit<br />として知られていました)
               </p>
             </a>
             <a href="#zepp" class="model-card">
@@ -64,22 +73,31 @@
                 &nbsp;
               </p>
             </a>
+            <a href="#samsunghealth" class="model-card">
+              <div class="device_img samsung"></div>
+              <h4 class="device-name footnoted">
+                Samsung
+              </h4>
+              <p class="device-app">
+                Samsung Health アプリ
+              </p>
+            </a>
+            <a href="#garmin" class="model-card">
+              <div class="device_img garmin"></div>
+              <h4 class="device-name footnoted">
+                Garmin
+              </h4>
+              <p class="device-app">
+                Connect アプリ
+              </p>
+            </a>
             <a href="#fitbit" class="model-card">
               <div class="device_img fitbit"></div>
               <h4 class="device-name footnoted">
                 Fitbit
               </h4>
               <p class="device-app">
-                Fit to fit アプリ
-              </p>
-            </a>
-            <a href="#lg" class="model-card">
-              <div class="device_img lg"></div>
-              <h4 class="device-name footnoted">
-                LG
-              </h4>
-              <p class="device-app">
-                Lg health アプリ
+                Fitbit アプリ
               </p>
             </a>
             <a href="#polar" class="model-card">
@@ -88,7 +106,7 @@
                 Polar
               </h4>
               <p class="device-app">
-                Polar flow アプリ
+                Polar Flow アプリ
               </p>
             </a>
             <a href="#huaweihealth" class="model-card">
@@ -100,24 +118,6 @@
                 Huawei Health アプリ
               </p>
             </a>
-            <a href="#samsunghealth" class="model-card">
-              <div class="device_img samsung"></div>
-              <h4 class="device-name">
-                Samsung
-              </h4>
-              <p class="device-app">
-                Samsung Health アプリ
-              </p>
-            </a>
-            <a href="#garmin" class="model-card">
-              <div class="device_img garmin"></div>
-              <h4 class="device-name">
-                Garmin
-              </h4>
-              <p class="device-app">
-                Garmin Connect アプリ
-              </p>
-            </a>
           </div>
         </div>
       </div>
@@ -127,88 +127,165 @@
         </label>
       </form>
       <p class="footnote">
-        これらのデバイスは、Google Fitに直接接続されているので、手順は同じです。
+        これらのデバイスはアプリ Health Connect に直接接続されています
       </p>
     </section>
 
     <div class="descriptions">
       <div class="backtop container">
-        <a class="up" href="#devices" tabindex="100"><img src="/img/braclets/top.svg" alt="Go to top"></a>
+        <a class="up" href="#devices" tabindex="100"><img src="/img/braclets/top.svg" alt="トップに戻る"></a>
       </div>
+      <section class="instructions container" id="healthconnect">
+        <div class="uline"></div>
+        <div class="title">
+          <div class="iconset">
+            <picture>
+              <source srcset="/img/braclets/icons/healthconnect_100.png" media="(max-width: 1108px)">
+              <img src="/img/braclets/icons/healthconnect_46.png" alt="デバイスアイコン">
+            </picture>
+          </div>
+          <h2 class="headers googlefit">
+            Google Health Connect (FitnessOnline バージョン 2.20.0 以上で利用可能) をアプリと同期するには、次の手順に従ってください:
+          </h2>
+        </div>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            デバイスに Health Connect アプリをインストールしてください。
+          </li>
+          <li class="instructions-cases-todo-item">
+            お使いのデバイスに FitnessOnline を初めてインストールした後、アカウントにサインインして、Health Connect でデータを読み取るアクセスを許可してください。
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          アプリの初期インストール後に Health Connect でのデータ読み取りアクセスが許可されなかった場合:
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            右下の「その他」をタップします。
+          </li>
+          <li class="instructions-cases-todo-item">
+            「設定」をタップします。
+          </li>
+          <li class="instructions-cases-todo-item">
+            「データ共有」をタップします。
+          </li>
+          <li class="instructions-cases-todo-item">
+            Health Connect のアイコンをタップします。
+          </li>
+          <li class="instructions-cases-todo-item">
+            「設定を開く」をタップします。
+          </li>
+          <li class="instructions-cases-todo-item">
+            FitnessOnline アプリのデータ読み取りアクセスを許可してください。
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          データがワークアウトサマリー画面に表示されない場合は、次の手順に従ってください:
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            データが Health Connect に同期されているかどうか確認してください。
+          </li>
+          <li class="instructions-cases-todo-item">
+            <p class="instruction-cases-text">FitnessOnline アプリで以下の操作を行い、Health Connect と FitnessOnline の同期状態を確認してください:</p>
+            <ol class="instructions-cases-todo-list">
+              <li class="instructions-cases-todo-item">
+                右下の「その他」をタップします。
+              </li>
+              <li class="instructions-cases-todo-item">
+                「設定」をタップします。
+              </li>
+              <li class="instructions-cases-todo-item">
+                「データ共有」をタップします。
+              </li>
+              <li class="instructions-cases-todo-item">
+                Health Connect のアイコンをタップします。
+              </li>
+            </ol>
+          </li>
+        </ol>
+      </section>
+
       <section class="instructions container" id="zepplife">
         <div class="title">
           <div class="iconset">
             <picture>
               <source srcset="/img/braclets/icons/zepplife_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/zepplife_46.png" alt="Device icon">
+              <img src="/img/braclets/icons/zepplife_46.png" alt="デバイスアイコン">
             </picture>
           </div>
           <h2 class="headers zepplife">
-            Zepp Lifeとアプリを連携させる場合：
+            Zepp Life を FitnessOnline と同期するには:
           </h2>
         </div>
-        <ul class="instructions-todo-list">
-          <li class="instructions-todo-item">
-            リストバンドまたはスマートウォッチをZepp Lifeアプリに接続します。
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            フィットネスバンドやスマートウォッチを Zepp Life アプリに接続します。
           </li>
-          <li class="instructions-todo-item">
-            任意のワークアウトを開始します。ワークアウトを開始する前に、アプリはデータを記録するために、リストバンドに接続するように要求します。
+          <li class="instructions-cases-todo-item">
+            FitnessOnline で任意のワークアウトを開始します。ワークアウトの前に、アプリがデータ追跡のためにフィットネスバンドを同期するように促します。
           </li>
-        </ul>
+        </ol>
         <h3 class="headers instruction-cases">
-          アプリからの要求がなかった場合は、以下の手順を実行します。
+          同期のプロンプトが表示されない場合は、次の手順に従ってください:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            FitnessOnlineアプリを開きます。
+            FitnessOnline アプリを開きます。
           </li>
           <li class="instructions-cases-todo-item">
-            右下隅の「More」をタップします。
+            右下の「その他」をタップします。
           </li>
           <li class="instructions-cases-todo-item">
-            「Settings」をタップします。
+            「設定」をタップします。
           </li>
           <li class="instructions-cases-todo-item">
-            「Data exchange」をタップします。
+            「データ共有」をタップします。
           </li>
           <li class="instructions-cases-todo-item">
             アプリのアイコンをタップします。
           </li>
           <li class="instructions-cases-todo-item">
-            「Connect」をタップします。
+            「接続」をタップします。
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          リストバンドがすでに接続されていても、データが転送されていない場合は、以下の手順を実行します。
+          フィットネスバンドが接続されているが、データが同期されない場合:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            リストバンドがZepp Lifeアプリに接続されていることを確認します。これを行うには、Zepp Lifeアプリを開き、「プロフィール」に移動し、「マイデバイス」の下にリストバンドが接続されていることを確認します。
+            Bluetooth をオフにしてから再びオンにします。
           </li>
           <li class="instructions-cases-todo-item">
-            FitnessOnlineアプリにアクセスします。
+            Zepp Life アプリでフィットネスバンドの同期状態を確認します。これを行うには、Zepp Life アプリを開き、「プロフィール」タブに移動し、「マイデバイス」セクションでフィットネスバンドが接続されていることを確認します。
           </li>
           <li class="instructions-cases-todo-item">
-            右下隅にある「More」をタップします。
+            FitnessOnline アプリを開きます。
           </li>
           <li class="instructions-cases-todo-item">
-            「Settings」をタップします。
+            右下の「その他」をタップします。
           </li>
           <li class="instructions-cases-todo-item">
-            「Data exchange」をタップします。
+            「設定」をタップします。
+          </li>
+          <li class="instructions-cases-todo-item">
+            「データ共有」をタップします。
           </li>
           <li class="instructions-cases-todo-item">
             アプリのアイコンをタップします。
           </li>
           <li class="instructions-cases-todo-item">
-            「Repeat connection」をタップします。
+            「再接続」をタップします。
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          リストバンドが接続されていても、カロリーがわずかしかカウントされていない場合：
+          フィットネスバンドが接続されているが、ワークアウトサマリー画面にカロリーが少なく表示される場合:
         </h3>
         <p class="instruction-cases-text">
-          システム・ワークアウトがオンになっていない時、リストバンドが消費カロリーを計算した場合に起こります。より正確な消費カロリーを表示するには、リストバンドでワークアウトを開始します。
+          これは、あなたのフィットネスバンドが特定の消費カロリー量を計算しているためです。
+        </p>
+        <p class="instruction-cases-text">
+          消費カロリーのより正確な表示のためには、フィットネスバンドでシステムトレーニングを開始する必要があります。
         </p>
       </section>
 
@@ -218,140 +295,152 @@
           <div class="iconset">
             <picture>
               <source srcset="/img/braclets/icons/zepp_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/zepp_46.png" alt="Device icon">
+              <img src="/img/braclets/icons/zepp_46.png" alt="デバイスアイコン">
             </picture>
           </div>
           <h2 class="headers zepp">
-            Zeppとアプリを連携させる場合：
+            Zepp を FitnessOnline と同期するには:
           </h2>
         </div>
-        <ul class="instructions-todo-list">
-          <li class="instructions-todo-item">
-            リストバンドまたはスマートウォッチをZeppアプリに接続します。
-          </li>
-          <li class="instructions-todo-item">
-            任意のワークアウトを開始します。ワークアウトを開始する前に、アプリはデータを記録するために、リストバンドに接続するように要求します。
-          </li>
-        </ul>
-        <h3 class="headers instruction-cases">
-          アプリからの要求がなかった場合は、以下の手順を実行します。
-        </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            FitnessOnlineアプリを開きます。
+            フィットネスバンドやスマートウォッチを Zepp アプリに接続します。
           </li>
           <li class="instructions-cases-todo-item">
-            右下隅の「More」をタップします。
-          </li>
-          <li class="instructions-cases-todo-item">
-            「Settings」をタップします。
-          </li>
-          <li class="instructions-cases-todo-item">
-            「Data exchange」をタップします。
-          </li>
-          <li class="instructions-cases-todo-item">
-            アプリのアイコンをタップします。
-          </li>
-          <li class="instructions-cases-todo-item">
-            「Connect」をタップします。
+            FitnessOnline で任意のワークアウトを開始します。ワークアウトの前に、アプリがデータ追跡のためにフィットネスバンドを同期するように促します。
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          リストバンドがすでに接続されていても、データが転送されていない場合は、以下の手順を実行します。
+          同期のプロンプトが表示されない場合は、次の手順に従ってください:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            リストバンドがZeppアプリに接続されていることを確認します。これを行うには、Zeppアプリを開き、「プロフィール」に移動し、「マイデバイス」の下にリストバンドが接続されていることを確認します。
+            FitnessOnline アプリを開きます。
           </li>
           <li class="instructions-cases-todo-item">
-            FitnessOnlineアプリにアクセスします。
+            右下の「その他」をタップします。
           </li>
           <li class="instructions-cases-todo-item">
-            右下隅にある「More」をタップします。
+            「設定」をタップします。
           </li>
           <li class="instructions-cases-todo-item">
-            「Settings」をタップします。
+            「データ共有」をタップします。
           </li>
           <li class="instructions-cases-todo-item">
-            「Data exchange」をタップします。
+            アプリアイコンをタップします。
           </li>
           <li class="instructions-cases-todo-item">
-            アプリのアイコンをタップします。
-          </li>
-          <li class="instructions-cases-todo-item">
-            「Repeat connection」をタップします。
+            「接続」をタップします。
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          リストバンドが接続されていても、カロリーがわずかしかカウントされていない場合：
+          フィットネスバンドが接続されているが、データが同期されない場合:
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            Bluetooth をオフにしてから再びオンにします。
+          </li>
+          <li class="instructions-cases-todo-item">
+            Zepp アプリでのフィットネスバンドの同期状態を確認します。これを行うには、Zepp アプリを開き、「プロフィール」タブに移動し、「マイデバイス」セクションでフィットネスバンドが接続されていることを確認します。
+          </li>
+          <li class="instructions-cases-todo-item">
+            FitnessOnline アプリを開きます。
+          </li>
+          <li class="instructions-cases-todo-item">
+            右下の「その他」をタップします。
+          </li>
+          <li class="instructions-cases-todo-item">
+            「設定」をタップします。
+          </li>
+          <li class="instructions-cases-todo-item">
+            「データ共有」をタップします。
+          </li>
+          <li class="instructions-cases-todo-item">
+            アプリアイコンをタップします。
+          </li>
+          <li class="instructions-cases-todo-item">
+            「再接続」をタップします。
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          フィットネスバンドが接続されているが、ワークアウトサマリー画面にカロリーが少なく表示される場合:
         </h3>
         <p class="instruction-cases-text">
-          システム・ワークアウトがオンになっていない時、リストバンドが消費カロリーを計算した場合に起こります。より正確な消費カロリーを表示するには、リストバンドでワークアウトを開始します。
+          これは、フィットネスバンドが特定の消費カロリーを計算しているためです。
+        </p>
+        <p class="instruction-cases-text">
+          消費カロリーのより正確な表示のためには、フィットネスバンドでシステムワークアウトを開始する必要があります。
         </p>
       </section>
 
       <section class="instructions container" id="googlefit">
         <div class="uline"></div>
+        <p class="warning bolder">注意！Google Fit は2025年6月30日以降は利用できなくなります:<br />
+          <nobr><a href="https://developers.google.com/fit">https://developers.google.com/fit</a></nobr>
+        </p>
         <div class="title">
           <div class="iconset">
             <picture>
               <source srcset="/img/braclets/icons/googlefit_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/googlefit_46.png" alt="Device icon">
+              <img src="/img/braclets/icons/googlefit_46.png" alt="デバイスアイコン">
             </picture>
           </div>
           <h2 class="headers googlefit">
-            Google Fitとアプリを連携させる場合：
+            Google Fit（FitnessOnline バージョン 2.19.2 およびそれ以下で利用可能）をアプリと同期するには、次の手順に従ってください:
           </h2>
         </div>
-        <ul class="instructions-todo-list">
-          <li class="instructions-todo-item">
-            任意のワークアウトを開始します。すでにGoogle Fitアプリがインストールされている場合、ワークアウトを開始する前に、ペアリングに招待されます。
-          </li>
-        </ul>
-        <h3 class="headers instruction-cases">
-          招待がない場合は、以下の手順を実行します。
-        </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            FitnessOnlineアプリを開きます。
+            デバイスに Google Fit アプリをインストールしてください。
           </li>
           <li class="instructions-cases-todo-item">
-            右下隅の「More」をタップします。
-          </li>
-          <li class="instructions-cases-todo-item">
-            「Settings」をタップします。
-          </li>
-          <li class="instructions-cases-todo-item">
-            「Data exchange」をタップします。
-          </li>
-          <li class="instructions-cases-todo-item">
-            Google Fitのアイコンをタップします。
-          </li>
-          <li class="instructions-cases-todo-item">
-            「Sign in with Google」をタップします。
+            FitnessOnline で任意のワークアウトを開始します。ワークアウトの前に、アプリが Google Fit と同期するように促します。
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          データがレポートに表示されない場合、以下の手順を実行します。
+          同期のプロンプトが表示されない場合は、次の手順に従ってください:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            Google Fitにデータが転送されているか確認します。
+            FitnessOnline アプリを開きます。
           </li>
           <li class="instructions-cases-todo-item">
-            <p class="instruction-cases-text">Google Fitとアプリの接続を確認します。これを行うには、FitnessOnlineアプリで次の手順を実行します。</p>
+            右下の「その他」をタップします。
+          </li>
+          <li class="instructions-cases-todo-item">
+            「設定」をタップします。
+          </li>
+          <li class="instructions-cases-todo-item">
+            「データ共有」をタップします。
+          </li>
+          <li class="instructions-cases-todo-item">
+            Google Fit のアイコンをタップします。
+          </li>
+          <li class="instructions-cases-todo-item">
+            「Google でログイン」をタップします。
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          データがワークアウトサマリー画面に表示されない場合は、次の手順に従ってください:
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            データが Google Fit に同期されているか確認してください。
+          </li>
+          <li class="instructions-cases-todo-item">
+            <p class="instruction-cases-text">FitnessOnline アプリで以下の操作を行い、Google Fit と FitnessOnline の同期状態を確認してください:</p>
             <ol class="instructions-cases-todo-list">
               <li class="instructions-cases-todo-item">
-                右下隅の「More」をタップします。
+                右下の「その他」をタップします。
               </li>
               <li class="instructions-cases-todo-item">
-                「Settings」をタップします。
+                「設定」をタップします。
               </li>
               <li class="instructions-cases-todo-item">
-                「Data exchange」をタップします。
+                「データ共有」をタップします。
               </li>
               <li class="instructions-cases-todo-item">
-                Google Fitのアイコンをタップします。
+                Google Fit のアイコンをタップします。
               </li>
             </ol>
           </li>
@@ -359,119 +448,133 @@
       </section>
 
       <section class="instructions container" id="fitbit">
-        <div id="lg"></div>
         <div id="polar"></div>
+        <div id="samsunghealth"></div>
+        <div id="garmin"></div>
         <div class="uline"></div>
         <div class="title">
           <div class="iconset">
             <picture>
-              <source srcset="/img/braclets/icons/fitbit_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/fitbit_46.png" alt="Device icon">
+              <source srcset="/img/braclets/icons/samsung_100.png" media="(max-width: 1108px)">
+              <img src="/img/braclets/icons/samsung_46.png" alt="デバイスアイコン">
             </picture>
             <picture>
-              <source srcset="/img/braclets/icons/lg_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/lg_46.png" alt="Device icon">
+              <source srcset="/img/braclets/icons/garmin_100.png" media="(max-width: 1108px)">
+              <img src="/img/braclets/icons/garmin_46.png" alt="デバイスアイコン">
+            </picture>
+            <picture>
+              <source srcset="/img/braclets/icons/fitbit_100.png" media="(max-width: 1108px)">
+              <img src="/img/braclets/icons/fitbit_46.png" alt="デバイスアイコン">
             </picture>
             <picture>
               <source srcset="/img/braclets/icons/polar_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/polar_46.png" alt="Device icon">
+              <img src="/img/braclets/icons/polar_46.png" alt="デバイスアイコン">
             </picture>
           </div>
           <h2 class="headers fitbit lg polar">
-            Fitbit、LG、Polarとアプリを連携させる場合：
+            Samsung Health, Garmin, Fitbit、および Polar Flow からのデータ転送は、Google Health Connect を介して FitnessOnline にて実行されます
           </h2>
         </div>
-        <h5 class="headers instruction-comment">
-          アクティビティを記録するアプリをFitnessOnlineアプリと連携させるためには、アプリをGoogle Fitと同期させる必要があります。
-        </h5>
         <h3 class="headers instruction-cases">
-          以下の手順を実行します。
+          接続するには、次の手順に従ってください:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            Google Fitアプリをインストールします。
+            Health Connect アプリをインストールし、サインインします。
           </li>
           <li class="instructions-cases-todo-item">
-            アカウントを作成します。
+            お使いの活動を追跡するためのアプリを開きます。
           </li>
           <li class="instructions-cases-todo-item">
-            アクティビティの記録に使用するアプリを開きます。
+            設定メニューにアクセスします。
           </li>
           <li class="instructions-cases-todo-item">
-            設定に移動します。
+            サードパーティアプリを接続するためのセクションを見つけてください。通常、これには「他のサービスを接続」、「アプリとデバイス」、「接続を管理」などのラベルが付いています。
           </li>
           <li class="instructions-cases-todo-item">
-            他のアプリを接続するためのセクションを探します。これは通常、「他のサービスを接続」、「アプリとデバイス」、「接続を管理」等と呼ばれています。
-          </li>
-          <li class="instructions-cases-todo-item">
-            指示に従って、アプリをGoogle Fitと接続します。
+            アプリを Health Connect に接続するための指示に従ってください。
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          次に、以下の手順でGoogle FitとFitnessOnlineアプリを同期させる必要があります。
-        </h3>
-        <ul class="instructions-todo-list">
-          <li class="instructions-todo-item">
-            任意のワークアウトを開始します。ワークアウトを開始する前に、ペアリングに招待されます。
-          </li>
-        </ul>
-        <h3 class="headers instruction-cases">
-          招待がない場合は、以下の手順を実行します。
+          そして、次のとおりに Health Connect を FitnessOnline アプリと同期させます:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            FitnessOnlineアプリを開きます。
+            FitnessOnline アプリで、右下の「その他」をタップします。
           </li>
           <li class="instructions-cases-todo-item">
-            右下隅の「More」をタップします。
+            「設定」をタップします。
           </li>
           <li class="instructions-cases-todo-item">
-            「Settings」をタップします。
+            「データ共有」をタップします。
           </li>
           <li class="instructions-cases-todo-item">
-            「Data exchange」をタップします。
+            Health Connect のアイコンをタップします。
           </li>
           <li class="instructions-cases-todo-item">
-            Google Fitのアイコンをタップします。
+            「設定を開く」をタップします。
           </li>
           <li class="instructions-cases-todo-item">
-            「Sign in with Google」をタップします。
+            FitnessOnline アプリのデータ読み取りアクセスを許可してください。
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          データがレポートに表示されない場合は、以下の手順を実行します。
+          データがワークアウトサマリー画面に表示されない場合は、次の手順に従ってください:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            Google Fitにデータが転送されているか確認します。
+            活動追跡に使用されるアプリからのデータが Health Connect に同期されるかどうか確認してください。
           </li>
           <li class="instructions-cases-todo-item">
-            「Settings」—「Data exchange」—「Google Fit」で、Google Fitとアプリが接続されていることを確認します。
+            <p class="instruction-cases-text">次の操作を行い、Health Connect と FitnessOnline の同期状態を確認してください:</p>
+            <ol class="instructions-cases-todo-list">
+              <li class="instructions-cases-todo-item">
+                右下の「その他」をタップします。
+              </li>
+              <li class="instructions-cases-todo-item">
+                「設定」をタップします。
+              </li>
+              <li class="instructions-cases-todo-item">
+                「データ共有」をタップします。
+              </li>
+              <li class="instructions-cases-todo-item">
+                Health Connect のアイコンをタップします。
+              </li>
+            </ol>
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          アクティビティを記録するアプリをGoogle Fitと連携させるには、以下の手順を実行します。
+          Health Connect と活動追跡に使用されるアプリとの接続を確認するには、次の手順に従ってください:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            Google Fitアプリを開きます。
+            Health Connect アプリを開きます。
           </li>
           <li class="instructions-cases-todo-item">
-            「プロフィール」—「設定」をタップします。
+            「許可とデータ」セクションで「アプリ権限」をタップします。
           </li>
           <li class="instructions-cases-todo-item">
-            「接続済みアプリの管理」をタップします。
-          </li>
-          <li class="instructions-cases-todo-item">
-            接続されているすべてのアプリのリストを開くには、「すべてのアプリとデバイス」の下矢印をタップします。
+            お使いのアプリが「許可されたアクセス」リストに含まれていることを確認してください。
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          リストバンドが接続されていても、カロリーがわずかしかカウントされていない場合：
+          フィットネスバンドと Health Connect が接続されているが、不正確な活動データやデータが表示されない場合は、次の手順に従ってください:
         </h3>
         <p class="instruction-cases-text">
-          システム・ワークアウトがオンになっていない時、リストバンドが消費カロリーを計算した場合に起こります。より正確な消費カロリーを表示するには、リストバンドでワークアウトを開始します。
+          これは、活動追跡アプリがカロリー、歩数、心拍数の特定のデータを Health Connect に送信しているためです。
         </p>
+        <p class="instruction-cases-text">
+          FitnessOnline は Health Connect から受信したデータのみを表示します。
+        </p>
+        <p class="instruction-cases-text">ワークアウトサマリー画面により正確な活動データを表示するには:</p>
+        <ol class="instructions-todo-list">
+          <li class="instructions-cases-todo-item">
+            FitnessOnline でのワークアウトを開始する前に、フィットネスバンドでシステムワークアウトを開始してください。
+          </li>
+          <li class="instructions-cases-todo-item">
+            FitnessOnline のワークアウトを終了する前に、活動追跡に使用するアプリを開き、フィットネスバンドとモバイルデバイスの間で同期を更新してください。
+          </li>
+        </ol>
       </section>
 
       <section class="instructions container" id="huaweihealth">
@@ -480,308 +583,146 @@
           <div class="iconset">
             <picture>
               <source srcset="/img/braclets/icons/huawei_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/huawei_46.png" alt="Device icon">
+              <img src="/img/braclets/icons/huawei_46.png" alt="デバイスアイコン">
             </picture>
           </div>
           <h2 class="headers huaweihealth">
-            Huawei HealthとFitnessOnlineを接続するには、Google Fitを使用する必要があります。
+            Huawei Health アプリから FitnessOnline へのデータ転送は、Google Health Connect および Health Sync を介して行われます (有料サブスクリプションが必要です)
           </h2>
         </div>
-        <h5 class="headers instruction-comment">
-          これを行うには、サードパーティ・アプリのHealth Sync（有料アプリ）を使用する必要があります。
-          有料のアプリを使用してデータを同期できない場合は、前のウィンドウに戻り、「Google Fitと同期」を選択します（リストバンドは考慮されません）。
-        </h5>
         <h3 class="headers instruction-cases">
-          サードパーティ・アプリを使用するには、Playストアで次の操作が必要です。
+          接続するには、次の手順に従ってください:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item bolder">
-            Google Fitをインストールします。
+            Health Connect アプリをインストールし、サインインしてください。
           </li>
           <li class="instructions-cases-todo-item bolder">
-            Health Syncアプリをインストールします。アプリを起動し、同期するメインソースとしてHuawei Health Kitを選択し、同期方向としてGoogle Fitを選択します。
+            Health Sync アプリをインストールします。アプリを開いて、Huawei Health Kit を主な同期ソースとして選択し、同期方向として Health Connect を選択します。
           </li>
           <li class="instructions-cases-todo-item bolder">
-            「同意の宣言」をタップします。
+            「同意書」をタップします。
           </li>
           <li class="instructions-cases-todo-item bolder">
             <p class="instruction-cases-text bolder">
-              Health Syncアプリの指示に従い、以下の操作を行います。
+              その後、Health Sync アプリの指示に従ってください:
             </p>
-            <ul class="instructions-todo-list">
+            <ul class="instructions-todo-list embedded">
               <li class="instructions-todo-item">
-                「GOOGLEアカウントの接続を確認してください」をタップします。
+                「Google アカウントへの接続を確認」をタップします。
               </li>
               <li class="instructions-todo-item">
-                「GOOGLE FITでアクティビティの追跡を確認します」をタップします。
+                「Health Connect での活動追跡を確認」をタップします。
               </li>
               <li class="instructions-todo-item">
-                Huawei AppGalleryをインストールします（公式ウェブサイト <a
-                  href="https://consumer.huawei.com/my/mobileservices/appgallery/android-installation/">https://consumer.huawei.com/<wbr>my/mobileservices/appgallery/<wbr>android-installation</a> の手順のコピー）。
+                Huawei AppGallery をインストールします (公式ガイドを参照: <a href="https://consumer.huawei.com/jp/mobileservices/appgallery/android-installation/">Huawei サポート</a>).
               </li>
               <li class="instructions-todo-item">
-                HMS COREをインストールします（これを行うには、AppGalleryを開いて、HMS COREを入力します）。AppGalleryは本製品からのインストール許可を要求しますので、許可する必要があります。
+                AppGallery から HMS CORE をインストールする (AppGallery はサードパーティアプリのインストールのためのシステム権限が必要です)。
               </li>
               <li class="instructions-todo-item">
-                Huawei Healthをインストール（またはアップデート）します。
+                Huawei Health をインストールまたは更新します。
               </li>
               <li class="instructions-todo-item">
-                Huaweiアカウントを認証またはログインします。
+                Huawei アカウントにサインインします。
               </li>
               <li class="instructions-todo-item">
-                Health Syncアプリを同期するために必要なボックスにチェックを入れます。
+                Health Sync で、Health Connect に転送したいデータ種別のチェックボックスをオンにします。
               </li>
             </ul>
           </li>
           <li class="instructions-cases-todo-item bolder">
-            <p class="instruction-cases-text bolder">
-              Google Fitとアプリを連携させる場合は、以下の手順を実行します。
-            </p>
-            <ul class="instructions-todo-list">
-              <li class="instructions-todo-item">
-                任意のワークアウトを開始します。すでにGoogle Fitアプリがインストールされている場合、ワークアウトを開始する前に、ペアリングに招待されます。
+            Health Sync が Huawei Health アプリの「プライバシー管理」設定でしっかりと接続されていることを確認してください。
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          そして、次のとおりに Health Connect を FitnessOnline アプリと同期させます:
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            FitnessOnline アプリで、右下の「その他」をタップします。
+          </li>
+          <li class="instructions-cases-todo-item">
+            「設定」をタップします。
+          </li>
+          <li class="instructions-cases-todo-item">
+            「データ共有」をタップします。
+          </li>
+          <li class="instructions-cases-todo-item">
+            Health Connect のアイコンをタップします。
+          </li>
+          <li class="instructions-cases-todo-item">
+            「設定を開く」をタップします。
+          </li>
+          <li class="instructions-cases-todo-item">
+            FitnessOnline アプリのデータ読み取りアクセスを許可してください。
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          データがワークアウトサマリー画面に表示されない場合は、次の手順に従ってください:
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            Health Sync からのデータが Health Connect に同期されているかどうか確認してください。
+          </li>
+          <li class="instructions-cases-todo-item">
+            <p class="instruction-cases-text">FitnessOnline アプリで以下の操作を行い、Health Connect と FitnessOnline の同期状態を確認してください:</p>
+            <ol class="instructions-cases-todo-list">
+              <li class="instructions-cases-todo-item">
+                右下の「その他」をタップします。
               </li>
-            </ul>
+              <li class="instructions-cases-todo-item">
+                「設定」をタップします。
+              </li>
+              <li class="instructions-cases-todo-item">
+                「データ共有」をタップします。
+              </li>
+              <li class="instructions-cases-todo-item">
+                Health Connect のアイコンをタップします。
+              </li>
+            </ol>
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          招待がない場合は、以下の手順を実行します。
+          Health Connect と Health Sync の間の接続を確認するには、次の手順に従ってください:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            FitnessOnlineアプリを開きます。
+            Health Connect アプリを開きます。
           </li>
           <li class="instructions-cases-todo-item">
-            右下隅の「More」をタップします。
+            「許可とデータ」セクションで「アプリ権限」をタップします。
           </li>
           <li class="instructions-cases-todo-item">
-            「Settings」をタップします。
-          </li>
-          <li class="instructions-cases-todo-item">
-            「Data exchange」をタップします。
-          </li>
-          <li class="instructions-cases-todo-item">
-            Google Fitのアイコンをタップします。
-          </li>
-          <li class="instructions-cases-todo-item">
-            「Sign in with Google」をタップします。
+            Health Sync が「許可されたアクセス」リストにあることを確認してください。
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          データがレポートに表示されない場合は、以下の手順を実行します。
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            Google Fitにデータが転送されているか確認します。
-          </li>
-          <li class="instructions-cases-todo-item">
-            「Settings」—「Data exchange」—「Google Fit」で、Google Fitとアプリが接続されていることを確認します。
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          リストバンドが接続されていても、カロリーがわずかしかカウントされていない場合：
+          フィットネスバンド、Health Sync、及び Health Connect が接続されているが、誤った活動データやデータが表示されていない場合:
         </h3>
         <p class="instruction-cases-text">
-          システム・ワークアウトがオンになっていない時、リストバンドが消費カロリーを計算した場合に起こります。より正確な消費カロリーを表示するには、リストバンドでワークアウトを開始します。
+          これは、活動追跡アプリがカロリー、歩数、心拍数の特定のデータを Health Sync に送信しているためです。また、Health Sync は Health Connect にデータを遅れて送信することがあります。
         </p>
-      </section>
-
-      <section class="instructions container" id="samsunghealth">
-        <div class="uline"></div>
-        <div class="title">
-          <div class="iconset">
-            <picture>
-              <source srcset="/img/braclets/icons/samsung_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/samsung_46.png" alt="Device icon">
-            </picture>
-          </div>
-          <h2 class="headers samsunghealth">
-            Samsung HealthとFitnessOnlineを接続するには、Google Fitを使用する必要があります。
-          </h2>
-        </div>
-        <h5 class="headers instruction-comment">
-          これを行うには、サードパーティ・アプリのHealth Sync（有料アプリ）を使用する必要があります。
-          有料のアプリを使用してデータを同期できない場合は、前のウィンドウに戻り、「Google Fitと同期」を選択します（リストバンドは考慮されません）。
-        </h5>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item bolder">
-            Google Fitをインストールします。
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            Health Syncアプリをインストールします。アプリを起動し、同期するメインソースとしてSamsung Healthを選択し、同期方向としてGoogle Fitを選択します。
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            「同意の宣言」をタップします。
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            <p class="instruction-cases-text bolder">
-              Health Syncアプリの指示に従い、以下の操作を行います。
-            </p>
-            <ul class="instructions-todo-list">
-              <li class="instructions-todo-item">
-                「GOOGLEアカウントの接続を確認してください」をタップします。
-              </li>
-              <li class="instructions-todo-item">
-                「GOOGLE FITでアクティビティの追跡を確認します」をタップします。
-              </li>
-              <li class="instructions-todo-item">
-                Health Syncアプリで、同期に必要なボックスにチェックを入れます。
-              </li>
-            </ul>
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            <p class="instruction-cases-text bolder">
-              Google Fitとアプリを連携させる場合は、以下の手順を実行します。
-            </p>
-            <ul class="instructions-todo-list">
-              <li class="instructions-todo-item">
-                任意のワークアウトを開始します。すでにGoogle Fitアプリがインストールされている場合、ワークアウトを開始する前に、ペアリングに招待されます。
-              </li>
-            </ul>
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          招待がない場合は、以下の手順を実行します。
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            FitnessOnlineアプリを開きます。
-          </li>
-          <li class="instructions-cases-todo-item">
-            右下隅の「More」をタップします。
-          </li>
-          <li class="instructions-cases-todo-item">
-            「Settings」をタップします。
-          </li>
-          <li class="instructions-cases-todo-item">
-            「Data exchange」をタップします。
-          </li>
-          <li class="instructions-cases-todo-item">
-            Google Fitのアイコンをタップします。
-          </li>
-          <li class="instructions-cases-todo-item">
-            「Sign in with Google」をタップします。
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          データがレポートに表示されない場合は、以下の手順を実行します。
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            Google Fitにデータが転送されているか確認します。
-          </li>
-          <li class="instructions-cases-todo-item">
-            「Settings」—「Data exchange」—「Google Fit」で、Google Fitとアプリが接続されていることを確認します。
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          リストバンドが接続されていても、カロリーがわずかしかカウントされていない場合：
-        </h3>
         <p class="instruction-cases-text">
-          システム・ワークアウトがオンになっていない時、リストバンドが消費カロリーを計算した場合に起こります。より正確な消費カロリーを表示するには、リストバンドでワークアウトを開始します。
+          FitnessOnline は Health Connect から受信したデータのみを表示します。
         </p>
-      </section>
-
-      <section class="instructions container" id="garmin">
-        <div class="uline"></div>
-        <div class="title">
-          <div class="iconset">
-            <picture>
-              <source srcset="/img/braclets/icons/garmin_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/garmin_46.png" alt="Device icon">
-            </picture>
-          </div>
-          <h2 class="headers garmin">
-            GarminとFitnessOnlineを接続するには、Google Fitを使用する必要があります。
-          </h2>
-        </div>
-        <h5 class="headers instruction-comment">
-          これを行うには、サードパーティ・アプリのHealth Sync（有料アプリ）を使用する必要があります。
-          有料のアプリを使用してデータを同期できない場合は、前のウィンドウに戻り、「Google Fitと同期」を選択します（リストバンドは考慮されません）。
-        </h5>
-        <h3 class="headers instruction-cases">
-          サードパーティ・アプリを使用するには、Playストアで次の操作が必要です。
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item bolder">
-            Google Fitをインストールします。
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            Health Syncアプリをインストールします。アプリを起動し、同期するメインソースとしてGarminを選択し、同期方向としてGoogle Fitを選択します。
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            「同意の宣言」をタップします。
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            <p class="instruction-cases-text bolder">
-              Health Syncアプリの指示に従い、以下の操作を行います。
-            </p>
-            <ul class="instructions-todo-list">
-              <li class="instructions-todo-item">
-                「GOOGLEアカウントの接続を確認してください」をタップします。
-              </li>
-              <li class="instructions-todo-item">
-                「GOOGLE FITでアクティビティの追跡を確認します」をタップします。
-              </li>
-              <li class="instructions-todo-item">
-                「Garmin接続を開始」をタップし、アカウントを作成するか、Garminアカウントにログインします。
-              </li>
-              <li class="instructions-todo-item">
-                Health Syncアプリで、同期に必要なボックスにチェックを入れます。
-              </li>
-            </ul>
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            <p class="instruction-cases-text bolder">
-              Google Fitとアプリを連携させる場合は、以下の手順を実行します。
-            </p>
-            <ul class="instructions-todo-list">
-              <li class="instructions-todo-item">
-                任意のワークアウトを開始します。すでにGoogle Fitアプリがインストールされている場合、ワークアウトを開始する前に、ペアリングに招待されます。
-              </li>
-            </ul>
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          招待がない場合は、以下の手順を実行します。
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            FitnessOnlineアプリを開きます。
-          </li>
-          <li class="instructions-cases-todo-item">
-            右下隅の「More」をタップします。
-          </li>
-          <li class="instructions-cases-todo-item">
-            「Settings」をタップします。
-          </li>
-          <li class="instructions-cases-todo-item">
-            「Data exchange」をタップします。
-          </li>
-          <li class="instructions-cases-todo-item">
-            Google Fitのアイコンをタップします。
-          </li>
-          <li class="instructions-cases-todo-item">
-            「Sign in with Google」をタップします。
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          データがレポートに表示されない場合は、以下の手順を実行します。
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            Google Fitにデータが転送されているか確認します。
-          </li>
-          <li class="instructions-cases-todo-item">
-            「Settings」—「Data exchange」—「Google Fit」で、Google Fitとアプリが接続されていることを確認します。
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          リストバンドが接続されていても、カロリーがわずかしかカウントされていない場合：
-        </h3>
-        <p class="instruction-cases-text">
-          システム・ワークアウトがオンになっていない時、リストバンドが消費カロリーを計算した場合に起こります。より正確な消費カロリーを表示するには、リストバンドでワークアウトを開始します。
+        <p class="instruction-cases-text mb">
+          より正確な活動データがワークアウトサマリー画面に表示されるようにするには、次の手順に従ってください:
         </p>
+        <ol class="instructions-todo-list">
+          <li class="instructions-cases-todo-item">
+            FitnessOnline のワークアウトを開始する前に、フィットネスバンド上でシステムワークアウトを開始してください。
+          </li>
+          <li class="instructions-cases-todo-item">
+            FitnessOnline のワークアウトを終了する前に、活動追跡に使用するアプリを開き、フィットネスバンドとモバイルデバイスの間で同期を更新してください。
+          </li>
+          <li class="instructions-cases-todo-item">
+            Health Sync アプリを開いて、Health Connect との同期を更新してください。
+          </li>
+          <li class="instructions-cases-todo-item">
+            FitnessOnline アプリに戻り、ワークアウトを完了させてください。
+          </li>
+        </ol>
       </section>
     </div>
   </main>

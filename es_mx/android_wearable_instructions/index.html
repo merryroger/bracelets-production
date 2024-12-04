@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bracelets</title>
+  <title>Brazaletes</title>
   <link rel="stylesheet" href="/css/braclets/bracelets.css">
   <link rel="stylesheet" href="/css/braclets/bracelets-media.css">
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -32,18 +32,27 @@
   <main class="main">
     <section class="review container">
       <h1 class="review_header headers">
-        Cómo conectar a un fitness tracker
+        Conectar un rastreador de fitness
       </h1>
       <div class="review-model-pad" id="devices">
         <div class="review-model-frame" id="review-model-frame">
           <div class="review-model-band" id="review-model-band">
+            <a href="#healthconnect" class="model-card">
+              <div class="device_img healthconnect"></div>
+              <h4 class="device-name">
+                Google Health Connect
+              </h4>
+              <p class="device-app">
+                &nbsp;
+              </p>
+            </a>
             <a href="#zepplife" class="model-card">
               <div class="device_img zepplife"></div>
               <h4 class="device-name">
                 Xiaomi Mi Band
               </h4>
               <p class="device-app">
-                Zepp life app<br>(anteriormente&nbsp;Mi&nbsp;Fit)
+                App Zepp Life<br />(anteriormente conocida como Mi&nbsp;Fit)
               </p>
             </a>
             <a href="#zepp" class="model-card">
@@ -52,7 +61,7 @@
                 Xiaomi Amazfit
               </h4>
               <p class="device-app">
-                Zepp app
+                App Zepp
               </p>
             </a>
             <a href="#googlefit" class="model-card">
@@ -64,22 +73,31 @@
                 &nbsp;
               </p>
             </a>
+            <a href="#samsunghealth" class="model-card">
+              <div class="device_img samsung"></div>
+              <h4 class="device-name footnoted">
+                Samsung
+              </h4>
+              <p class="device-app">
+                App Samsung Health
+              </p>
+            </a>
+            <a href="#garmin" class="model-card">
+              <div class="device_img garmin"></div>
+              <h4 class="device-name footnoted">
+                Garmin
+              </h4>
+              <p class="device-app">
+                App Connect
+              </p>
+            </a>
             <a href="#fitbit" class="model-card">
               <div class="device_img fitbit"></div>
               <h4 class="device-name footnoted">
                 Fitbit
               </h4>
               <p class="device-app">
-                Fit&nbsp;to&nbsp;fit&nbsp;app
-              </p>
-            </a>
-            <a href="#lg" class="model-card">
-              <div class="device_img lg"></div>
-              <h4 class="device-name footnoted">
-                LG
-              </h4>
-              <p class="device-app">
-                app LG&nbsp;health
+                App Fitbit
               </p>
             </a>
             <a href="#polar" class="model-card">
@@ -88,7 +106,7 @@
                 Polar
               </h4>
               <p class="device-app">
-                Polar&nbsp;Flow&nbsp;app
+                App Polar Flow
               </p>
             </a>
             <a href="#huaweihealth" class="model-card">
@@ -97,25 +115,7 @@
                 Honor/Huawei
               </h4>
               <p class="device-app">
-                app Huawei&nbsp;Health
-              </p>
-            </a>
-            <a href="#samsunghealth" class="model-card">
-              <div class="device_img samsung"></div>
-              <h4 class="device-name">
-                Samsung
-              </h4>
-              <p class="device-app">
-                app Samsung&nbsp;Health
-              </p>
-            </a>
-            <a href="#garmin" class="model-card">
-              <div class="device_img garmin"></div>
-              <h4 class="device-name">
-                Garmin
-              </h4>
-              <p class="device-app">
-                Garmin&nbsp;Connect&nbsp;app
+                App Huawei Health
               </p>
             </a>
           </div>
@@ -127,91 +127,165 @@
         </label>
       </form>
       <p class="footnote">
-        Para estos dispositivos las instrucciones son iguales ya que se conectan directamente con Google Fit
+        Estos dispositivos tienen una conexión directa a la app Health Connect
       </p>
     </section>
 
     <div class="descriptions">
       <div class="backtop container">
-        <a class="up" href="#devices" tabindex="100"><img src="/img/braclets/top.svg" alt="Go to top"></a>
+        <a class="up" href="#devices" tabindex="100"><img src="/img/braclets/top.svg" alt="Volver arriba"></a>
       </div>
+      <section class="instructions container" id="healthconnect">
+        <div class="uline"></div>
+        <div class="title">
+          <div class="iconset">
+            <picture>
+              <source srcset="/img/braclets/icons/healthconnect_100.png" media="(max-width: 1108px)">
+              <img src="/img/braclets/icons/healthconnect_46.png" alt="Icono del dispositivo">
+            </picture>
+          </div>
+          <h2 class="headers googlefit">
+            Para sincronizar Google Health Connect (disponible en versiones de FitnessOnline 2.20.0 y superiores) con la app, sigue estos pasos:
+          </h2>
+        </div>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            Instala la app Health Connect en tu dispositivo.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Tras la instalación inicial de FitnessOnline en tu dispositivo y después de iniciar sesión en tu cuenta, otorga acceso para leer datos en Health Connect.
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          Si no se otorgó acceso para leer datos en Health Connect después de la instalación inicial de la app:
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            Toca “Más” en la esquina inferior derecha.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Toca “Configuraciones”.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Toca “Compartir datos”.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Toca el ícono de Health Connect.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Toca “Abrir configuraciones”.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Otorga acceso para leer datos para la app FitnessOnline.
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          Si los datos no se muestran en la pantalla de resumen del entrenamiento, sigue estos pasos:
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            Verifica si los datos están siendo sincronizados con Health Connect.
+          </li>
+          <li class="instructions-cases-todo-item">
+            <p class="instruction-cases-text">Verifica el estado de sincronización entre Health Connect y FitnessOnline haciendo lo siguiente en la app FitnessOnline:</p>
+            <ol class="instructions-cases-todo-list">
+              <li class="instructions-cases-todo-item">
+                Toca “Más” en la esquina inferior derecha.
+              </li>
+              <li class="instructions-cases-todo-item">
+                Toca “Configuraciones”.
+              </li>
+              <li class="instructions-cases-todo-item">
+                Toca “Compartir datos”.
+              </li>
+              <li class="instructions-cases-todo-item">
+                Toca el ícono de Health Connect.
+              </li>
+            </ol>
+          </li>
+        </ol>
+      </section>
+
       <section class="instructions container" id="zepplife">
         <div class="title">
           <div class="iconset">
             <picture>
               <source srcset="/img/braclets/icons/zepplife_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/zepplife_46.png" alt="icono del dispositivo">
+              <img src="/img/braclets/icons/zepplife_46.png" alt="Icono del dispositivo">
             </picture>
           </div>
           <h2 class="headers zepplife">
-            Para conectar Zepp Life con la aplicación:
+            Para sincronizar Zepp Life con FitnessOnline:
           </h2>
         </div>
-        <ul class="instructions-todo-list">
-          <li class="instructions-todo-item">
-            Conecta tu banda o tu smartwatch a la app Zepp Life
-          </li>
-          <li class="instructions-todo-item">
-            Inicia tu entrenamiento. Antes de iniciar un entrenamiento, la aplicación te solicitará que conectes tu banda para monitorear los datos
-          </li>
-        </ul>
-        <h3 class="headers instruction-cases">
-          Si no recibes esta solicitud, sigue estos pasos:
-        </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            Abre la app FitnessOnline
+            Conecta tu banda de fitness o smartwatch a la app Zepp Life.
           </li>
           <li class="instructions-cases-todo-item">
-            Toque en “Más” en la esquina inferior derecha
-          </li>
-          <li class="instructions-cases-todo-item">
-            Toque en "Ajustes"
-          </li>
-          <li class="instructions-cases-todo-item">
-            Toque en “Transferencia de datos”
-          </li>
-          <li class="instructions-cases-todo-item">
-            Toque en el ícono de la app
-          </li>
-          <li class="instructions-cases-todo-item">
-            Toque en "Conectar"
+            Comienza cualquier entrenamiento en FitnessOnline. Antes del entrenamiento, la app te pedirá que sincronices tu banda de fitness para el seguimiento de datos.
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          Si la banda se conectó previamente pero no está compartiendo los datos, sigue estos pasos:
+          Si no aparece el aviso de sincronización, sigue estos pasos:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            Verifica que la banda esté conectada a la app de Zepp. Para esto debes abrir la app de Zepp Life, dirígete a “Perfil” y asegúrate de que la banda/dispositivo aparezca listado en “Mis dispositivos”
+            Abre la app FitnessOnline.
           </li>
           <li class="instructions-cases-todo-item">
-            Abre la app FitnessOnline
+            Toca “Más” en la esquina inferior derecha.
           </li>
           <li class="instructions-cases-todo-item">
-            Toque en “Más” en la esquina inferior derecha
+            Toca “Configuraciones”.
           </li>
           <li class="instructions-cases-todo-item">
-            Toque en “Ajustes”
+            Toca “Compartir datos”.
           </li>
           <li class="instructions-cases-todo-item">
-            Toque en “Transferencia de datos”
+            Toca el ícono de la app.
           </li>
           <li class="instructions-cases-todo-item">
-            Toque en el ícono de la app
-          </li>
-          <li class="instructions-cases-todo-item">
-            Toque en "Reconectar"
+            Toca “Conectar”.
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          Si tu banda está conectada pero se han registrado pocas calorías:
+          Si tu banda de fitness está conectada pero los datos no se sincronizan:
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            Apaga el Bluetooth y vuelve a encenderlo.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Verifica el estado de sincronización de tu banda de fitness con la app Zepp Life. Para hacer esto, abre la app Zepp Life, ve a la pestaña “Perfil” y, en la sección “Mis Dispositivos”, asegúrate de que tu banda de fitness esté conectada.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Abre la app FitnessOnline.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Toca “Más” en la esquina inferior derecha.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Toca “Configuraciones”.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Toca “Compartir datos”.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Toca el ícono de la app.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Toca “Reconectar”.
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          Si tu banda de fitness está conectada pero muestra pocas calorías en la pantalla de resumen del entrenamiento:
         </h3>
         <p class="instruction-cases-text">
-          Esto pasa cuando el brazalete calcula el número de calorías y el sistema de entrenamiento no está activado.
+          Esto sucede porque tu banda de fitness calcula esa cantidad específica de calorías quemadas.
         </p>
         <p class="instruction-cases-text">
-          Para mostrar un número más exacto de calorías quemadas, inicia un ejercicio en tu dispositivo.
+          Para una visualización más precisa de las calorías quemadas, deberías comenzar un entrenamiento del sistema en tu banda de fitness.
         </p>
       </section>
 
@@ -221,145 +295,152 @@
           <div class="iconset">
             <picture>
               <source srcset="/img/braclets/icons/zepp_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/zepp_46.png" alt="icono del dispositivo">
+              <img src="/img/braclets/icons/zepp_46.png" alt="Icono del dispositivo">
             </picture>
           </div>
           <h2 class="headers zepp">
-            Para conectar Zepp con la aplicación:
+            Para sincronizar Zepp con FitnessOnline:
           </h2>
         </div>
-        <ul class="instructions-todo-list">
-          <li class="instructions-todo-item">
-            Conecta tu banda o tu smartwatch a la app Zepp
-          </li>
-          <li class="instructions-todo-item">
-            Inicia tu entrenamiento. Antes de iniciar un entrenamiento, la aplicación te solicitará que conectes tu banda para monitorear los datos
-          </li>
-        </ul>
-        <h3 class="headers instruction-cases">
-          Si no recibes esta solicitud, sigue estos pasos:
-        </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            Abre la app FitnessOnline
+            Conecta tu banda de fitness o smartwatch a la app Zepp.
           </li>
           <li class="instructions-cases-todo-item">
-            Toque en “Más” en la esquina inferior derecha
-          </li>
-          <li class="instructions-cases-todo-item">
-            Toque en “Ajustes”
-          </li>
-          <li class="instructions-cases-todo-item">
-            Toque en “Transferencia de datos”
-          </li>
-          <li class="instructions-cases-todo-item">
-            Toque en el ícono de la app
-          </li>
-          <li class="instructions-cases-todo-item">
-            Toque en “Conectar”
+            Comienza cualquier entrenamiento en FitnessOnline. Antes del entrenamiento, la app te pedirá que sincronices tu banda de fitness para el seguimiento de datos.
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          Si la banda se conectó previamente pero no está compartiendo los datos, sigue estos pasos:
+          Si no aparece el aviso de sincronización, sigue estos pasos:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            Verifica que la banda esté conectada a la app de Zepp. Para esto debes abrir la app de Zepp, dirígete a “Perfil” y asegúrate de que la banda/dispositivo esté conectado
+            Abre la app FitnessOnline.
           </li>
           <li class="instructions-cases-todo-item">
-            Abre la app FitnessOnline
+            Toca “Más” en la esquina inferior derecha.
           </li>
           <li class="instructions-cases-todo-item">
-            Toque en “Más” en la esquina inferior derecha
+            Toca “Configuraciones”.
           </li>
           <li class="instructions-cases-todo-item">
-            Toque en “Ajustes”
+            Toca “Compartir datos”.
           </li>
           <li class="instructions-cases-todo-item">
-            Toque en “Transferencia de datos”
+            Toca el ícono de la app.
           </li>
           <li class="instructions-cases-todo-item">
-            Toque en el ícono de la app
-          </li>
-          <li class="instructions-cases-todo-item">
-            Toque en “Reconectar”
+            Toca “Conectar”.
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          Si tu banda está conectada pero se han registrado pocas calorías:
+          Si tu banda de fitness está conectada pero los datos no se sincronizan:
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            Apaga el Bluetooth y vuelve a encenderlo.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Verifica el estado de sincronización de tu banda de fitness con la app Zepp. Para hacer esto, abre la app Zepp, ve a la pestaña “Perfil” y, en la sección “Mis Dispositivos”, asegúrate de que tu banda de fitness esté conectada.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Abre la app FitnessOnline.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Toca “Más” en la esquina inferior derecha.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Toca “Configuraciones”.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Toca “Compartir datos”.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Toca el ícono de la app.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Toca “Reconectar”.
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          Si tu banda de fitness está conectada pero muestra pocas calorías en la pantalla de resumen del entrenamiento:
         </h3>
         <p class="instruction-cases-text">
-          Esto pasa cuando el brazalete calcula el número de calorías y el sistema de entrenamiento no está activado.
+          Esto sucede porque tu banda de fitness calcula esa cantidad específica de calorías quemadas.
         </p>
         <p class="instruction-cases-text">
-          Para mostrar un número más exacto de calorías quemadas, inicia un ejercicio en tu dispositivo.
+          Para una visualización más precisa de las calorías quemadas, deberías comenzar un entrenamiento del sistema en tu banda de fitness.
         </p>
       </section>
 
       <section class="instructions container" id="googlefit">
         <div class="uline"></div>
+        <p class="warning bolder">¡Aviso! Google Fit ya no estará disponible después del 30 de junio de 2025:<br />
+          <nobr><a href="https://developers.google.com/fit">https://developers.google.com/fit</a></nobr>
+        </p>
         <div class="title">
           <div class="iconset">
             <picture>
               <source srcset="/img/braclets/icons/googlefit_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/googlefit_46.png" alt="icono del dispositivo">
+              <img src="/img/braclets/icons/googlefit_46.png" alt="Icono del dispositivo">
             </picture>
           </div>
           <h2 class="headers googlefit">
-            Para conectar Google Fit con la aplicación:
+            Para sincronizar Google Fit (disponible en versiones de FitnessOnline 2.19.2 y menores) con la app, sigue estos pasos:
           </h2>
         </div>
-        <ul class="instructions-todo-list">
-          <li class="instructions-todo-item">
-            Inicia tu entrenamiento. Antes de iniciar un ejercicio, recibirás una notificación para emparejar el dispositivo si ya tienes instalado la app de Google Fit
-          </li>
-        </ul>
-        <h3 class="headers instruction-cases">
-          Si no recibes esta solicitud, sigue estos pasos:
-        </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            Abre la app FitnessOnline
+            Instala la app Google Fit en tu dispositivo.
           </li>
           <li class="instructions-cases-todo-item">
-            Toque en “Más” en la esquina inferior derecha
-          </li>
-          <li class="instructions-cases-todo-item">
-            Toque en “Ajustes”
-          </li>
-          <li class="instructions-cases-todo-item">
-            Toque en “Transferencia de datos”
-          </li>
-          <li class="instructions-cases-todo-item">
-            Toque en el ícono de Google Fit
-          </li>
-          <li class="instructions-cases-todo-item">
-            Toque en “Iniciar sesión con Google”
+            Comienza cualquier entrenamiento en FitnessOnline. Antes del entrenamiento, la app te pedirá que sincronices con Google Fit para el seguimiento de datos.
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          Si los datos no aparecen en el informe, sigue estos pasos:
+          Si no aparece el aviso de sincronización, sigue estos pasos:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            Verifica si los datos se están compartiendo con Google Fit
+            Abre la app FitnessOnline.
           </li>
           <li class="instructions-cases-todo-item">
-            <p class="instruction-cases-text">
-              Verifica la conexión entre Google Fit y la aplicación, para esto, sigue los siguientes pasos desde la app de FitnessOnline:
-            </p>
+            Toca “Más” en la esquina inferior derecha.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Toca “Configuraciones”.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Toca “Compartir datos”.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Toca el ícono para Google Fit.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Toca “Iniciar sesión con Google”.
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          Si los datos no se muestran en la pantalla de resumen del entrenamiento, sigue estos pasos:
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            Verifica si los datos están siendo sincronizados con Google Fit.
+          </li>
+          <li class="instructions-cases-todo-item">
+            <p class="instruction-cases-text">Verifica el estado de sincronización entre Google Fit y FitnessOnline haciendo lo siguiente en la app FitnessOnline:</p>
             <ol class="instructions-cases-todo-list">
               <li class="instructions-cases-todo-item">
-                Toque en “Más” en la esquina inferior derecha
+                Toca “Más” en la esquina inferior derecha.
               </li>
               <li class="instructions-cases-todo-item">
-                Toque en "Ajustes"
+                Toca “Configuraciones”.
               </li>
               <li class="instructions-cases-todo-item">
-                Toque en “Transferencia de datos”
+                Toca “Compartir datos”.
               </li>
               <li class="instructions-cases-todo-item">
-                Toque en el ícono de Google Fit
+                Toca el ícono de Google Fit.
               </li>
             </ol>
           </li>
@@ -367,123 +448,133 @@
       </section>
 
       <section class="instructions container" id="fitbit">
-        <div id="lg"></div>
         <div id="polar"></div>
+        <div id="samsunghealth"></div>
+        <div id="garmin"></div>
         <div class="uline"></div>
         <div class="title">
           <div class="iconset">
             <picture>
-              <source srcset="/img/braclets/icons/fitbit_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/fitbit_46.png" alt="icono del dispositivo">
+              <source srcset="/img/braclets/icons/samsung_100.png" media="(max-width: 1108px)">
+              <img src="/img/braclets/icons/samsung_46.png" alt="Icono del dispositivo">
             </picture>
             <picture>
-              <source srcset="/img/braclets/icons/lg_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/lg_46.png" alt="icono del dispositivo">
+              <source srcset="/img/braclets/icons/garmin_100.png" media="(max-width: 1108px)">
+              <img src="/img/braclets/icons/garmin_46.png" alt="Icono del dispositivo">
+            </picture>
+            <picture>
+              <source srcset="/img/braclets/icons/fitbit_100.png" media="(max-width: 1108px)">
+              <img src="/img/braclets/icons/fitbit_46.png" alt="Icono del dispositivo">
             </picture>
             <picture>
               <source srcset="/img/braclets/icons/polar_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/polar_46.png" alt="icono del dispositivo">
+              <img src="/img/braclets/icons/polar_46.png" alt="Icono del dispositivo">
             </picture>
           </div>
           <h2 class="headers fitbit lg polar">
-            Para conectar Fitbit, LG, Polar con la aplicación:
+            La transferencia de datos desde Samsung Health, Garmin, Fitbit y Polar Flow a FitnessOnline se facilita a través de Google Health Connect
           </h2>
         </div>
-        <h5 class="headers instruction-comment">
-          Para conectar tu aplicación utilizada para monitorear tu actividad con la app de FitnessOnline, sincroniza tu app con Google Fit.
-        </h5>
         <h3 class="headers instruction-cases">
-          Sigue estos pasos:
+          Para conectar, sigue estos pasos:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            Instala la app Google Fit
+            Instala la app Health Connect e inicia sesión.
           </li>
           <li class="instructions-cases-todo-item">
-            Crea una cuenta
+            Abre la app utilizada para rastrear tu actividad.
           </li>
           <li class="instructions-cases-todo-item">
-            Abre la aplicación que utilizas para monitorear tu actividad
+            Ve al menú de configuraciones.
           </li>
           <li class="instructions-cases-todo-item">
-            Ve a los Ajustes
+            Localiza la sección para conectar aplicaciones de terceros. Esto generalmente se etiqueta como “Conectar otros servicios”, “Apps y dispositivos”, “Administrar conexiones” o algo similar.
           </li>
           <li class="instructions-cases-todo-item">
-            Encuentra la sección para conectarse con otras aplicaciones. Esto normalmente aparece como “Conectar otros dispositivos”, “Apps y dispositivos”, “Administrar dispositivos”, etc.
-          </li>
-          <li class="instructions-cases-todo-item">
-            Sigue las instrucciones para conectar la app con Google Fit
+            Sigue las instrucciones para conectar la app a Health Connect.
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          Después, debes sincronizar Google Fit y la app FitnessOnline siguiendo estos pasos:
-        </h3>
-        <ul class="instructions-todo-list">
-          <li class="instructions-todo-item">
-            Inicia tu entrenamiento. Antes de iniciar un entrenamiento/ejercicio recibirás una solicitud para emparejar/sincronizar
-          </li>
-        </ul>
-        <h3 class="headers instruction-cases">
-          Si no recibes esta solicitud, sigue estos pasos:
+          Luego, sincroniza Health Connect con la app FitnessOnline de la siguiente manera:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            Abre la app FitnessOnline
+            En la app FitnessOnline, toca “Más” en la esquina inferior derecha.
           </li>
           <li class="instructions-cases-todo-item">
-            Toque en “Más” en la esquina inferior derecha
+            Toca “Configuraciones”.
           </li>
           <li class="instructions-cases-todo-item">
-            Toque en “Ajustes”
+            Toca “Compartir datos”.
           </li>
           <li class="instructions-cases-todo-item">
-            Toque en “Transferencia de datos”
+            Toca el ícono de Health Connect.
           </li>
           <li class="instructions-cases-todo-item">
-            Toque en el ícono de Google Fit
+            Toca “Abrir configuraciones”.
           </li>
           <li class="instructions-cases-todo-item">
-            Toque en “Iniciar sesión con Google”
+            Otorga acceso para leer datos para la app FitnessOnline.
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          Si los datos no aparecen en el informe, sigue estos pasos:
+          Si los datos no se muestran en la pantalla de resumen del entrenamiento, sigue estos pasos:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            Verifica si los datos se están compartiendo con Google Fit
+            Verifica si los datos de la app utilizada para rastrear actividades se están sincronizando con Health Connect.
           </li>
           <li class="instructions-cases-todo-item">
-            Verifica que Google Fit y la aplicación estén conectadas, dirígete a <span
-            class="italic">Ajustes&nbsp;&mdash; Transferencia de datos&nbsp;&mdash; Google Fit</span>
+            <p class="instruction-cases-text">Verifica el estado de sincronización entre Health Connect y FitnessOnline haciendo lo siguiente en la app FitnessOnline:</p>
+            <ol class="instructions-cases-todo-list">
+              <li class="instructions-cases-todo-item">
+                Toca “Más” en la esquina inferior derecha.
+              </li>
+              <li class="instructions-cases-todo-item">
+                Toca “Configuraciones”.
+              </li>
+              <li class="instructions-cases-todo-item">
+                Toca “Compartir datos”.
+              </li>
+              <li class="instructions-cases-todo-item">
+                Toca el ícono de Health Connect.
+              </li>
+            </ol>
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          Para conectar tu app utilizada para monitorear tu actividad con Google Fit, sigue estos pasos:
+          Para verificar la conexión entre Health Connect y la app utilizada para rastrear actividades, sigue estos pasos:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            Abre la app Google Fit
+            Abre la app Health Connect.
           </li>
           <li class="instructions-cases-todo-item">
-            Toque en <span class="italic">Perfil</span>&nbsp;&mdash; luego en “Ajustes”
+            En la sección “Permisos y datos”, toca “Permisos de la aplicación”.
           </li>
           <li class="instructions-cases-todo-item">
-            Toque en “Administrar apps conectadas”
-          </li>
-          <li class="instructions-cases-todo-item">
-            Para abrir una lista de todas las aplicaciones conectadas, toca la flecha hacia abajo en “Todas las apps y dispositivos”
+            Asegúrate de que la app que estás utilizando esté listada bajo “Acceso permitido”.
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          Si tu banda está conectada pero se han registrado pocas calorías:
+          Si tu banda de fitness y Health Connect están conectados, pero aparecen datos de actividad incorrectos o no aparecen datos en la pantalla de resumen del entrenamiento:
         </h3>
         <p class="instruction-cases-text">
-          Esto pasa cuando el brazalete calcula el número de calorías y el sistema de entrenamiento no está activado.
+          Esto sucede porque la app de rastreo de actividades envía datos específicos de calorías, conteo de pasos y frecuencia cardíaca a Health Connect.
         </p>
         <p class="instruction-cases-text">
-          Para mostrar un número más exacto de calorías quemadas, inicia un ejercicio en tu dispositivo.
+          FitnessOnline solo muestra los datos recibidos de Health Connect.
         </p>
+        <p class="instruction-cases-text">Para garantizar que se muestren datos de actividad más precisos en la pantalla de resumen del entrenamiento:</p>
+        <ol class="instructions-todo-list">
+          <li class="instructions-cases-todo-item">
+            Antes de comenzar un entrenamiento en FitnessOnline, comienza un entrenamiento del sistema en tu banda de fitness.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Antes de terminar el entrenamiento en FitnessOnline, abre la app utilizada para rastrear actividades y actualiza la sincronización entre tu banda de fitness y el dispositivo móvil.
+          </li>
+        </ol>
       </section>
 
       <section class="instructions container" id="huaweihealth">
@@ -492,317 +583,146 @@
           <div class="iconset">
             <picture>
               <source srcset="/img/braclets/icons/huawei_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/huawei_46.png" alt="icono del dispositivo">
+              <img src="/img/braclets/icons/huawei_46.png" alt="Icono del dispositivo">
             </picture>
           </div>
           <h2 class="headers huaweihealth">
-            Para conectar la app Salud de Huawei con FitnessOnline, deberás utilizar Google Fit
+           La transferencia de datos de la app Huawei Health a FitnessOnline se facilita a través de Google Health Connect y Health Sync (requiere suscripción paga)
           </h2>
         </div>
-        <h5 class="headers instruction-comment">
-          Para hacer esto deberás utilizar la app de terceros Health Sync (una app de pago). Si no puedes utilizar una app de pago para sincronizar los datos, regresa a la ventana anterior y selecciona <span class="italic">sincronizar con Google Fit</span> (la banda no se tomará en cuenta).
-        </h5>
         <h3 class="headers instruction-cases">
-          Para utilizar una aplicación de terceros deberás seguir estos pasos en Play Store:
+          Para conectar, sigue estos pasos:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item bolder">
-            Instala Google Fit
+            Instala la app Health Connect e inicia sesión.
           </li>
           <li class="instructions-cases-todo-item bolder">
-            Instala la app Health Sync. Abre la aplicación y selecciona <span class="italic">Huawei Health Kit</span> como la fuente principal para sincronizar y selecciona <span class="italic">Google Fit</span> como destino de la sincronización
+            Instala la app Health Sync. Abre la app y selecciona Huawei Health Kit como la fuente principal de sincronización; para la dirección de sincronización, elige Health Connect.
           </li>
           <li class="instructions-cases-todo-item bolder">
-            Toque en “Declaración de consentimiento”
+            Toca el botón “Declaración de consentimiento”.
           </li>
           <li class="instructions-cases-todo-item bolder">
             <p class="instruction-cases-text bolder">
-              Después deberás seguir las siguientes instrucciones en la app Health Sync:
+              Luego, sigue las instrucciones en la app Health Sync:
             </p>
-            <ul class="instructions-todo-list">
+            <ul class="instructions-todo-list embedded">
               <li class="instructions-todo-item">
-                Toque en “Verefique la conexión de la cuenta de Google”
+                Toca “Verificar conexión a la cuenta de Google”.
               </li>
               <li class="instructions-todo-item">
-                Toque en “Consultar seguimiento de actividad de Google Fit”
+                Toca “Verificar seguimiento de actividad en Health Connect”.
               </li>
               <li class="instructions-todo-item">
-                Instala Huawei AppGallery (sigue las instrucciones desde <a
-                  href="https://consumer.huawei.com/latin/support/content/es-us00696141/">https://consumer.huawei.com/<wbr>latin/support/content/<wbr>es-us00696141/</a>)
+                Instala Huawei AppGallery (consulta las instrucciones oficiales: <a href="https://consumer.huawei.com/latin/support/content/es-us00696141/">Soporte de Huawei</a>).
               </li>
               <li class="instructions-todo-item">
-                Instala HMS CORE (abre AppGallery e ingresa en su buscador HMS CORE). AppGallery te solicitará permiso para instalar este producto, por lo que deberás autorizar este permiso
+                Instala HMS CORE desde AppGallery (AppGallery requerirá permiso del sistema para instalar apps de terceros).
               </li>
               <li class="instructions-todo-item">
-                Instala Salud de Huawei (o actualiza)
+                Instala o actualiza Huawei Health.
               </li>
               <li class="instructions-todo-item">
-                Autentícate/inicia sesión en tu cuenta de Huawei
+                Inicia sesión en tu cuenta de Huawei.
               </li>
               <li class="instructions-todo-item">
-                Verifica los recuadros necesarios para sincronizar la app Health Sync
+                En Health Sync, marca las casillas para los tipos de datos que deseas transferir a Health Connect.
               </li>
             </ul>
           </li>
           <li class="instructions-cases-todo-item bolder">
-            <p class="instruction-cases-text bolder">
-              Para conectar Google Fit con la aplicación:
-            </p>
-            <ul class="instructions-todo-list">
-              <li class="instructions-todo-item">
-                Inicia tu entrenamiento. Antes de iniciar un ejercicio, recibirás una notificación para emparejar el dispositivo si ya tienes instalado la app de Google Fit
+            Asegúrate de que Health Sync esté conectado exitosamente a Huawei Health en la configuración de “Gestión de privacidad” de la app Huawei Health.
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          Luego, sincroniza Health Connect con la app FitnessOnline de la siguiente manera:
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            En la app FitnessOnline, toca “Más” en la esquina inferior derecha.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Toca “Configuraciones”.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Toca “Compartir datos”.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Toca el ícono de Health Connect.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Toca “Abrir configuraciones”.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Otorga acceso para leer datos para la app FitnessOnline.
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          Si los datos no se muestran en la pantalla de resumen del entrenamiento, sigue estos pasos:
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            Verifica si los datos de Health Sync se están sincronizando con Health Connect.
+          </li>
+          <li class="instructions-cases-todo-item">
+            <p class="instruction-cases-text">Verifica el estado de sincronización entre Health Connect y FitnessOnline haciendo lo siguiente en la app FitnessOnline:</p>
+            <ol class="instructions-cases-todo-list">
+              <li class="instructions-cases-todo-item">
+                Toca “Más” en la esquina inferior derecha.
               </li>
-            </ul>
+              <li class="instructions-cases-todo-item">
+                Toca “Configuraciones”.
+              </li>
+              <li class="instructions-cases-todo-item">
+                Toca “Compartir datos”.
+              </li>
+              <li class="instructions-cases-todo-item">
+                Toca el ícono de Health Connect.
+              </li>
+            </ol>
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          Si no recibes esta solicitud, sigue estos pasos:
+          Para verificar la conexión entre Health Connect y Health Sync, sigue estos pasos:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            Abre la app FitnessOnline
+            Abre la app Health Connect.
           </li>
           <li class="instructions-cases-todo-item">
-            Toque en “Más” en la esquina inferior derecha
+            En la sección “Permisos y datos”, toca “Permisos de la aplicación”.
           </li>
           <li class="instructions-cases-todo-item">
-            Toque en “Ajustes”
-          </li>
-          <li class="instructions-cases-todo-item">
-            Toque en “Transferencia de datos”
-          </li>
-          <li class="instructions-cases-todo-item">
-            Toque en el ícono de Google Fit
-          </li>
-          <li class="instructions-cases-todo-item">
-            Toque en “Iniciar sesión con Google”
+            Asegúrate de que Health Sync esté listado bajo “Acceso permitido”.
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          Si los datos no aparecen en el informe, sigue estos pasos:
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            Verifica si los datos se están compartiendo con Google Fit
-          </li>
-          <li class="instructions-cases-todo-item">
-            Verifica que Google Fit y la aplicación estén conectadas, dirígete a <span
-            class="italic">Ajustes&nbsp;&mdash; Transferencia de datos&nbsp;&mdash; Google Fit</span>
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          Si tu banda está conectada pero se han registrado pocas calorías:
+          Si tu banda de fitness, Health Sync y Health Connect están conectados, pero aparecen datos de actividad incorrectos o no aparecen datos en la pantalla de resumen del entrenamiento:
         </h3>
         <p class="instruction-cases-text">
-          Esto pasa cuando el brazalete calcula el número de calorías y el sistema de entrenamiento no está activado.
+          Esto ocurre porque la app de rastreo de actividades envía datos específicos de calorías, conteo de pasos y frecuencia cardíaca a Health Sync. Además, es posible que Health Sync transmita datos a Health Connect con un retraso.
         </p>
         <p class="instruction-cases-text">
-          Para mostrar un número más exacto de calorías quemadas, inicia un ejercicio en tu dispositivo.
+          FitnessOnline solo muestra los datos recibidos de Health Connect.
         </p>
-      </section>
-
-      <section class="instructions container" id="samsunghealth">
-        <div class="uline"></div>
-        <div class="title">
-          <div class="iconset">
-            <picture>
-              <source srcset="/img/braclets/icons/samsung_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/samsung_46.png" alt="icono del dispositivo">
-            </picture>
-          </div>
-          <h2 class="headers samsunghealth">
-            Para conectar la app Samsung Health con FitnessOnline, deberás utilizar Google Fit
-          </h2>
-        </div>
-        <h5 class="headers instruction-comment">
-          Para hacer esto deberás utilizar la app de terceros Health Sync (una app de pago). Si no puedes utilizar una app de pago para sincronizar los datos, regresa a la ventana anterior y selecciona <span class="italic">sincronizar con Google Fit</span> (la banda no se tomará en cuenta).
-        </h5>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item bolder">
-            Instala Google Fit
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            Instala la app Health Sync. Abre la aplicación y selecciona <span class="italic">Samsung Health</span> como la fuente principal para sincronizar y selecciona <span class="italic">Google Fit</span> como destino de sincronización
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            Toque en “Aceptar”
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            <p class="instruction-cases-text bolder">
-              Después deberás seguir las siguientes instrucciones en la app Health Sync:
-            </p>
-            <ul class="instructions-todo-list">
-              <li class="instructions-todo-item">
-                Toque en “Verefique la conexión de la cuenta de Google”
-              </li>
-              <li class="instructions-todo-item">
-                Toque en “Consultar seguimiento de actividad de Google Fit”
-              </li>
-              <li class="instructions-todo-item">
-                Verifica los recuadros necesarios en la app de Health Sync para sincronizar
-              </li>
-            </ul>
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            <p class="instruction-cases-text bolder">
-              Para conectar Google Fit con la aplicación:
-            </p>
-            <ul class="instructions-todo-list">
-              <li class="instructions-todo-item">
-                Inicia tu entrenamiento. Antes de iniciar un ejercicio, recibirás una notificación para emparejar el dispositivo si ya tienes instalado la app de Google Fit
-              </li>
-            </ul>
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          Si no recibes esta solicitud, sigue estos pasos:
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            Abre la app FitnessOnline
-          </li>
-          <li class="instructions-cases-todo-item">
-            Toque en “Más” en la esquina inferior derecha
-          </li>
-          <li class="instructions-cases-todo-item">
-            Toque en “Ajustes”
-          </li>
-          <li class="instructions-cases-todo-item">
-            Toque en “Transferencia de datos”
-          </li>
-          <li class="instructions-cases-todo-item">
-            Toque en el ícono de Google Fit
-          </li>
-          <li class="instructions-cases-todo-item">
-            Toque en “Iniciar sesión con Google”
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          Si los datos no aparecen en el informe, sigue estos pasos:
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            Verifica si los datos se están compartiendo con Google Fit
-          </li>
-          <li class="instructions-cases-todo-item">
-            Verifica que Google Fit y la aplicación estén conectadas, dirígete a <span
-            class="italic">Ajustes&nbsp;&mdash; Transferencia de datos&nbsp;&mdash; Google Fit</span>
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          Si tu banda está conectada pero se han registrado pocas calorías:
-        </h3>
-        <p class="instruction-cases-text">
-          Esto pasa cuando el brazalete calcula el número de calorías y el sistema de entrenamiento no está activado.
+        <p class="instruction-cases-text mb">
+          Para garantizar que se muestren datos de actividad más precisos en la pantalla de resumen del entrenamiento, sigue estos pasos:
         </p>
-        <p class="instruction-cases-text">
-          Para mostrar un número más exacto de calorías quemadas, inicia un ejercicio en tu dispositivo.
-        </p>
-      </section>
-
-      <section class="instructions container" id="garmin">
-        <div class="uline"></div>
-        <div class="title">
-          <div class="iconset">
-            <picture>
-              <source srcset="/img/braclets/icons/garmin_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/garmin_46.png" alt="icono del dispositivo">
-            </picture>
-          </div>
-          <h2 class="headers garmin">
-            Para conectar el Garmin con FitnessOnline, deberás utilizar Google Fit
-          </h2>
-        </div>
-        <h5 class="headers instruction-comment">
-          Para hacer esto deberás utilizar la app de terceros Health Sync (una app de pago). Si no puedes utilizar una app de pago para sincronizar los datos, regresa a la ventana anterior y selecciona sincronizar con Google Fit (la banda no se tomará en cuenta).
-        </h5>
-        <h3 class="headers instruction-cases">
-          Para utilizar una aplicación de terceros deberás seguir estos pasos en Play Store:
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item bolder">
-            Instala Google Fit
+        <ol class="instructions-todo-list">
+          <li class="instructions-cases-todo-item">
+            Antes de comenzar un entrenamiento en FitnessOnline, comienza un entrenamiento del sistema en tu banda de fitness.
           </li>
-          <li class="instructions-cases-todo-item bolder">
-            Instala la app Health Sync. Abre la aplicación y selecciona Garmin como la fuente principal para sincronizar y selecciona Google Fit como destino de sincronización
+          <li class="instructions-cases-todo-item">
+            Antes de terminar el entrenamiento en FitnessOnline, abre la app utilizada para rastrear actividades y actualiza la sincronización entre tu banda de fitness y el dispositivo móvil.
           </li>
-          <li class="instructions-cases-todo-item bolder">
-            Toque en “Aceptar”
+          <li class="instructions-cases-todo-item">
+            Abre la app Health Sync y actualiza la sincronización con Health Connect.
           </li>
-          <li class="instructions-cases-todo-item bolder">
-            <p class="instruction-cases-text bolder">
-              Después deberás seguir las siguientes instrucciones en la app Health Sync:
-            </p>
-            <ul class="instructions-todo-list">
-              <li class="instructions-todo-item">
-                Toque en “Verefique la conexión de la cuenta de Google”
-              </li>
-              <li class="instructions-todo-item">
-                Toque en “Consultar seguimiento de actividad de Google Fit”
-              </li>
-              <li class="instructions-todo-item">
-                Toque en “Inicializar conexión Garmin”&nbsp;&mdash; crea una cuenta o inicia sesión en tu cuenta Garmin
-              </li>
-              <li class="instructions-todo-item">
-                Verifica los recuadros necesarios en la app de Health Sync para sincronizar
-              </li>
-            </ul>
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            <p class="instruction-cases-text bolder">
-              Para conectar Google Fit con la aplicación:
-            </p>
-            <ul class="instructions-todo-list">
-              <li class="instructions-todo-item">
-                Inicia tu entrenamiento. Antes de iniciar un ejercicio, recibirás una notificación para emparejar el dispositivo si ya tienes instalado la app de Google Fit
-              </li>
-            </ul>
+          <li class="instructions-cases-todo-item">
+            Regresa a la app FitnessOnline y completa el entrenamiento.
           </li>
         </ol>
-        <h3 class="headers instruction-cases">
-          Si no recibes esta solicitud, sigue estos pasos:
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            Abre la app FitnessOnline
-          </li>
-          <li class="instructions-cases-todo-item">
-            Toque en “Más” en la esquina inferior derecha
-          </li>
-          <li class="instructions-cases-todo-item">
-            Toque en “Ajustes”
-          </li>
-          <li class="instructions-cases-todo-item">
-            Toque en “Transferencia de datos”
-          </li>
-          <li class="instructions-cases-todo-item">
-            Toque en el ícono de Google Fit
-          </li>
-          <li class="instructions-cases-todo-item">
-            Toque en “Iniciar sesión con Google”
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          Si los datos no aparecen en el informe, sigue estos pasos:
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            Verifica si los datos se están compartiendo con Google Fit
-          </li>
-          <li class="instructions-cases-todo-item">
-            Verifica que Google Fit y la aplicación estén conectadas, dirígete a <span
-            class="italic">Ajustes&nbsp;&mdash; Transferencia de datos&nbsp;&mdash; Google Fit</span>
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          Si tu banda está conectada pero se han registrado pocas calorías:
-        </h3>
-        <p class="instruction-cases-text">
-          Esto pasa cuando el brazalete calcula el número de calorías y el sistema de entrenamiento no está activado.
-        </p>
-        <p class="instruction-cases-text">
-          Para mostrar un número más exacto de calorías quemadas, inicia un ejercicio en tu dispositivo.
-        </p>
       </section>
     </div>
   </main>

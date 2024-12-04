@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bracelets</title>
+  <title>팔찌</title>
   <link rel="stylesheet" href="/css/braclets/bracelets.css">
   <link rel="stylesheet" href="/css/braclets/bracelets-media.css">
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -32,24 +32,33 @@
   <main class="main">
     <section class="review container">
       <h1 class="review_header headers">
-        피트니스 트래커에 연결하는 방법
+        피트니스 트래커 연결
       </h1>
       <div class="review-model-pad" id="devices">
         <div class="review-model-frame" id="review-model-frame">
           <div class="review-model-band" id="review-model-band">
+            <a href="#healthconnect" class="model-card">
+              <div class="device_img healthconnect"></div>
+              <h4 class="device-name">
+                Google Health Connect
+              </h4>
+              <p class="device-app">
+                &nbsp;
+              </p>
+            </a>
             <a href="#zepplife" class="model-card">
               <div class="device_img zepplife"></div>
               <h4 class="device-name">
                 샤오미 미 밴드
               </h4>
               <p class="device-app">
-                Zepp 라이프 앱(과거 미 핏)
+                Zepp Life 앱<br />(이전 명칭 Mi&nbsp;Fit)
               </p>
             </a>
             <a href="#zepp" class="model-card">
               <div class="device_img zepp"></div>
               <h4 class="device-name">
-                샤오미 아마즈핏
+                샤오미 Amazfit
               </h4>
               <p class="device-app">
                 Zepp 앱
@@ -58,51 +67,15 @@
             <a href="#googlefit" class="model-card">
               <div class="device_img googlefit"></div>
               <h4 class="device-name">
-                구글 핏
+                Google Fit
               </h4>
               <p class="device-app">
                 &nbsp;
               </p>
             </a>
-            <a href="#fitbit" class="model-card">
-              <div class="device_img fitbit"></div>
-              <h4 class="device-name footnoted">
-                핏빗
-              </h4>
-              <p class="device-app">
-                핏 투 핏 앱
-              </p>
-            </a>
-            <a href="#lg" class="model-card">
-              <div class="device_img lg"></div>
-              <h4 class="device-name footnoted">
-                LG
-              </h4>
-              <p class="device-app">
-                LG 헬스 앱
-              </p>
-            </a>
-            <a href="#polar" class="model-card">
-              <div class="device_img polar"></div>
-              <h4 class="device-name footnoted">
-                Polar
-              </h4>
-              <p class="device-app">
-                Polar 플로우 앱
-              </p>
-            </a>
-            <a href="#huaweihealth" class="model-card">
-              <div class="device_img huawei"></div>
-              <h4 class="device-name">
-                아너/화웨이
-              </h4>
-              <p class="device-app">
-                화웨이 헬스 앱
-              </p>
-            </a>
             <a href="#samsunghealth" class="model-card">
               <div class="device_img samsung"></div>
-              <h4 class="device-name">
+              <h4 class="device-name footnoted">
                 삼성
               </h4>
               <p class="device-app">
@@ -111,11 +84,38 @@
             </a>
             <a href="#garmin" class="model-card">
               <div class="device_img garmin"></div>
-              <h4 class="device-name">
+              <h4 class="device-name footnoted">
                 가민
               </h4>
               <p class="device-app">
-                가민 커넥트 앱
+                커넥트 앱
+              </p>
+            </a>
+            <a href="#fitbit" class="model-card">
+              <div class="device_img fitbit"></div>
+              <h4 class="device-name footnoted">
+                핏빗
+              </h4>
+              <p class="device-app">
+                핏빗 앱
+              </p>
+            </a>
+            <a href="#polar" class="model-card">
+              <div class="device_img polar"></div>
+              <h4 class="device-name footnoted">
+                Polar
+              </h4>
+              <p class="device-app">
+                Polar Flow 앱
+              </p>
+            </a>
+            <a href="#huaweihealth" class="model-card">
+              <div class="device_img huawei"></div>
+              <h4 class="device-name">
+                Honor/화웨이
+              </h4>
+              <p class="device-app">
+                화웨이 헬스 앱
               </p>
             </a>
           </div>
@@ -127,88 +127,165 @@
         </label>
       </form>
       <p class="footnote">
-        해당 기기들은 구글 핏에 바로 연결되므로 가이드가 동일합니다
+        이 장치들은 Health Connect 앱과 직접 연결됩니다.
       </p>
     </section>
 
     <div class="descriptions">
       <div class="backtop container">
-        <a class="up" href="#devices" tabindex="100"><img src="/img/braclets/top.svg" alt="Go to top"></a>
+        <a class="up" href="#devices" tabindex="100"><img src="/img/braclets/top.svg" alt="맨 위로"></a>
       </div>
+      <section class="instructions container" id="healthconnect">
+        <div class="uline"></div>
+        <div class="title">
+          <div class="iconset">
+            <picture>
+              <source srcset="/img/braclets/icons/healthconnect_100.png" media="(max-width: 1108px)">
+              <img src="/img/braclets/icons/healthconnect_46.png" alt="장치 아이콘">
+            </picture>
+          </div>
+          <h2 class="headers googlefit">
+            Google Health Connect (FitnessOnline 2.20.0 버전 이상에서 사용 가능)를 앱과 동기화하려면 다음 단계를 따르세요:
+          </h2>
+        </div>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            기기에 Health Connect 앱을 설치하세요.
+          </li>
+          <li class="instructions-cases-todo-item">
+            기기에 FitnessOnline을 처음 설치하고 계정에 로그인한 후, Health Connect에서 데이터를 읽을 수 있는 권한을 부여하세요.
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          앱 초기 설치 후 Health Connect에서 데이터 읽기 권한이 부여되지 않은 경우:
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            오른쪽 아래의 ‘더보기’를 탭하세요.
+          </li>
+          <li class="instructions-cases-todo-item">
+            ‘설정’을 탭하세요.
+          </li>
+          <li class="instructions-cases-todo-item">
+            ‘데이터 공유’를 탭하세요.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Health Connect 아이콘을 탭하세요.
+          </li>
+          <li class="instructions-cases-todo-item">
+            ‘설정 열기’를 탭하세요.
+          </li>
+          <li class="instructions-cases-todo-item">
+            FitnessOnline 앱의 데이터 읽기 권한을 부여하세요.
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          데이터가 운동 요약 화면에 표시되지 않는 경우 다음 단계를 따르세요:
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            데이터가 Health Connect에 동기화되는지 확인하세요.
+          </li>
+          <li class="instructions-cases-todo-item">
+            <p class="instruction-cases-text">FitnessOnline 앱에서 다음 조치를 수행하여 Health Connect와 FitnessOnline 간의 동기화 상태를 확인하세요:</p>
+            <ol class="instructions-cases-todo-list">
+              <li class="instructions-cases-todo-item">
+                오른쪽 아래의 ‘더보기’를 탭하세요.
+              </li>
+              <li class="instructions-cases-todo-item">
+                ‘설정’을 탭하세요.
+              </li>
+              <li class="instructions-cases-todo-item">
+                ‘데이터 공유’를 탭하세요.
+              </li>
+              <li class="instructions-cases-todo-item">
+                Health Connect 아이콘을 탭하세요.
+              </li>
+            </ol>
+          </li>
+        </ol>
+      </section>
+
       <section class="instructions container" id="zepplife">
         <div class="title">
           <div class="iconset">
             <picture>
               <source srcset="/img/braclets/icons/zepplife_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/zepplife_46.png" alt="Device icon">
+              <img src="/img/braclets/icons/zepplife_46.png" alt="장치 아이콘">
             </picture>
           </div>
           <h2 class="headers zepplife">
-            Zepp 라이프 앱에 연결하는 방법
+            Zepp Life를 FitnessOnline과 동기화하려면:
           </h2>
         </div>
-        <ul class="instructions-todo-list">
-          <li class="instructions-todo-item">
-            손목 밴드 또는 스마트 워치를 Zepp 라이프 앱에 연결하세요.
-          </li>
-          <li class="instructions-todo-item">
-            운동을 시작하세요. 운동 시작 전에 앱이 데이터 추적을 위해 손목 밴드를 연결하라는 알림을 보낼 것입니다.
-          </li>
-        </ul>
-        <h3 class="headers instruction-cases">
-          알림이 오지 않는다면 다음을 따르세요.
-        </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            FitnessOnline 앱을 여세요.
+            피트니스 밴드나 스마트워치를 Zepp Life 앱에 연결하세요.
           </li>
           <li class="instructions-cases-todo-item">
-            우측 하단의 '더 보기' 버튼을 누르세요.
-          </li>
-          <li class="instructions-cases-todo-item">
-            '설정'을 누르세요.
-          </li>
-          <li class="instructions-cases-todo-item">
-            '데이터 공유'를 누르세요.
-          </li>
-          <li class="instructions-cases-todo-item">
-            앱 아이콘을 누르세요.
-          </li>
-          <li class="instructions-cases-todo-item">
-            '연결'을 누르세요.
+            FitnessOnline에서 임의의 운동을 시작하세요. 운동 전에, 앱이 데이터 추적을 위해 피트니스 밴드를 동기화하도록 요청할 것입니다.
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          이미 손목 밴드를 연결했는데 데이터가 전송되지 않는다면 다음을 따르세요.
+          동기화 프롬프트가 나타나지 않으면 다음 단계를 따르세요:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            손목 밴드가 Zepp 라이프 앱과 연결됐는지 확인하세요. Zepp 라이프 앱을 열고 '프로필'로 이동해 '내 기기' 항목에서 손목 밴드가 연결됐는지 확인해야 합니다.
+            FitnessOnline 앱을 엽니다.
           </li>
           <li class="instructions-cases-todo-item">
-            FitnessOnline 앱으로 이동하세요.
+            오른쪽 아래의 ‘더보기’를 탭하세요.
           </li>
           <li class="instructions-cases-todo-item">
-            우측 하단의 '더 보기' 버튼을 누르세요.
+            ‘설정’을 탭하세요.
           </li>
           <li class="instructions-cases-todo-item">
-            '설정'을 누르세요.
+            ‘데이터 공유’를 탭하세요.
           </li>
           <li class="instructions-cases-todo-item">
-            '데이터 공유'를 누르세요.
+            앱의 아이콘을 탭하세요.
           </li>
           <li class="instructions-cases-todo-item">
-            앱 아이콘을 누르세요.
-          </li>
-          <li class="instructions-cases-todo-item">
-            '연결 재시도'를 누르세요.
+            ‘연결’을 탭하세요.
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          손목 밴드가 연결됐지만, 너무 적은 칼로리만이 측정된다면 다음을 참고하세요.
+          피트니스 밴드가 연결되었으나 데이터가 동기화되지 않는 경우:
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            Bluetooth를 끄고 다시 켜세요.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Zepp Life 앱에서 피트니스 밴드의 동기화 상태를 확인하세요. 이렇게 하려면, Zepp Life 앱을 열고, ‘프로필’ 탭으로 이동한 다음, ‘내 장치’ 섹션에서 피트니스 밴드가 연결되어 있는지 확인하세요.
+          </li>
+          <li class="instructions-cases-todo-item">
+            FitnessOnline 앱을 엽니다.
+          </li>
+          <li class="instructions-cases-todo-item">
+            오른쪽 아래의 ‘더보기’를 탭하세요.
+          </li>
+          <li class="instructions-cases-todo-item">
+            ‘설정’을 탭하세요.
+          </li>
+          <li class="instructions-cases-todo-item">
+            ‘데이터 공유’를 탭하세요.
+          </li>
+          <li class="instructions-cases-todo-item">
+            앱의 아이콘을 탭하세요.
+          </li>
+          <li class="instructions-cases-todo-item">
+            ‘다시 연결’을 탭하세요.
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          피트니스 밴드가 연결되었으나 운동 요약 화면에서 칼로리가 낮게 표시되는 경우:
         </h3>
         <p class="instruction-cases-text">
-          이는 시스템 운동이 활성화되지 않았는데도 손목 밴드가 자체적으로 연소한 칼로리를 측정한 것입니다. 더 정확한 칼로리 소모량을 보고 싶다면 손목 밴드의 운동을 시작하세요.
+          이는 피트니스 밴드가 그 특정 소모 칼로리 양을 계산하기 때문입니다.
+        </p>
+        <p class="instruction-cases-text">
+          소모 칼로리를 보다 정확하게 표시하려면, 피트니스 밴드에서 시스템 운동을 시작해야 합니다.
         </p>
       </section>
 
@@ -218,142 +295,152 @@
           <div class="iconset">
             <picture>
               <source srcset="/img/braclets/icons/zepp_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/zepp_46.png" alt="Device icon">
+              <img src="/img/braclets/icons/zepp_46.png" alt="장치 아이콘">
             </picture>
           </div>
           <h2 class="headers zepp">
-            Zepp을 앱에 연결하는 방법
+            Zepp를 FitnessOnline과 동기화하려면:
           </h2>
         </div>
-        <ul class="instructions-todo-list">
-          <li class="instructions-todo-item">
-            손목 밴드 또는 스마트 워치를 Zepp 앱에 연결하세요.
-          </li>
-          <li class="instructions-todo-item">
-            운동을 시작하세요. 운동 시작 전에 앱이 데이터 추적을 위해 손목 밴드를 연결하라는 알림을 보낼 것입니다.
-          </li>
-        </ul>
-        <h3 class="headers instruction-cases">
-          알림이 오지 않는다면 다음을 따르세요.
-        </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            FitnessOnline 앱을 여세요.
+            피트니스 밴드나 스마트워치를 Zepp 앱에 연결하세요.
           </li>
           <li class="instructions-cases-todo-item">
-            우측 하단의 '더 보기' 버튼을 누르세요.
-          </li>
-          <li class="instructions-cases-todo-item">
-            '설정'을 누르세요.
-          </li>
-          <li class="instructions-cases-todo-item">
-            '데이터 공유'를 누르세요.
-          </li>
-          <li class="instructions-cases-todo-item">
-            앱 아이콘을 누르세요.
-          </li>
-          <li class="instructions-cases-todo-item">
-            '연결'을 누르세요.
+            FitnessOnline에서 임의의 운동을 시작하세요. 운동 전에, 앱이 데이터 추적을 위해 피트니스 밴드를 동기화하도록 요청할 것입니다.
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          이미 손목 밴드를 연결했는데 데이터가 전송되지 않는다면 다음을 따르세요.
+          동기화 프롬프트가 나타나지 않으면 다음 단계를 따르세요:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            손목 밴드가 Zepp 앱과 연결됐는지 확인하세요. Zepp 앱을 열고 '프로필'로 이동해 '내 기기' 항목에서 손목 밴드가 연결됐는지 확인해야 합니다.
+            FitnessOnline 앱을 엽니다.
           </li>
           <li class="instructions-cases-todo-item">
-            FitnessOnline 앱으로 이동하세요.
+            오른쪽 아래의 ‘더보기’를 탭하세요.
           </li>
           <li class="instructions-cases-todo-item">
-            우측 하단의 '더 보기' 버튼을 누르세요.
+            ‘설정’을 탭하세요.
           </li>
           <li class="instructions-cases-todo-item">
-            '설정'을 누르세요.
+            ‘데이터 공유’를 탭하세요.
           </li>
           <li class="instructions-cases-todo-item">
-            '데이터 공유'를 누르세요.
+            앱의 아이콘을 탭하세요.
           </li>
           <li class="instructions-cases-todo-item">
-            앱 아이콘을 누르세요.
-          </li>
-          <li class="instructions-cases-todo-item">
-            '연결 재시도'를 누르세요.
+            ‘연결’을 탭하세요.
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          손목 밴드가 연결됐지만, 너무 적은 칼로리만이 측정된다면 다음을 참고하세요.
+          피트니스 밴드가 연결되었으나 데이터가 동기화되지 않는 경우:
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            Bluetooth를 끄고 다시 켜세요.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Zepp 앱에서 피트니스 밴드의 동기화 상태를 확인하세요. 이렇게 하려면, Zepp 앱을 열고, ‘프로필’ 탭으로 이동한 다음, ‘내 장치’ 섹션에서 피트니스 밴드가 연결되어 있는지 확인하세요.
+          </li>
+          <li class="instructions-cases-todo-item">
+            FitnessOnline 앱을 엽니다.
+          </li>
+          <li class="instructions-cases-todo-item">
+            오른쪽 아래의 ‘더보기’를 탭하세요.
+          </li>
+          <li class="instructions-cases-todo-item">
+            ‘설정’을 탭하세요.
+          </li>
+          <li class="instructions-cases-todo-item">
+            ‘데이터 공유’를 탭하세요.
+          </li>
+          <li class="instructions-cases-todo-item">
+            앱의 아이콘을 탭하세요.
+          </li>
+          <li class="instructions-cases-todo-item">
+            ‘다시 연결’을 탭하세요.
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          피트니스 밴드가 연결되었으나 운동 요약 화면에서 칼로리가 낮게 표시되는 경우:
         </h3>
         <p class="instruction-cases-text">
-          이는 시스템 운동이 활성화되지 않았는데도 손목 밴드가 자체적으로 연소한 칼로리를 측정한 것입니다. 더 정확한 칼로리 소모량을 보고 싶다면 손목 밴드의 운동을 시작하세요.
+          이는 피트니스 밴드가 그 특정 소모 칼로리 양을 계산하기 때문입니다.
+        </p>
+        <p class="instruction-cases-text">
+          소모 칼로리를 보다 정확하게 표시하려면, 피트니스 밴드에서 시스템 운동을 시작해야 합니다.
         </p>
       </section>
 
       <section class="instructions container" id="googlefit">
         <div class="uline"></div>
+        <p class="warning bolder">주의! Google Fit은 2025년 6월 30일 이후로 더 이상 사용할 수 없습니다:<br />
+          <nobr><a href="https://developers.google.com/fit">https://developers.google.com/fit</a></nobr>
+        </p>
         <div class="title">
           <div class="iconset">
             <picture>
               <source srcset="/img/braclets/icons/googlefit_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/googlefit_46.png" alt="Device icon">
+              <img src="/img/braclets/icons/googlefit_46.png" alt="장치 아이콘">
             </picture>
           </div>
           <h2 class="headers googlefit">
-            구글 핏 앱에 연결하는 방법
+            Google Fit (FitnessOnline 2.19.2 이하 버전에서 사용 가능)을 앱과 동기화하려면 다음 단계를 따르세요:
           </h2>
         </div>
-        <ul class="instructions-todo-list">
-          <li class="instructions-todo-item">
-            운동을 시작하세요. 이미 구글 핏 앱을 설치했다면 운동 시작 전에 페어링 요청 알림이 나타날 것입니다.
-          </li>
-        </ul>
-        <h3 class="headers instruction-cases">
-          알림이 오지 않는다면 다음을 따르세요.
-        </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            FitnessOnline 앱을 여세요.
+            기기에 Google Fit 앱을 설치하세요.
           </li>
           <li class="instructions-cases-todo-item">
-            우측 하단의 '더 보기' 버튼을 누르세요.
-          </li>
-          <li class="instructions-cases-todo-item">
-            '설정'을 누르세요.
-          </li>
-          <li class="instructions-cases-todo-item">
-            '데이터 공유'를 누르세요.
-          </li>
-          <li class="instructions-cases-todo-item">
-            구글 핏 아이콘을 누르세요.
-          </li>
-          <li class="instructions-cases-todo-item">
-            '구글로 로그인'을 누르세요.
+            FitnessOnline에서 임의의 운동을 시작하세요. 운동 전에, 앱이 Google Fit과 동기화하여 데이터를 추적하도록 요청할 것입니다.
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          리포트에 데이터가 나타나지 않으면 다음을 따르세요.
+          동기화 프롬프트가 나타나지 않으면 다음 단계를 따르세요:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            데이터가 구글 핏으로 전송되고 있는지 확인하세요.
+            FitnessOnline 앱을 엽니다.
           </li>
           <li class="instructions-cases-todo-item">
-            <p class="instruction-cases-text">
-              구글 핏과 앱 사이의 연결을 확인하세요. 이를 위해서는 FitnessOnline 앱에서 아래의 절차를 완료해야 합니다.
-            </p>
+            오른쪽 아래의 ‘더보기’를 탭하세요.
+          </li>
+          <li class="instructions-cases-todo-item">
+            ‘설정’을 탭하세요.
+          </li>
+          <li class="instructions-cases-todo-item">
+            ‘데이터 공유’를 탭하세요.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Google Fit의 아이콘을 탭하세요.
+          </li>
+          <li class="instructions-cases-todo-item">
+            ‘Google로 로그인’을 탭하세요.
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          데이터가 운동 요약 화면에 표시되지 않는 경우 다음 단계를 따르세요:
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            데이터가 Google Fit에 동기화되는지 확인하세요.
+          </li>
+          <li class="instructions-cases-todo-item">
+            <p class="instruction-cases-text">FitnessOnline 앱에서 다음 조치를 수행하여 Google Fit과 FitnessOnline 간의 동기화 상태를 확인하세요:</p>
             <ol class="instructions-cases-todo-list">
               <li class="instructions-cases-todo-item">
-                우측 하단의 '더 보기' 버튼을 누르세요.
+                오른쪽 아래의 ‘더보기’를 탭하세요.
               </li>
               <li class="instructions-cases-todo-item">
-                '설정'을 누르세요.
+                ‘설정’을 탭하세요.
               </li>
               <li class="instructions-cases-todo-item">
-                '데이터 공유'를 누르세요.
+                ‘데이터 공유’를 탭하세요.
               </li>
               <li class="instructions-cases-todo-item">
-                구글 핏 아이콘을 누르세요.
+                Google Fit의 아이콘을 탭하세요.
               </li>
             </ol>
           </li>
@@ -361,119 +448,135 @@
       </section>
 
       <section class="instructions container" id="fitbit">
-        <div id="lg"></div>
         <div id="polar"></div>
+        <div id="samsunghealth"></div>
+        <div id="garmin"></div>
         <div class="uline"></div>
         <div class="title">
           <div class="iconset">
             <picture>
-              <source srcset="/img/braclets/icons/fitbit_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/fitbit_46.png" alt="Device icon">
+              <source srcset="/img/braclets/icons/samsung_100.png" media="(max-width: 1108px)">
+              <img src="/img/braclets/icons/samsung_46.png" alt="장치 아이콘">
             </picture>
             <picture>
-              <source srcset="/img/braclets/icons/lg_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/lg_46.png" alt="Device icon">
+              <source srcset="/img/braclets/icons/garmin_100.png" media="(max-width: 1108px)">
+              <img src="/img/braclets/icons/garmin_46.png" alt="장치 아이콘">
+            </picture>
+            <picture>
+              <source srcset="/img/braclets/icons/fitbit_100.png" media="(max-width: 1108px)">
+              <img src="/img/braclets/icons/fitbit_46.png" alt="장치 아이콘">
             </picture>
             <picture>
               <source srcset="/img/braclets/icons/polar_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/polar_46.png" alt="Device icon">
+              <img src="/img/braclets/icons/polar_46.png" alt="장치 아이콘">
             </picture>
           </div>
           <h2 class="headers fitbit lg polar">
-            핏빗, LG, Polar를 앱에 연결하는 방법
+            Samsung Health, Garmin, Fitbit, 그리고 Polar Flow에서 FitnessOnline으로의 데이터 전송은 Google Health Connect를 통해 이루어집니다.
           </h2>
         </div>
-        <h5 class="headers instruction-comment">
-          앱에 연결해 FitnessOnline 앱으로 움직임을 기록하려면 앱을 구글 핏과 동기화해야 합니다.
-        </h5>
         <h3 class="headers instruction-cases">
-          다음을 따르세요.
+          연결하려면 다음 단계를 따르세요:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            구글 핏 앱을 설치하세요.
+            Health Connect 앱을 설치하고 로그인하세요.
           </li>
           <li class="instructions-cases-todo-item">
-            계정을 생성하세요.
+            활동을 추적하기 위해 사용하는 앱을 엽니다.
           </li>
           <li class="instructions-cases-todo-item">
-            움직임을 기록하기 위한 앱을 여세요.
+            설정 메뉴로 이동합니다.
           </li>
           <li class="instructions-cases-todo-item">
-            설정으로 이동하세요.
+            서드파티 앱을 연결하는 섹션을 찾습니다. 이는 일반적으로 "다른 서비스 연결", "앱 및 기기", "연결 관리" 또는 이와 유사한 이름으로 표시됩니다.
           </li>
           <li class="instructions-cases-todo-item">
-            다른 앱과의 연결을 위한 섹션을 찾으세요. 이는 대개 '다른 서비스에 연결', '앱 및 기기', '연결 관리' 등의 이름으로 나타날 것입니다.
-          </li>
-          <li class="instructions-cases-todo-item">
-            구글 핏에 앱을 연결하기 위한 가이드를 따르세요.
+            Health Connect에 앱을 연결하기 위한 지침을 따르세요.
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          이제 구글 핏과 FitnessOnline 앱을 동기화해야 합니다. 다음을 따르세요.
-        </h3>
-        <ul class="instructions-todo-list">
-          <li class="instructions-todo-item">
-            운동을 시작하세요. 운동 시작 전에 페어링 요청 알림이 나타날 것입니다.
-          </li>
-        </ul>
-        <h3 class="headers instruction-cases">
-          알림이 오지 않는다면 다음을 따르세요.
+          그런 다음, 다음과 같이 Health Connect를 FitnessOnline 앱과 동기화합니다:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            FitnessOnline 앱을 여세요.
+            FitnessOnline 앱에서 오른쪽 아래의 '더보기'를 탭하세요.
           </li>
           <li class="instructions-cases-todo-item">
-            우측 하단의 '더 보기' 버튼을 누르세요.
+            '설정'을 탭하세요.
           </li>
           <li class="instructions-cases-todo-item">
-            '설정'을 누르세요.
+            '데이터 공유'를 탭하세요.
           </li>
           <li class="instructions-cases-todo-item">
-            '데이터 공유'를 누르세요.
+            Health Connect 아이콘을 탭하세요.
           </li>
           <li class="instructions-cases-todo-item">
-            구글 핏 아이콘을 누르세요.
+            '설정 열기'를 탭하세요.
           </li>
           <li class="instructions-cases-todo-item">
-            '구글로 로그인'을 누르세요.
+            FitnessOnline 앱의 데이터 읽기 권한을 부여하세요.
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          리포트에 데이터가 나타나지 않으면 다음을 따르세요.
+          데이터가 운동 요약 화면에 표시되지 않는 경우 다음 단계를 따르세요:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            데이터가 구글 핏으로 전송되고 있는지 확인하세요.
+            활동 추적에 사용되는 앱에서의 데이터가 Health Connect에 동기화되고 있는지 확인하세요.
           </li>
           <li class="instructions-cases-todo-item">
-            설정 —&gt; 데이터 공유 —&gt; 구글 핏으로 이동해 구글 핏과 앱이 연결됐는지 확인하세요.
+            <p class="instruction-cases-text">다음의 절차를 통해 Health Connect와 FitnessOnline 간의 동기화 상태를 확인하세요:</p>
+            <ol class="instructions-cases-todo-list">
+              <li class="instructions-cases-todo-item">
+                '더보기'를 오른쪽 하단에서 탭하세요.
+              </li>
+              <li class="instructions-cases-todo-item">
+                '설정'을 탭하세요.
+              </li>
+              <li class="instructions-cases-todo-item">
+                '데이터 공유'를 탭하세요.
+              </li>
+              <li class="instructions-cases-todo-item">
+                Health Connect 아이콘을 탭하세요.
+              </li>
+            </ol>
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          움직임을 기록하기 위해 앱을 구글 핏과 연결하려면 다음을 따르세요.
+          Health Connect와 활동 추적에 사용되는 앱 간의 연결을 확인하려면 다음 단계를 따르세요:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            구글 핏 앱을 여세요.
+            Health Connect 앱을 엽니다.
           </li>
           <li class="instructions-cases-todo-item">
-            프로필을 누르고 '설정'으로 이동하세요.
+            '권한 및 데이터' 섹션에서 '앱 권한'을 탭하세요.
           </li>
           <li class="instructions-cases-todo-item">
-            '연결된 앱 관리'를 누르세요.
-          </li>
-          <li class="instructions-cases-todo-item">
-            '모든 앱 및 기기' 아래의 화살표를 눌러 연결된 모든 앱 목록을 여세요.
+            사용 중인 앱이 '허용된 접근'에 나열되어 있는지 확인하세요.
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          손목 밴드가 연결됐지만, 너무 적은 칼로리만이 측정된다면 다음을 참고하세요.
+          피트니스 밴드와 Health Connect가 연결되어 있지만, 잘못된 활동 데이터가 표시되거나 데이터가 전혀 표시되지 않는 경우:
         </h3>
         <p class="instruction-cases-text">
-          이는 시스템 운동이 활성화되지 않았는데도 손목 밴드가 자체적으로 연소한 칼로리를 측정한 것입니다. 더 정확한 칼로리 소모량을 보고 싶다면 손목 밴드의 운동을 시작하세요.
+          이는 활동 추적 앱이 특정 칼로리, 걸음 수, 심박수 데이터를 Health Connect에 보내기 때문입니다.
         </p>
+        <p class="instruction-cases-text">
+          FitnessOnline은 Health Connect에서 받은 데이터만 표시합니다.
+        </p>
+        <p class="instruction-cases-text">
+          운동 요약 화면에 보다 정확한 활동 데이터를 표시하려면 다음 단계를 따르세요:
+        </p>
+        <ol class="instructions-todo-list">
+          <li class="instructions-cases-todo-item">
+            FitnessOnline에서 운동을 시작하기 전에, 여러분의 피트니스 밴드에서 시스템 운동을 시작하세요.
+          </li>
+          <li class="instructions-cases-todo-item">
+            FitnessOnline에서 운동을 종료하기 전에, 사용 중인 활동 추적 앱을 열고 피트니스 밴드와 모바일 기기 간의 동기화를 새로고침 하세요.
+          </li>
+        </ol>
       </section>
 
       <section class="instructions container" id="huaweihealth">
@@ -482,308 +585,146 @@
           <div class="iconset">
             <picture>
               <source srcset="/img/braclets/icons/huawei_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/huawei_46.png" alt="Device icon">
+              <img src="/img/braclets/icons/huawei_46.png" alt="장치 아이콘">
             </picture>
           </div>
           <h2 class="headers huaweihealth">
-            화웨이 헬스를 FitnessOnline과 연결하려면 구글 핏을 이용해야 합니다.
+            Huawei Health 앱에서 FitnessOnline으로의 데이터 전송은 Google Health Connect 및 Health Sync를 통해 진행됩니다(유료 구독 필요)
           </h2>
         </div>
-        <h5 class="headers instruction-comment">
-          이를 위해서는 타사 앱인 헬스 싱크(유료 앱)를 이용해야 합니다.
-          이 유료 앱을 이용해 데이터를 동기화할 수 없다면, 이전 창으로 돌아가 구글 핏과 동기화를 선택하세요. 이때 손목 밴드는 고려하지 않아도 괜찮습니다.
-        </h5>
         <h3 class="headers instruction-cases">
-          타사 앱을 사용하려면 플레이 마켓에서 다음을 따라야 합니다.
+          연결하려면 다음 단계를 따르세요:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item bolder">
-            구글 핏을 설치하세요.
+            Health Connect 앱을 설치하고 로그인하세요.
           </li>
           <li class="instructions-cases-todo-item bolder">
-            헬스 싱크 앱을 설치하세요. 앱을 실행한 후 주요 동기화 소스로 화웨이 헬스 킷을 선택하고 동기화 방향으로 구글 핏을 선택하세요.
+            Health Sync 앱을 설치합니다. 앱을 열고 Huawei Health Kit을 주요 동기화 원본으로 선택하세요. 동기화 방향으로 Health Connect를 선택하세요.
           </li>
           <li class="instructions-cases-todo-item bolder">
-            '동의 확인'을 누르세요.
+            '동의 성명' 버튼을 누르세요.
           </li>
           <li class="instructions-cases-todo-item bolder">
             <p class="instruction-cases-text bolder">
-              이후, 헬스 싱크 앱에서 다음의 가이드를 따라야 합니다.
+              그런 다음, Health Sync 앱의 지침을 따르세요:
             </p>
-            <ul class="instructions-todo-list">
+            <ul class="instructions-todo-list embedded">
               <li class="instructions-todo-item">
-                '구글 계정 연결 확인'을 누르세요.
+                'Google 계정에 대한 연결 확인'을 터치하세요.
               </li>
               <li class="instructions-todo-item">
-                '구글 핏에서 움직임 기록 확인'을 누르세요.
+                'Health Connect에서의 활동 추적 확인'을 터치하세요.
               </li>
               <li class="instructions-todo-item">
-                화웨이 앱갤러리를 설치하세요. 공식 웹사이트의 안내는 다음과 같습니다. <a
-                  href="https://consumer.huawei.com/my/mobileservices/appgallery/android-installation/">https://consumer.huawei.com/<wbr>my/mobileservices/appgallery/<wbr>android-installation</a>
+                Huawei AppGallery를 설치하세요 (공식 지침을 참조하세요: <a href="https://consumer.huawei.com/my/mobileservices/appgallery/android-installation/">화웨이 지원</a>).
               </li>
               <li class="instructions-todo-item">
-                앱갤러리를 열고 HMS CORE를 입력해 HMS CORE를 설치하세요. 앱 갤러리가 해당 제품 설치 권한 허용을 요청하면 이를 허용해야 합니다.
+                HMS CORE를 AppGallery에서 설치하세요 (AppGallery는 타사 앱 설치를 위한 시스템 권한을 요구할 것입니다).
               </li>
               <li class="instructions-todo-item">
-                화웨이 헬스를 설치하거나 업데이트하세요.
+                Huawei Health를 설치하거나 업데이트하세요.
               </li>
               <li class="instructions-todo-item">
-                화웨이 계정을 인증하거나 로그인하세요.
+                Huawei 계정에 로그인하세요.
               </li>
               <li class="instructions-todo-item">
-                헬스 싱크 앱과의 동기화 필수 요소에 체크하세요.
+                Health Sync에서 Health Connect로 전송하려는 데이터 유형의 체크박스를 선택하세요.
               </li>
             </ul>
           </li>
           <li class="instructions-cases-todo-item bolder">
-            <p class="instruction-cases-text bolder">
-              구글 핏 앱에 연결하려면 다음을 따르세요.
-            </p>
-            <ul class="instructions-todo-list">
-              <li class="instructions-todo-item">
-                운동을 시작하세요. 이미 구글 핏 앱을 설치했다면 운동 시작 전에 페어링 요청 알림이 나타날 것입니다.
+            Health Sync가 Huawei Health의 '개인정보 관리' 설정에서 성공적으로 연결되었는지 확인하세요.
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          그런 다음, 다음과 같이 Health Connect를 FitnessOnline 앱과 동기화합니다:
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            FitnessOnline 앱에서, 오른쪽 하단의 '더보기'를 클릭하세요.
+          </li>
+          <li class="instructions-cases-todo-item">
+            '설정'을 클릭하세요.
+          </li>
+          <li class="instructions-cases-todo-item">
+            '데이터 공유'를 클릭하세요.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Health Connect 아이콘을 클릭하세요.
+          </li>
+          <li class="instructions-cases-todo-item">
+            '설정 열기'를 클릭하세요.
+          </li>
+          <li class="instructions-cases-todo-item">
+            FitnessOnline 앱에 대한 데이터 읽기 권한을 허용하세요.
+          </li>
+        </ol>
+        <h3 class="headers instruction-cases">
+          데이터가 운동 요약 화면에 표시되지 않으면 다음 단계를 수행하세요:
+        </h3>
+        <ol class="instructions-cases-todo-list">
+          <li class="instructions-cases-todo-item">
+            Health Sync의 데이터가 Health Connect에 동기화되고 있는지 확인하세요.
+          </li>
+          <li class="instructions-cases-todo-item">
+            <p class="instruction-cases-text">FitnessOnline 앱에서 다음의 절차를 통해 Health Connect와 FitnessOnline 간의 동기화 상태를 확인하세요:</p>
+            <ol class="instructions-cases-todo-list">
+              <li class="instructions-cases-todo-item">
+                '더보기'를 오른쪽 하단에서 클릭하세요.
               </li>
-            </ul>
+              <li class="instructions-cases-todo-item">
+                '설정'을 클릭하세요.
+              </li>
+              <li class="instructions-cases-todo-item">
+                '데이터 공유'를 클릭하세요.
+              </li>
+              <li class="instructions-cases-todo-item">
+                Health Connect 아이콘을 클릭하세요.
+              </li>
+            </ol>
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          알림이 오지 않는다면 다음을 따르세요.
+          Health Connect와 Health Sync 간의 연결을 확인하려면 다음 단계를 따르세요:
         </h3>
         <ol class="instructions-cases-todo-list">
           <li class="instructions-cases-todo-item">
-            FitnessOnline 앱으로 이동하세요.
+            Health Connect 앱을 엽니다.
           </li>
           <li class="instructions-cases-todo-item">
-            우측 하단의 '더 보기' 버튼을 누르세요.
+            '허가 및 데이터' 섹션에서 '앱 권한'을 클릭하세요.
           </li>
           <li class="instructions-cases-todo-item">
-            '설정'을 누르세요.
-          </li>
-          <li class="instructions-cases-todo-item">
-            '데이터 공유'를 누르세요.
-          </li>
-          <li class="instructions-cases-todo-item">
-            구글 핏 아이콘을 누르세요.
-          </li>
-          <li class="instructions-cases-todo-item">
-            '구글로 로그인'을 누르세요.
+            사용 중인 앱이 '허용된 접근' 항목에 포함되어 있는지 확인하세요.
           </li>
         </ol>
         <h3 class="headers instruction-cases">
-          리포트에 데이터가 나타나지 않으면 다음을 따르세요.
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            데이터가 구글 핏으로 전송되고 있는지 확인하세요.
-          </li>
-          <li class="instructions-cases-todo-item">
-            설정 —&gt; 데이터 공유 —&gt; 구글 핏으로 이동해 구글 핏과 앱이 연결됐는지 확인하세요.
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          손목 밴드가 연결됐지만, 너무 적은 칼로리만이 측정된다면 다음을 참고하세요.
+          피트니스 밴드, Health Sync, 및 Health Connect가 연결되어 있지만 부정확한 활동 데이터가 표시되거나 데이터가 나타나지 않을 경우:
         </h3>
         <p class="instruction-cases-text">
-          이는 시스템 운동이 활성화되지 않았는데도 손목 밴드가 자체적으로 연소한 칼로리를 측정한 것입니다. 더 정확한 칼로리 소모량을 보고 싶다면 손목 밴드의 운동을 시작하세요.
+          이는 활동 추적 앱이 특정 칼로리, 걸음 수, 심박수 데이터를 Health Sync로 전송하기 때문입니다. 또한 Health Sync는 Health Connect에 데이터를 지연해서 전달할 수도 있습니다.
         </p>
-      </section>
-
-      <section class="instructions container" id="samsunghealth">
-        <div class="uline"></div>
-        <div class="title">
-          <div class="iconset">
-            <picture>
-              <source srcset="/img/braclets/icons/samsung_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/samsung_46.png" alt="Device icon">
-            </picture>
-          </div>
-          <h2 class="headers samsunghealth">
-            삼성 헬스를 FitnessOnline과 연결하려면 구글 핏을 이용해야 합니다.
-          </h2>
-        </div>
-        <h5 class="headers instruction-comment">
-          이를 위해서는 타사 앱인 헬스 싱크(유료 앱)를 이용해야 합니다.
-          이 유료 앱을 이용해 데이터를 동기화할 수 없다면, 이전 창으로 돌아가 구글 핏과 동기화를 선택하세요. 이때 손목 밴드는 고려하지 않아도 괜찮습니다.
-        </h5>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item bolder">
-            구글 핏을 설치하세요.
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            헬스 싱크 앱을 설치하세요. 앱을 실행한 후 주요 동기화 소스로 삼성 헬스를 선택하고 동기화 방향으로 구글 핏을 선택하세요.
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            '동의 확인'을 누르세요.
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            <p class="instruction-cases-text bolder">
-              이후, 헬스 싱크 앱에서 다음의 가이드를 따라야 합니다.
-            </p>
-            <ul class="instructions-todo-list">
-              <li class="instructions-todo-item">
-                '구글 계정 연결 확인'을 누르세요.
-              </li>
-              <li class="instructions-todo-item">
-                '구글 핏에서 움직임 기록 확인'을 누르세요.
-              </li>
-              <li class="instructions-todo-item">
-                헬스 싱크 앱과의 동기화 필수 요소에 체크하세요.
-              </li>
-            </ul>
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            <p class="instruction-cases-text bolder">
-              구글 핏 앱에 연결하려면 다음을 따르세요.
-            </p>
-            <ul class="instructions-todo-list">
-              <li class="instructions-todo-item">
-                운동을 시작하세요. 이미 구글 핏 앱을 설치했다면 운동 시작 전에 페어링 요청 알림이 나타날 것입니다.
-              </li>
-            </ul>
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          알림이 오지 않는다면 다음을 따르세요.
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            FitnessOnline 앱으로 이동하세요.
-          </li>
-          <li class="instructions-cases-todo-item">
-            우측 하단의 '더 보기' 버튼을 누르세요.
-          </li>
-          <li class="instructions-cases-todo-item">
-            '설정'을 누르세요.
-          </li>
-          <li class="instructions-cases-todo-item">
-            '데이터 공유'를 누르세요.
-          </li>
-          <li class="instructions-cases-todo-item">
-            구글 핏 아이콘을 누르세요.
-          </li>
-          <li class="instructions-cases-todo-item">
-            '구글로 로그인'을 누르세요.
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          리포트에 데이터가 나타나지 않으면 다음을 따르세요.
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            데이터가 구글 핏으로 전송되고 있는지 확인하세요.
-          </li>
-          <li class="instructions-cases-todo-item">
-            설정 —&gt; 데이터 공유 —&gt; 구글 핏으로 이동해 구글 핏과 앱이 연결됐는지 확인하세요.
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          손목 밴드가 연결됐지만, 너무 적은 칼로리만이 측정된다면 다음을 참고하세요.
-        </h3>
         <p class="instruction-cases-text">
-          이는 시스템 운동이 활성화되지 않았는데도 손목 밴드가 자체적으로 연소한 칼로리를 측정한 것입니다. 더 정확한 칼로리 소모량을 보고 싶다면 손목 밴드의 운동을 시작하세요.
+          FitnessOnline은 Health Connect로부터 수신한 데이터만 표시합니다.
         </p>
-      </section>
-
-      <section class="instructions container" id="garmin">
-        <div class="uline"></div>
-        <div class="title">
-          <div class="iconset">
-            <picture>
-              <source srcset="/img/braclets/icons/garmin_100.png" media="(max-width: 1108px)">
-              <img src="/img/braclets/icons/garmin_46.png" alt="Device icon">
-            </picture>
-          </div>
-          <h2 class="headers garmin">
-            가민을 FitnessOnline과 연결하려면 구글 핏을 이용해야 합니다.
-          </h2>
-        </div>
-        <h5 class="headers instruction-comment">
-          이를 위해서는 타사 앱인 헬스 싱크(유료 앱)를 이용해야 합니다.
-          이 유료 앱을 이용해 데이터를 동기화할 수 없다면, 이전 창으로 돌아가 구글 핏과 동기화를 선택하세요. 이때 손목 밴드는 고려하지 않아도 괜찮습니다.
-        </h5>
-        <h3 class="headers instruction-cases">
-          타사 앱을 사용하려면 플레이 마켓에서 다음을 따라야 합니다.
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item bolder">
-            구글 핏을 설치하세요.
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            헬스 싱크 앱을 설치하세요. 앱을 실행한 후 주요 동기화 소스로 가민을 선택하고 동기화 방향으로 구글 핏을 선택하세요.
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            '동의 확인'을 누르세요.
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            <p class="instruction-cases-text bolder">
-              이후, 헬스 싱크 앱에서 다음의 가이드를 따라야 합니다.
-            </p>
-            <ul class="instructions-todo-list">
-              <li class="instructions-todo-item">
-                '구글 계정 연결 확인'을 누르세요.
-              </li>
-              <li class="instructions-todo-item">
-                '구글 핏에서 움직임 기록 확인'을 누르세요.
-              </li>
-              <li class="instructions-todo-item">
-                '가민 연결 시작'을 누르고 가민 계정을 생성하거나 로그인하세요.
-              </li>
-              <li class="instructions-todo-item">
-                헬스 싱크 앱과의 동기화 필수 요소에 체크하세요.
-              </li>
-            </ul>
-          </li>
-          <li class="instructions-cases-todo-item bolder">
-            <p class="instruction-cases-text bolder">
-              구글 핏 앱에 연결하려면 다음을 따르세요.
-            </p>
-            <ul class="instructions-todo-list">
-              <li class="instructions-todo-item">
-                운동을 시작하세요. 이미 구글 핏 앱을 설치했다면 운동 시작 전에 페어링 요청 알림이 나타날 것입니다.
-              </li>
-            </ul>
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          알림이 오지 않는다면 다음을 따르세요.
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            FitnessOnline 앱으로 이동하세요.
-          </li>
-          <li class="instructions-cases-todo-item">
-            우측 하단의 '더 보기' 버튼을 누르세요.
-          </li>
-          <li class="instructions-cases-todo-item">
-            '설정'을 누르세요.
-          </li>
-          <li class="instructions-cases-todo-item">
-            '데이터 공유'를 누르세요.
-          </li>
-          <li class="instructions-cases-todo-item">
-            구글 핏 아이콘을 누르세요.
-          </li>
-          <li class="instructions-cases-todo-item">
-            '구글로 로그인'을 누르세요.
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          리포트에 데이터가 나타나지 않으면 다음을 따르세요.
-        </h3>
-        <ol class="instructions-cases-todo-list">
-          <li class="instructions-cases-todo-item">
-            데이터가 구글 핏으로 전송되고 있는지 확인하세요.
-          </li>
-          <li class="instructions-cases-todo-item">
-            설정 —&gt; 데이터 공유 —&gt; 구글 핏으로 이동해 구글 핏과 앱이 연결됐는지 확인하세요.
-          </li>
-        </ol>
-        <h3 class="headers instruction-cases">
-          손목 밴드가 연결됐지만, 너무 적은 칼로리만이 측정된다면 다음을 참고하세요.
-        </h3>
-        <p class="instruction-cases-text">
-          이는 시스템 운동이 활성화되지 않았는데도 손목 밴드가 자체적으로 연소한 칼로리를 측정한 것입니다. 더 정확한 칼로리 소모량을 보고 싶다면 손목 밴드의 운동을 시작하세요.
+        <p class="instruction-cases-text mb">
+          보다 정확한 활동 데이터가 운동 요약 화면에 표시되도록 하려면 아래 단계를 따르세요:
         </p>
+        <ol class="instructions-todo-list">
+          <li class="instructions-cases-todo-item">
+            FitnessOnline에서 운동을 시작하기 전에 피트니스 밴드에서 시스템 운동을 시작하세요.
+          </li>
+          <li class="instructions-cases-todo-item">
+            FitnessOnline에서 운동을 완료하기 전에, 사용하는 활동 추적 앱을 열고, 귀하의 피트니스 밴드와 모바일 기기 간의 동기화를 새로 고침하십시오.
+          </li>
+          <li class="instructions-cases-todo-item">
+            Health Sync 앱을 열고 Health Connect와의 동기화를 새로 고침하십시오.
+          </li>
+          <li class="instructions-cases-todo-item">
+            FitnessOnline 앱으로 돌아가 운동을 완료하십시오.
+          </li>
+        </ol>
       </section>
     </div>
   </main>
