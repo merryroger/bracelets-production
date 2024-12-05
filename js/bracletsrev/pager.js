@@ -1,8 +1,8 @@
 /**
  * The Object Pager (reversed) JavaScript library
- * version 0.1.7-r
+ * version 0.2.0-r
  * © 2022..2023 Ehwaz Raido
- * 05/Aug/2022 .. 27/Nov/2024
+ * 05/Aug/2022 .. 05/Dec/2024
  */
 
 const Pager = class ObjectPager {
@@ -145,11 +145,11 @@ const Pager = class ObjectPager {
     let dX = (e.target.value - 1) * treck;
     dX =
       dX - this._settings.leftEdge + this._nullPos > 0
-        ? this._settings.leftEdge - this._nullPos
-        : dX;
+        ? this._settings.leftEdge /*- this._nullPos*/
+        : dX + this._nullPos - this._settings.rightShift;
     this._settings.band.style.setProperty(
       "transform",
-      `translateX(${this._nullPos + dX}px)`
+      `translateX(${/*this._nullPos + */dX - this._settings.leftEdge}px)`
     );
   }
 
@@ -166,7 +166,6 @@ const Pager = class ObjectPager {
     this._hangTouchHandleListeners();
     this._hangMouseHandleListeners();
 
-    /** Begin :: Smooth scrolling changes on 2024-11-27 */
     const up_link = document.body.querySelector("a.up");
     [...this._settings.items, up_link].forEach(item => {
       item.addEventListener("click", e => {
@@ -176,7 +175,6 @@ const Pager = class ObjectPager {
         target.scrollIntoView({ behavior: 'smooth' });
       })
     });
-    /** End :: Smooth scrolling changes on 2024-11-27 */
 
     this._settings.frameDock.addEventListener("keyup", this._focbytab);
     this._settings.band.addEventListener("click", this._cardclk);
@@ -190,8 +188,8 @@ const Pager = class ObjectPager {
         e.target.closest("#review-model-band")
       ) {
         this._swipping = true;
+//        e.preventDefault();
         e.stopPropagation();
-        e.preventDefault();
         this._ptrdn({ target: e.target, clientX: e.changedTouches[0].pageX });
       }
     });
@@ -257,7 +255,7 @@ const Pager = class ObjectPager {
     input.checked = true;
     this._settings.band.style.setProperty(
       "transform",
-      `translateX(${this._nullPos}px)`
+      `translateX(${this._nullPos - this._settings.leftEdge - this._settings.rightShift}px)`
     );
   }
 
@@ -313,22 +311,24 @@ const Pager = class ObjectPager {
   _reCalcAfterSwip(lastShift) {
     this._settings.band.style.setProperty(
       "transition",
-      "transform .1s ease-in-out"
+      "transform .1s linear"
     );
     let cv = this._getCurrentPageValue();
     let atEdge = true;
-
-    if (lastShift < 0) {
+    if (lastShift < -100) {
       cv = 0;
-    } else if (lastShift + this._nullPos >= 0) {
+    } else if (lastShift + this._nullPos - 100 >= 0) {
       cv = this._settings.items.length - 1;
     } else {
       lastShift += (this._swipInfo.dir == 1)
-          ? 0
-          : this._parameters.frameRect.width - this._parameters.itemsPerScreen * this._parameters.moveLength;
+          ? - 150
+          : this._parameters.frameRect.width - this._parameters.itemsPerScreen * this._parameters.moveLength + 150;
       cv = Math.round(lastShift / this._parameters.moveLength);
       atEdge = false;
     }
+
+    cv = cv < this._settings.items.length ? cv : this._settings.items.length - 1;
+    cv = cv < 0 ? 0 : cv;
 
     this._moveByExternalActionEnd(cv, atEdge);
 
@@ -339,12 +339,12 @@ const Pager = class ObjectPager {
     if (this._swipInfo.dir == 1) {
       this._settings.band.style.setProperty(
         "transform",
-        `translateX(${this._nullPos + cv * this._parameters.moveLength}px)`
+        `translateX(${this._nullPos + cv * this._parameters.moveLength - this._settings.leftEdge - this._settings.rightShift}px)`
       );
     } else {
       this._settings.band.style.setProperty(
         "transform",
-        `translateX(${this._nullPos + (cv + this._parameters.itemsPerScreen) * this._parameters.moveLength - this._parameters.frameRect.width - this._parameters.gap + this._settings.leftEdge}px)`
+        `translateX(${this._nullPos + (cv + this._parameters.itemsPerScreen) * this._parameters.moveLength - this._parameters.frameRect.width - this._parameters.gap + this._settings.leftEdge - this._settings.rightShift}px)`
       );
     }
   }
@@ -426,13 +426,13 @@ const Pager = class ObjectPager {
   }
 
   _transitionEnd() {
-    this._settings.band.style.setProperty("transition", "transform .5s ease-in-out");
+    this._settings.band.style.setProperty("transition", "transform .15s linear");
     this._moving = false;
   }
 
   _focusCardsByTab(e) {
     if (this._parameters.movesNeeded > 1 && e.target.closest(".model-card") !== null && e.keyCode == 0x9) {
-      this._settings.band.style.setProperty("transition", "transform .1s ease-in-out");
+      this._settings.band.style.setProperty("transition", "transform .1s linear");
       this._focused = e.target.closest(".model-card");
       const cv = this._getFocusedCardNum();
       const bandShift = Math.abs(+getComputedStyle(this._settings.band).transform.split(", ")[4] - this._nullPos);

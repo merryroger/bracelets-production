@@ -1,12 +1,16 @@
 @media (max-width: 1380px) {
   .review-model-pad {
     justify-content: flex-start;
-    padding-left: 50px;
+    /* padding-left: 50px; */
   }
 
   .review-model-frame {
     position: relative;
     overflow: hidden;
+  }
+
+  .review-model-band-wrapper {
+    padding: 0 50px;
   }
 
   .review-model-band {

@@ -249,7 +249,7 @@ p.instruction-cases-text.mb {
   padding-top: 40px;
   flex-direction: column;
   left: 50%;
-  width: calc(100vw);
+  width: 100vw;
   justify-content: space-between;
   align-items: center;
   transform: translateX(-50%);
@@ -270,7 +270,7 @@ p.instruction-cases-text.mb {
   flex-wrap: wrap;
   column-gap: 20px;
   row-gap: 20px;
-  transition: transform .5s ease-in-out;
+  transition: transform .25s linear;
 }
 
 .model-card {
