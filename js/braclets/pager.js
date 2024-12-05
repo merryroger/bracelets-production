@@ -1,8 +1,8 @@
 /**
  * The Object Pager JavaScript library
- * version 0.1.5
+ * version 0.2.0
  * © 2022 Ehwaz Raido
- * 05/Aug/2022 .. 27/Nov/2024
+ * 05/Aug/2022 .. 05/Dec/2024
  */
 
 const Pager = class ObjectPager {
@@ -44,8 +44,10 @@ const Pager = class ObjectPager {
       lastX: 0,
       reset: (x) => { this._swipInfo.dir = 0; this._swipInfo.lastX = x },
       update: (x) => {
-        this._swipInfo.dir = (x == this._swipInfo.lastX.x) ? 0 : ((x < this._swipInfo.lastX) ? 1 : -1),
-          this._swipInfo.lastX = x
+        this._swipInfo.dir = (x == this._swipInfo.lastX.x)
+          ? 0
+          : (x < this._swipInfo.lastX) ? 1 : -1,
+        this._swipInfo.lastX = x
       },
     };
     this._setUp(settings);
@@ -144,7 +146,6 @@ const Pager = class ObjectPager {
     this._hangTouchHandleListeners();
     this._hangMouseHandleListeners();
 
-    /** Begin :: Smooth scrolling changes on 2024-11-27 */
     const up_link = document.body.querySelector("a.up");
     [...this._settings.items, up_link].forEach(item => {
       item.addEventListener("click", e => {
@@ -154,7 +155,6 @@ const Pager = class ObjectPager {
         target.scrollIntoView({ behavior: 'smooth' });
       })
     });
-    /** End :: Smooth scrolling changes on 2024-11-27 */
 
     this._settings.frameDock.addEventListener('keyup', this._focbytab);
     this._settings.band.addEventListener('click', this._cardclk);
@@ -165,8 +165,8 @@ const Pager = class ObjectPager {
     document.addEventListener('touchstart', (e) => {
       if (this._parameters.movesNeeded > 1 && e.target.closest('#review-model-band')) {
         this._swipping = true;
+//        e.preventDefault();
         e.stopPropagation();
-        e.preventDefault();
         this._ptrdn({ target: e.target, clientX: e.changedTouches[0].pageX });
       }
     });
@@ -262,16 +262,16 @@ const Pager = class ObjectPager {
   }
 
   _reCalcAfterSwip(lastShift) {
-    this._settings.band.style.setProperty('transition', 'transform .1s ease-in-out');
+    this._settings.band.style.setProperty('transition', 'transform .1s linear');
     let cv = this._getCurrentPageValue();
     let atEdge = true;
 
     if (lastShift > 0) {
       cv = 0;
-    } else if (lastShift + this._parameters.bandRect.width < this._parameters.frameRect.right) {
+    } else if (lastShift + this._parameters.bandRect.width + 100 < this._parameters.frameRect.right) {
       cv = this._settings.items.length - 1;
     } else {
-      lastShift -= ((this._swipInfo.dir == -1)) ? 0 : this._parameters.frameRect.width - this._parameters.itemsPerScreen * this._parameters.moveLength;
+      lastShift -= ((this._swipInfo.dir == -1)) ? -130 : this._parameters.frameRect.width - this._parameters.itemsPerScreen * this._parameters.moveLength + 80;
       cv = Math.round(-lastShift / this._parameters.moveLength);
       atEdge = false;
     }
@@ -291,7 +291,7 @@ const Pager = class ObjectPager {
     if (this._swipInfo.dir == -1) {
       this._settings.band.style.setProperty('transform', `translateX(-${(cv * this._parameters.moveLength)}px)`);
     } else {
-      this._settings.band.style.setProperty('transform', `translateX(-${(cv + this._parameters.itemsPerScreen) * this._parameters.moveLength - this._parameters.frameRect.width - this._parameters.gap + this._settings.rightEdge}px)`);
+      this._settings.band.style.setProperty('transform', `translateX(-${(cv + this._parameters.itemsPerScreen) * this._parameters.moveLength - this._parameters.frameRect.width - this._parameters.gap + this._settings.rightEdge + this._settings.leftShift}px)`);
     }
   }
 
@@ -331,13 +331,13 @@ const Pager = class ObjectPager {
   }
 
   _transitionEnd() {
-    this._settings.band.style.setProperty('transition', 'transform .5s ease-in-out');
+    this._settings.band.style.setProperty('transition', 'transform .25s linear');
     this._moving = false;
   }
 
   _focusCardsByTab(e) {
     if (this._parameters.movesNeeded > 1 && e.target.closest('.model-card') !== null && e.keyCode == 0x9) {
-      this._settings.band.style.setProperty('transition', 'transform .1s ease-in-out');
+      this._settings.band.style.setProperty('transition', 'transform .1s linear');
       this._focused = e.target.closest('.model-card');
       const cv = this._getFocusedCardNum();
       const bandShift = Math.abs(+getComputedStyle(this._settings.band).transform.split(', ')[4]);
