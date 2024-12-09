@@ -1,8 +1,8 @@
 /**
  * The Object Pager (reversed) JavaScript library
  * version 0.2.0-r
- * © 2022..2023 Ehwaz Raido
- * 05/Aug/2022 .. 05/Dec/2024
+ * © 2022..2024 Ehwaz Raido
+ * 05/Aug/2022 .. 09/Dec/2024
  */
 
 const Pager = class ObjectPager {
@@ -145,11 +145,11 @@ const Pager = class ObjectPager {
     let dX = (e.target.value - 1) * treck;
     dX =
       dX - this._settings.leftEdge + this._nullPos > 0
-        ? this._settings.leftEdge /*- this._nullPos*/
+        ? this._settings.leftEdge
         : dX + this._nullPos - this._settings.rightShift;
     this._settings.band.style.setProperty(
       "transform",
-      `translateX(${/*this._nullPos + */dX - this._settings.leftEdge}px)`
+      `translateX(${dX - this._settings.leftEdge}px)`
     );
   }
 
@@ -188,7 +188,6 @@ const Pager = class ObjectPager {
         e.target.closest("#review-model-band")
       ) {
         this._swipping = true;
-//        e.preventDefault();
         e.stopPropagation();
         this._ptrdn({ target: e.target, clientX: e.changedTouches[0].pageX });
       }
@@ -304,7 +303,6 @@ const Pager = class ObjectPager {
       const input = this._settings.ctrlDock.querySelectorAll("input")[cv];
       input.checked = true;
       this._doMove({ target: input });
-      //this._settings.band.style.setProperty('transform', `translateX(-${((atLeftEdge - 1) * this._parameters.moveLength)}px)`);
     }
   }
 
@@ -390,7 +388,7 @@ const Pager = class ObjectPager {
     const atRightEdge = (rightAligned) ? Math.floor(lastShift / this._parameters.moveLength) : Math.floor(lastShift / this._parameters.moveLength) + 1;
     const atLeftEdge = atRightEdge + this._parameters.itemsPerScreen - 1;
     const focusedCard = this._getFocusedCardNum() - 1;
-    const overFlow = (atLeftEdge >= this._settings.items.length - 1 && focusedCard >= atRightEdge);
+    const overFlow = (atLeftEdge >= this._settings.items.length - 1 && focusedCard >= atRightEdge) || focusedCard === this._settings.items.length - 1;
 
     let atEdge = true;
 
@@ -399,9 +397,11 @@ const Pager = class ObjectPager {
     } else if (overFlow) {
       cv = this._settings.items.length - 1;
     } else if (focusedCard >= atRightEdge && focusedCard <= atLeftEdge) {
-      return;
+      cv = focusedCard;
+      atEdge = false;
+      this._swipInfo.dir = 1;
     } else {
-      this._swipInfo.dir = (focusedCard > atLeftEdge) ? -1 : -1;
+      this._swipInfo.dir = (focusedCard > atLeftEdge) ? 1 : 1;
       lastShift += (focusedCard > atLeftEdge)
           ? this._parameters.moveLength
           : -lastShift % this._parameters.moveLength;

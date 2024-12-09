@@ -1,8 +1,8 @@
 /**
  * The Object Pager JavaScript library
  * version 0.2.0
- * © 2022 Ehwaz Raido
- * 05/Aug/2022 .. 05/Dec/2024
+ * © 2022..2024 Ehwaz Raido
+ * 05/Aug/2022 .. 09/Dec/2024
  */
 
 const Pager = class ObjectPager {
@@ -165,7 +165,6 @@ const Pager = class ObjectPager {
     document.addEventListener('touchstart', (e) => {
       if (this._parameters.movesNeeded > 1 && e.target.closest('#review-model-band')) {
         this._swipping = true;
-//        e.preventDefault();
         e.stopPropagation();
         this._ptrdn({ target: e.target, clientX: e.changedTouches[0].pageX });
       }
@@ -257,7 +256,6 @@ const Pager = class ObjectPager {
       const input = this._settings.ctrlDock.querySelectorAll('input')[cv];
       input.checked = true;
       this._doMove({ target: input });
-      //this._settings.band.style.setProperty('transform', `translateX(-${((atLeftEdge - 1) * this._parameters.moveLength)}px)`);
     }
   }
 
@@ -275,6 +273,9 @@ const Pager = class ObjectPager {
       cv = Math.round(-lastShift / this._parameters.moveLength);
       atEdge = false;
     }
+
+    cv = cv < this._settings.items.length ? cv : this._settings.items.length - 1;
+    cv = cv < 0 ? 0 : cv;
 
     const input = this._settings.ctrlDock.querySelectorAll('input')[Math.floor(cv / (this._parameters.itemsPerScreen * this._parameters.rows))];
     input.checked = true;
@@ -327,6 +328,47 @@ const Pager = class ObjectPager {
   _cardClick(e) {
     if (this._moving) {
       e.preventDefault();
+      return;
+    }
+
+    var lastShift = +getComputedStyle(this._settings.band).transform.split(", ")[4];
+    let cv = this._getCurrentPageValue();
+    const leftAligned = lastShift % this._parameters.moveLength === 0;
+    const atLeftEdge = (leftAligned) ? Math.abs(Math.floor(-lastShift / this._parameters.moveLength)) : Math.abs(Math.floor(-lastShift / this._parameters.moveLength) + 1);
+    const atRightEdge = atLeftEdge + this._parameters.itemsPerScreen - 1;
+    const focusedCard = this._getFocusedCardNum() - 1;
+    const overFlow = (atRightEdge >= this._settings.items.length - 1 && focusedCard >= atRightEdge);
+
+    let atEdge = true;
+
+    if (focusedCard === 0) {
+      cv = 0;
+    } else if (overFlow) {
+      cv = this._settings.items.length - 1;
+    } else if (focusedCard <= atLeftEdge && focusedCard <= atRightEdge) {
+      cv = focusedCard;
+    } else {
+      this._swipInfo.dir = (focusedCard > atRightEdge) ? 1 : 1;
+      lastShift -= (focusedCard > atRightEdge)
+          ? this._parameters.moveLength
+          : -lastShift % this._parameters.moveLength;
+      cv = Math.round(-lastShift / this._parameters.moveLength);
+      atEdge = false;
+    }
+
+    if (this._parameters.rows === 1)
+      this._moveByExternalActionEnd(cv, atEdge);
+  }
+
+  _moveByExternalActionEnd(cv, atEdge) {
+    const input = this._settings.ctrlDock.querySelectorAll("input")[
+      Math.floor(cv / (this._parameters.itemsPerScreen * this._parameters.rows))
+    ];
+    input.checked = true;
+    if (atEdge) {
+      this._doMove({ target: input });
+    } else {
+      this._cardSelect(cv);
     }
   }
 
