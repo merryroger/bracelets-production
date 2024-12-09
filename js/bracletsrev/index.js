@@ -6,6 +6,7 @@ const settings = {
   ctrlDock: document.getElementById('review-band-controls'),
   items: Array.from(document.getElementById('review-model-band').querySelectorAll('.model-card')),
   swipSpotLr: document.getElementById('swip-spot-layer'),
+  rightShift: 50,
   leftEdge: 50,
   append: (num) => {
     const id = (num < 10) ? `review-control-0${num}` : `review-control-${num}`;
